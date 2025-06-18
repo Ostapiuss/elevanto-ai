@@ -1,0 +1,55 @@
+@use './assets/styles/style.scss' as *;
+
+:root {
+  font-family: 'IBM Plex Mono', monospace;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 400;
+  color: $primary;
+  text-decoration: inherit;
+}
+
+header {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+p,
+a,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: 'TT Hoves Pro Trial', sans-serif;
+}
+
+ul,
+li {
+  color: $primary;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  color: $primary;
+  min-height: 100vh;
+}
+
+#elevanto-app-root {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffffff;
+}

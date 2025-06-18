@@ -1,0 +1,47 @@
+.elevanto-header {
+  display: flex;
+  gap: 235px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 32px;
+
+    button {
+      min-width: fit-content;
+    }
+  }
+
+  .navigation {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 30px;
+
+    li {
+      font-size: 14px;
+      line-height: 18px;
+      list-style: none;
+    }
+  }
+}

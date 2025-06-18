@@ -1,0 +1,31 @@
+.section-layout {
+  border-left: 1px solid #cdd1d5;
+  border-right: 1px solid #cdd1d5;
+  // border-bottom: 1px solid #cdd1d5;
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    left: -122px;
+    background-color: #cdd1d5;
+    top: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #cdd1d5;
+    top: 100%;
+    left: -122px;
+  }
+}

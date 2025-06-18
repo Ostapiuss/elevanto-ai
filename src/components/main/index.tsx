@@ -1,3 +1,5 @@
+import { Outlet } from 'react-router';
+
 export default function Main() {
-  return <div>Main</div>;
+  return <Outlet />;
 }
