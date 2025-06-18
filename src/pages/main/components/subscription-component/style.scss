@@ -1,0 +1,73 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+
+  &__actions {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 105px;
+    .annually-btn {
+      .discount {
+        position: relative;
+        top: -1px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: $gray-50;
+      left: 0%;
+      top: -57px;
+      height: 1px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: $gray-50;
+      left: 0%;
+      top: calc(100% + 57px);
+      height: 1px;
+    }
+
+    div.sub-item {
+      position: relative;
+
+      &:last-child {
+        &::after {
+          content: '';
+          display: none;
+        }
+      }
+
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        background-color: $gray-50;
+        left: 105.7%;
+        top: -18%;
+        height: 135%;
+      }
+    }
+  }
+}

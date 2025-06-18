@@ -31,13 +31,13 @@ declare module '@mui/material/Button' {
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#0DB6AB',
-      light: '#5CD1C9',
-      dark: '#0A7B74',
+      main: '#23272b',
+      light: '#1b1e21',
+      dark: '#151719',
     },
     primaryLight: {
       main: '#7C66EB1A',
-      contrastText: '#0DB6AB',
+      contrastText: '#23272b',
     },
     previewButtons: {
       main: '#F8FAFC',
@@ -53,7 +53,7 @@ let theme = createTheme({
     },
     whiteButton: {
       main: '#FFFFFFB2',
-      contrastText: '#0DB6AB',
+      contrastText: '#23272b',
     },
     secondary: {
       main: '#DF156A',
@@ -86,7 +86,7 @@ let theme = createTheme({
       secondary: '#98A1AA',
     },
     grey: {
-      '50': '#98a1aa',
+      '50': '#626c77',
       '100': '#F2F3F3',
       '200': '#8F91A5',
       '700': '#596072',
@@ -176,9 +176,9 @@ let theme = createTheme({
             borderRadius: '6px',
             ':hover': {
               backgroundColor: '#7C66EB1A',
-              color: '#0DB6AB',
+              color: '#23272b',
               svg: {
-                stroke: '#0DB6AB',
+                stroke: '#23272b',
               },
             },
           },
@@ -194,9 +194,9 @@ let theme = createTheme({
             },
             ':hover': {
               backgroundColor: '#7C66EB1A',
-              color: '#0DB6AB',
+              color: '#23272b',
               svg: {
-                stroke: '#0DB6AB',
+                stroke: '#23272b',
               },
             },
           },
@@ -308,15 +308,26 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           border: 0,
-          // color: 'gray',
-          // bgcolor: '#98A1AA1A',
-          // color: 'text.secondary',
+          borderRadius: '6px',
+          '&.Mui-selected': {
+            border: '1px solid #EAEBEC',
+            backgroundColor: '#3B4146',
+            borderRadius: '6px',
+            color: 'white',
+            '&:hover': {
+              backgroundColor: '#3B4146',
+              color: 'white',
+            },
+          },
         },
       },
       defaultProps: {
         sx: {
-          bgcolor: '#98A1AA1A',
-          color: 'text.secondary',
+          boxShadow: '0px 2px 8px 0px #00000014',
+          border: '1px solid transpatent',
+          maxHeight: '36px',
+          bgcolor: '##FAFAFA',
+          color: '#3B4146',
         },
       },
     },

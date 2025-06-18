@@ -1,0 +1,6 @@
+.customers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 16px;
+}

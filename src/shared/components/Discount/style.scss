@@ -1,0 +1,16 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.discount {
+  max-height: 24px;
+
+  .text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $secondary;
+    padding: 4px 8px;
+    background-color: $secondary-200;
+    border-radius: 8px;
+    border: 1px solid $secondary-100;
+  }
+}

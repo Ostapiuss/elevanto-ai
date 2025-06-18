@@ -10,6 +10,7 @@ export default defineConfig({
     alias: {
       '@assets': '/src/assets',
       '@pages': '/src/pages',
+      '@mocks': '/src/mocks',
       '@components': '/src/components',
       '@constants': '/src/constants',
       '@interfaces': '/src/interfaces',
