@@ -8,6 +8,7 @@ import { Button } from '@mui/material';
 import './style.scss';
 import { constants } from '@constants/index';
 import Tags from './components/tags-component';
+import CompanyOffer from './components/offer-component';
 
 const pageTitle = 'Everything you need to automate your business with AI';
 const pageSubTitle =
@@ -18,7 +19,9 @@ export default function MainPage() {
     <>
       <SectionLayout className="section">
         <PageHeader title={pageTitle} subTitle={pageSubTitle} />
-        <Button variant="contained">Start for free</Button>
+        <Button sx={{ marginTop: '32px' }} variant="contained">
+          Start for free
+        </Button>
         {/* <img className="dashboard-icon" src={DashboardIcon} alt="dashboard-icon" /> */}
       </SectionLayout>
       <SectionLayout className="section">
@@ -32,9 +35,17 @@ export default function MainPage() {
         />
         <Tags />
       </SectionLayout>
-      <SectionLayout className="section">
-        <PageHeader title={pageTitle} subTitle={pageSubTitle} />
-        <Button variant="contained">Start for free</Button>
+      <SectionLayout className="section offer-section">
+        <PageHeader
+          size={36}
+          subTitle="We combine a white-label automation platform with AI-powered services tailored to your business."
+          title={
+            <div className="tag-title">
+              What <span style={{ color: constants.colors.secondary }}>We Offer</span>
+            </div>
+          }
+        />
+        <CompanyOffer />
       </SectionLayout>
     </>
   );

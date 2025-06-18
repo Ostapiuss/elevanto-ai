@@ -2,6 +2,7 @@ import Main from '@components/main';
 import { Header } from '@components/header';
 
 import './style.scss';
+import Footer from '@components/footer';
 
 export function Layout() {
   return (
@@ -12,6 +13,7 @@ export function Layout() {
       <main className="main">
         <Main />
       </main>
+      <Footer />
     </div>
   );
 }
