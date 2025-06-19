@@ -13,6 +13,8 @@ import DashboardIcon from '@assets/png/dashboard.png';
 import { constants } from '@constants/index';
 
 import './style.scss';
+import MainQuestion from './components/question-component';
+import ReadyBusiness from '@shared/components/ReadyBusiness';
 
 export default function MainPage() {
   return (
@@ -76,6 +78,28 @@ export default function MainPage() {
         />
 
         <CustomersComponent />
+      </SectionLayout>
+      <SectionLayout className="section promo-video">
+        <PageHeader
+          size={36}
+          title="Promo video title"
+          subTitle="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque"
+        />
+      </SectionLayout>
+      <SectionLayout className="section question-section">
+        <PageHeader
+          size={36}
+          title={
+            <div className="tag-title">
+              <span style={{ color: constants.colors.secondary }}>Your questions</span>, we answered
+            </div>
+          }
+        />
+        <MainQuestion />
+      </SectionLayout>
+
+      <SectionLayout className="section ready-business-section">
+        <ReadyBusiness />
       </SectionLayout>
     </>
   );

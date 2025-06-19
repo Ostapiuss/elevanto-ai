@@ -19,7 +19,7 @@ export interface SubscriptionAdvantages {
   icon: ReactNode;
 }
 
-export interface Customer {
+export interface CustomerItem {
   iconSrc: string;
   fullName: string;
   position: string;
@@ -28,4 +28,10 @@ export interface Customer {
   userName: string;
   dateTime: string;
   socialIcon: ReactElement;
+}
+
+export interface AccordionsItme {
+  question: string;
+  id: number;
+  answer: string;
 }

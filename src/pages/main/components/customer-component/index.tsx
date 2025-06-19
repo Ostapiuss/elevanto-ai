@@ -1,12 +1,23 @@
-import { Customer } from '@interfaces/shared-interfaces';
+import { CustomerItem } from '@interfaces/shared-interfaces';
 
 import './style.scss';
 
-export default function CustomerComponent({ fullName, dateTime, userName, position, socialIcon, tag, text }: Customer) {
+export default function CustomerComponent({
+  fullName,
+  iconSrc,
+  dateTime,
+  userName,
+  position,
+  socialIcon,
+  tag,
+  text,
+}: CustomerItem) {
   return (
     <div className="customer">
       <div className="customer__personal-info">
-        <div className="user-icon"></div>
+        <div className="user-icon">
+          <img src={iconSrc} alt="" />
+        </div>
         <div className="personal-info">
           <div className="info">
             <p className="full-name">

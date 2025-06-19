@@ -1,0 +1,40 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.accordions {
+  .accordion {
+    .MuiAccordion-heading {
+      .MuiButtonBase-root {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+
+    .MuiAccordionSummary-expandIconWrapper {
+      transform: rotate(180deg);
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+      transform: rotate(-360deg);
+    }
+
+    .MuiAccordionDetails-root {
+      padding-top: 0;
+      padding-right: 50px;
+
+      .details {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $primary-light;
+        padding-left: 12px;
+      }
+    }
+  }
+  .MuiPaper-root {
+    border: none;
+  }
+}
