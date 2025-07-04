@@ -1,0 +1,115 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.client-board {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      svg {
+        width: 38px;
+        height: 38px;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 40px;
+      gap: 8px;
+
+      &__text {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        color: $main-400;
+      }
+
+      &__value {
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 600;
+        color: $main-500;
+      }
+    }
+  }
+
+  &__footer {
+    position: relative;
+    z-index: 1;
+
+    .alert-board {
+      position: relative;
+      z-index: 1;
+      padding: 12px;
+      background-color: $secondary-200;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0px 2px 8px 0px #00000014;
+      overflow: hidden;
+      width: calc(100% - 5px);
+      right: -5px;
+
+      .text {
+        font-size: 14px;
+        position: relative;
+        z-index: 1;
+        line-height: 18px;
+        font-weight: 400;
+        color: #000000;
+      }
+
+      .circle {
+        width: 6px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        height: 6px;
+        margin-left: 12px;
+        background-color: $secondary-50;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      border-radius: 4px;
+      width: 99%;
+      background-color: $secondary;
+      left: 0;
+      z-index: 0;
+    }
+  }
+}

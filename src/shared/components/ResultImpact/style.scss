@@ -1,0 +1,33 @@
+.result-impact {
+  width: 100%;
+  padding: 16px;
+  box-shadow: 0px 2px 8px 0px #00000014;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h2.title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    h3.value {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+
+  &__icon {
+  }
+}

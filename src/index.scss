@@ -5,6 +5,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+
+  background-image: radial-gradient(#edeeee 1px, transparent 0);
+  background-size: 24px 24px;
+  background-repeat: repeat;
+  background-position: top left;
+  z-index: 0;
 }
 
 * {
@@ -57,6 +70,7 @@ body {
   min-width: 320px;
   color: $primary;
   min-height: 100vh;
+  overflow: auto !important;
 }
 
 #elevanto-app-root {

@@ -1,0 +1,25 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .feature {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.reverse {
+      .split-view {
+        margin-top: 0;
+        direction: rtl;
+
+        * {
+          direction: ltr;
+        }
+      }
+    }
+  }
+}

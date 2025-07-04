@@ -1,0 +1,14 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.small-alert {
+  border-radius: 16px;
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+  &.paid {
+    background-color: $secondary-200;
+    color: $dark-secondary;
+  }
+}

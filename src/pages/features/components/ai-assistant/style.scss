@@ -1,0 +1,133 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.ai-assistant-component {
+  display: flex;
+  gap: 20px;
+  // justify-content: end;
+
+  .chat {
+    max-width: 279px;
+    padding: 16px;
+    background: #fffffffa;
+    box-shadow: 0px 2px 8px 0px #00000014;
+    border-radius: 12px;
+
+    &__header {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 18px;
+
+      .title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: $main-550;
+      }
+    }
+
+    &__messages {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .message {
+        padding: 12px;
+        border-radius: 8px;
+
+        box-shadow: 0px 2px 8px 0px #00000014;
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+        }
+
+        &.chat {
+          background-color: $violet-600;
+          color: white;
+          width: 100%;
+        }
+
+        &.me {
+          background-color: $gray-50;
+          color: $gray-900;
+
+          width: calc(100% - 20px);
+
+          position: relative;
+          left: 20px;
+        }
+      }
+    }
+
+    &__footer {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  .voice-chat {
+    background: #fffffffa;
+    box-shadow: 0px 2px 8px 0px #00000014;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 280px;
+    max-height: 262px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__micro {
+      background-color: $secondary-200;
+      border-radius: 50%;
+      height: 54px;
+      width: 54px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: $accent-600;
+    }
+
+    &__message {
+      background-color: $gray-50;
+      border-radius: 8px;
+      padding: 12px;
+
+      .title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $main-500;
+      }
+
+      .message {
+        margin-top: 9px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $primary;
+      }
+    }
+
+    &__micro-animation {
+      margin-top: 24px;
+    }
+  }
+}

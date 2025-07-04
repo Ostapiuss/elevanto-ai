@@ -7,9 +7,7 @@ import Footer from '@components/footer';
 export function Layout() {
   return (
     <div className="layout">
-      <header className="header">
-        <Header />
-      </header>
+      <Header />
       <main className="main">
         <Main />
       </main>

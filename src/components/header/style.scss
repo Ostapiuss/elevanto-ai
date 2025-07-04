@@ -1,13 +1,33 @@
+@use '../../assets/styles/style.scss' as *;
+
 .elevanto-header {
-  display: flex;
-  gap: 235px;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
+  &.MuiContainer-root {
+    padding-left: 0;
+    padding-right: 0;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    max-width: 100%;
+
+    .MuiToolbar-root {
+      min-height: fit-content;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   &__logo {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
 
     .logo {
       img {
@@ -17,6 +37,7 @@
     }
 
     .title {
+      color: $primary;
       font-weight: 600;
       font-size: 18px;
     }

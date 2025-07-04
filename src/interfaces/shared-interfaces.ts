@@ -35,3 +35,19 @@ export interface AccordionsItme {
   id: number;
   answer: string;
 }
+
+export interface TriggerItem {
+  icon: ReactNode;
+  name: string;
+  description: string;
+  status: 'ready' | 'add';
+}
+
+export interface ResultImpactItem {
+  title: string;
+  result: string;
+  icon: ReactNode;
+  titleColor?: string;
+  bgColor?: string;
+  color?: string;
+}

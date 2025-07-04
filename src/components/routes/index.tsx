@@ -4,6 +4,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router';
 
 const MainPageLazy = lazy(() => import('@pages/main'));
+const FeaturesPageLazy = lazy(() => import('@pages/features'));
 
 export function AppRoutes() {
   return (
@@ -11,6 +12,7 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPageLazy />} />
+          <Route path="features" element={<FeaturesPageLazy />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

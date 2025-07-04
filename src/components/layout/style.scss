@@ -1,11 +1,60 @@
-.layout {
-  padding: 0 120px;
+@use '../../assets/styles/style.scss' as *;
 
-  .header {
-    padding-top: 30px;
+.layout {
+  transition: padding 0.2s ease;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    background-image: radial-gradient(#edeeee 1px, transparent 0);
+    background-size: 24px 24px;
+    background-repeat: repeat;
+    background-position: top left;
+    z-index: 0;
   }
 
-  .main {
-    padding-top: 22px;
+  header {
+    padding: 0 120px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  main {
+    padding: 0 120px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 300px;
+      width: 100%;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (max-width: ($breakpoint-md)) {
+  .layout {
+    padding: 0 40px;
+
+    transition: padding 0.2s ease;
   }
 }

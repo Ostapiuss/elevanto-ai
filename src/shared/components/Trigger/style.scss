@@ -1,0 +1,78 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.trigger {
+  background: #ffffff;
+  border: 1px solid $white-50;
+  box-shadow: 0px 2px 8px 0px #00000014;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border-radius: 8px;
+
+  &.add {
+    background-color: $secondary-200;
+    border-color: $accent-200;
+    border-style: dashed;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-out;
+    }
+
+    .trigger__icon {
+      background-color: $secondary-180;
+      svg {
+        fill: $accent-700;
+      }
+    }
+  }
+
+  &__icon {
+    background-color: $secondary-200;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    border-radius: 4px;
+
+    svg {
+      fill: #75797c;
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $accent-600;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__description {
+    color: #000000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__action {
+    margin-left: auto;
+  }
+}

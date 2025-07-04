@@ -8,13 +8,12 @@ import CompanyOffer from './components/offer-component';
 import Subscription from './components/subscription-component';
 import Tags from './components/tags-component';
 
-import DashboardIcon from '@assets/png/dashboard.png';
-
 import { constants } from '@constants/index';
 
-import './style.scss';
 import MainQuestion from './components/question-component';
 import ReadyBusiness from '@shared/components/ReadyBusiness';
+
+import './style.scss';
 
 export default function MainPage() {
   return (
@@ -27,7 +26,7 @@ export default function MainPage() {
         <Button sx={{ marginTop: '32px' }} variant="contained">
           Start for free
         </Button>
-        <img className="dashboard-icon" src={DashboardIcon} alt="dashboard-icon" />
+        {/* <img className="dashboard-icon" src={DashboardIcon} alt="dashboard-icon" /> */}
       </SectionLayout>
       <SectionLayout className="section">
         <PageHeader

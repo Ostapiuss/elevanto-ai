@@ -4,17 +4,33 @@
   max-width: 800px;
 
   h1 {
+    font-size: 3.5rem;
     font-weight: 600;
     line-height: 60px;
     text-align: center;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 22px;
     color: $primary;
     text-align: center;
     font-weight: 40;
     margin-top: 24px;
+  }
+}
+
+@media (max-width: ($breakpoint-md)) {
+  .page-header {
+    padding: 0 80px;
+    h1 {
+      font-size: 2rem !important;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 0.875rem !important;
+      line-height: 18px;
+    }
   }
 }
