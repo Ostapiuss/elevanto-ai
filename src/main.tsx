@@ -10,7 +10,7 @@ import './index.scss';
 
 createRoot(document.getElementById('elevanto-app-root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="elevanto-ai">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
