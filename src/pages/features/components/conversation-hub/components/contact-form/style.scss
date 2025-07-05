@@ -1,0 +1,52 @@
+@use '../../../../../../assets/styles/style.scss' as *;
+
+.contact-form {
+  padding: 16px;
+  background-color: $gray-50;
+  box-shadow: 0px 2px 8px 0px #00000014;
+  margin-top: 24px;
+  border-radius: 8px;
+
+  max-height: 252px;
+  min-height: 252px;
+
+  overflow-y: auto;
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid $gray-100;
+
+    &__full-name {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+  }
+
+  &__messages {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    .message {
+      background: #ffffff;
+      box-shadow: 0px 2px 8px 0px #00000014;
+      color: $primary;
+      border-radius: 8px;
+      padding: 8px 12px;
+
+      &.other {
+        background-color: $gray-500;
+        color: #ffffff;
+        width: calc(100% - 12px);
+        position: relative;
+        left: 12px;
+      }
+    }
+  }
+}

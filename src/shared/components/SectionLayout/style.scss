@@ -13,9 +13,9 @@
     position: absolute;
     z-index: 2;
     display: block;
-    width: 100vw;
+    width: calc(100% + 240px);
+    left: -120px;
     height: 1px;
-    left: -122px;
     background-color: #cdd1d5;
     top: 0;
     transition: left 0.2s ease;
@@ -26,22 +26,22 @@
     position: absolute;
     z-index: 3;
     display: block;
-    width: 100vw;
+    width: calc(100% + 240px);
     height: 1px;
     background-color: #cdd1d5;
     top: 100%;
-    left: -122px;
+    left: -120px;
     transition: left 0.2s ease;
   }
 }
 
-@media (max-width: ($breakpoint-md)) {
+@media (max-width: ($breakpoint-md + 200px)) {
   .section-layout {
     &::after {
       content: '';
       position: absolute;
       display: block;
-      width: 100vw;
+      width: calc(100% + 80px);
       height: 1px;
       left: -40px;
       background-color: #cdd1d5;
@@ -54,7 +54,7 @@
       content: '';
       position: absolute;
       display: block;
-      width: 100vw;
+      width: calc(100% + 80px);
       height: 1px;
       background-color: #cdd1d5;
       top: 100%;

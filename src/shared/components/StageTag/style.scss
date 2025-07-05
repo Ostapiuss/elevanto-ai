@@ -1,0 +1,25 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.stage-tag {
+  border-radius: 16px;
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  width: fit-content;
+
+  &.hot {
+    background-color: $secondary-200;
+    color: $dark-secondary;
+  }
+
+  &.warm {
+    background-color: $orange-50;
+    color: $orange-700;
+  }
+
+  &.cold {
+    background-color: $yellow-50;
+    color: $yellow-700;
+  }
+}

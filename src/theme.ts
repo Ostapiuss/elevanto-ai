@@ -141,6 +141,40 @@ let theme = createTheme({
     },
   },
   components: {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          // fontFamily: '"TT Hoves Pro Trial", monospace',
+          color: '#3B4146',
+          '&.Mui-selected': {
+            color: '#3B4146',
+          },
+        },
+      },
+    },
+    MuiTabs: {
+      styleOverrides: {
+        indicator: {
+          backgroundColor: '#3B4146',
+        },
+      },
+    },
+    MuiIconButton: {
+      variants: [
+        {
+          props: { color: 'secondary' },
+          style: {
+            backgroundColor: '#C82859',
+            color: '#FFFFFF',
+            transition: 'background-color 0.3s ease, color 0.3s ease',
+
+            '&:hover': {
+              backgroundColor: '#D94B73',
+            },
+          },
+        },
+      ],
+    },
     MuiButton: {
       variants: [
         {
@@ -167,15 +201,10 @@ let theme = createTheme({
           style: { height: 44 },
         },
         {
-          props: { color: 'grayLight' },
+          props: { color: 'secondary' },
           style: {
-            // ':hover': {
-            //   backgroundColor: '#7C66EB1A',
-            //   color: '#0DB6AB',
-            //   svg: {
-            //     stroke: '#0DB6AB',
-            //   },
-            // },
+            backgroundColor: '#C82859',
+            color: '#FFFFFF',
           },
         },
         {
@@ -335,7 +364,7 @@ let theme = createTheme({
           boxShadow: '0px 2px 8px 0px #00000014',
           border: '1px solid transpatent',
           maxHeight: '36px',
-          bgcolor: '##FAFAFA',
+          bgcolor: '#FAFAFA',
           color: '#3B4146',
         },
       },

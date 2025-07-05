@@ -26,7 +26,6 @@ export default function MainPage() {
         <Button sx={{ marginTop: '32px' }} variant="contained">
           Start for free
         </Button>
-        {/* <img className="dashboard-icon" src={DashboardIcon} alt="dashboard-icon" /> */}
       </SectionLayout>
       <SectionLayout className="section">
         <PageHeader

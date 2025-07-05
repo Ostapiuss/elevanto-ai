@@ -1,0 +1,112 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.billing-invoices {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+  border-radius: 16px;
+
+  padding: 24px 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  &__col {
+    .invoices {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .title {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 600;
+      color: $primary;
+      margin-bottom: 12px;
+    }
+
+    .invoice-total {
+      background-color: $bg-50;
+      border: 1px solid $gray-50;
+      border-radius: 8px;
+      padding: 16px;
+      min-width: 240px;
+
+      &__client {
+        border-bottom: 1px solid $gray-100;
+        padding-bottom: 6px;
+
+        .client-header {
+          display: flex;
+          justify-content: space-between;
+
+          .client-title {
+            color: #000000;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+
+        .client-content {
+          margin-top: 6px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          .row {
+            display: flex;
+            justify-content: space-between;
+            color: $gray-500;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+        }
+      }
+
+      .service {
+        padding-top: 6px;
+
+        &__title {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          color: $gray-500;
+        }
+
+        &__description {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          font-weight: 400;
+          color: $gray-700;
+          margin-top: 6px;
+        }
+
+        &__total {
+          color: $gray-700;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 16px;
+          margin-top: 6px;
+          text-align: right;
+        }
+
+        &__actions {
+          margin-top: 24px;
+          button {
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

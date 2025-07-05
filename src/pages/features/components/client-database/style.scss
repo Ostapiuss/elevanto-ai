@@ -1,0 +1,25 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.client-database {
+  background-color: white;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+  padding: 32px 24px;
+  border-radius: 16px;
+  min-height: 371px;
+
+  &__activity {
+    background-color: $secondary-200;
+    border: 1px solid $secondary-180;
+    box-shadow: 0px 2px 8px 0px #00000014;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      color: $primary;
+    }
+  }
+}

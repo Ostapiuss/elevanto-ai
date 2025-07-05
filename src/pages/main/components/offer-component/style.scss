@@ -1,24 +1,35 @@
 @use '../../../../assets/styles/style.scss' as *;
 
 .offer-component {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   border: 1px solid #eaebec;
   border-radius: 16px;
   margin-bottom: 40px;
   margin-top: 32px;
 
   .offer-list {
-    .offer-item {
+    .MuiButtonBase-root {
+      background-color: white;
       padding: 24px;
-
+      cursor: pointer;
       border-bottom: 1px solid #eaebec;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      transition: background-color 0.2 ease-in;
+
+      &:hover {
+        background-color: $bg-50;
+
+        transition: background-color 0.2 ease-out;
+      }
 
       &:last-child {
         border: none;
       }
 
-      &__icon {
+      .offer-item__icon {
         padding: 10px;
         background-color: white;
         box-shadow: 0px 2px 8px 0px #63636333;
@@ -32,7 +43,7 @@
         }
       }
 
-      &__text {
+      .offer-item__text {
         color: $primary-50;
         font-size: 20px;
         font-weight: 600;
@@ -42,15 +53,15 @@
         max-width: 450px;
       }
 
-      &__description {
+      .offer-item__description {
         max-width: 450px;
         color: $gray-400;
+        text-align: left;
       }
 
-      &__more {
+      .offer-item__more {
         display: flex;
         gap: 10px;
-        align-items: center;
         margin-top: 32px;
 
         .title {
@@ -85,5 +96,10 @@
       width: 620px;
       height: 570px;
     }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .offer-component {
   }
 }

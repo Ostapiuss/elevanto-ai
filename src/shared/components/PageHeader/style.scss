@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: ($breakpoint-md)) {
+@media (max-width: ($breakpoint-md + 200px)) {
   .page-header {
     padding: 0 80px;
     h1 {

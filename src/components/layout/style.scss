@@ -9,7 +9,7 @@
   &::before {
     content: '';
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     left: 0;
     position: absolute;
@@ -51,10 +51,22 @@
   }
 }
 
-@media (max-width: ($breakpoint-md)) {
-  .layout {
+@media (max-width: ($breakpoint-md + 200px)) {
+  .layout > .main {
     padding: 0 40px;
 
     transition: padding 0.2s ease;
+  }
+
+  .layout {
+    header {
+      padding: 0 40px;
+
+      transition: padding 0.2s ease;
+
+      &.MuiPaper-root {
+        padding-right: 40px !important;
+      }
+    }
   }
 }

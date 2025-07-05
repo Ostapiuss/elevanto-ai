@@ -1,0 +1,51 @@
+@use '../../../../../../assets/styles/style.scss' as *;
+
+.contact-container {
+  position: relative;
+}
+
+.contact {
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  background-color: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .contact-info,
+  .reason-text,
+  .tags {
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    h2.full-name {
+      color: $main-500;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+  }
+
+  .reason-text {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main-500;
+  }
+}

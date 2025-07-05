@@ -1,5 +1,11 @@
 @use './assets/styles/style.scss' as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: 'IBM Plex Mono', monospace;
   text-rendering: optimizeLegibility;
@@ -8,16 +14,6 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-body {
-  height: 100vh;
-
-  background-image: radial-gradient(#edeeee 1px, transparent 0);
-  background-size: 24px 24px;
-  background-repeat: repeat;
-  background-position: top left;
-  z-index: 0;
 }
 
 * {
@@ -55,6 +51,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
   font-family: 'TT Hoves Pro Trial', sans-serif;
 }
 
@@ -64,17 +61,23 @@ li {
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   display: flex;
   place-items: center;
   min-width: 320px;
   color: $primary;
-  min-height: 100vh;
   overflow: auto !important;
+  height: 100vh;
+  background-image: radial-gradient(#edeeee 1px, transparent 0);
+  background-size: 24px 24px;
+  background-repeat: repeat;
+  background-position: top left;
+  z-index: 0;
 }
 
 #elevanto-app-root {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: 'IBM Plex Mono', monospace;
   background-color: #ffffff;
