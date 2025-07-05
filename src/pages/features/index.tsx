@@ -57,7 +57,7 @@ export default function Features() {
               title: 'Custom Workflow Automation',
               subtitle:
                 'Eliminate manual work with tailored automation logic. From onboarding sequences to task routing, we design flows that save hours.',
-              btnText: 'Learn more',
+              btnText: 'Learn moree',
             }}
           />
         </Box>
