@@ -42,7 +42,7 @@ export default function Features() {
             position="center"
             firstColRender={<AiAssistant />}
             text={{
-              title: 'AI-Powered Assistants',
+              title: 'AI-Powered Assistants 123',
               subtitle:
                 'Turn every website visit, WhatsApp chat, or phone call into a qualified lead with intelligent agents that respond and book—24/7.',
               btnText: 'Learn more',
