@@ -6,6 +6,9 @@ import svgr from 'vite-plugin-svgr';
 // https://vite.dev/config/
 export default defineConfig({
   base: '/elevanto-ai/',
+  build: {
+    outDir: 'dist',
+  },
   plugins: [react(), svgr()],
   resolve: {
     alias: {
