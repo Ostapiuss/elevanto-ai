@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="footer__content">
         <div className="footer__items">
           <div className="title">Elevanto.ai</div>
-          <p className="subtitle">AI solutions that elevate your business very efficiency</p>
+          <p className="subtitle">AI solutions that elevate your business efficiency</p>
         </div>
         <div className="footer__items">
           <div className="title">Company</div>
