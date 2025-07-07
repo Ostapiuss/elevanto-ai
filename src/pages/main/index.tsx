@@ -18,7 +18,7 @@ import './style.scss';
 export default function MainPage() {
   return (
     <>
-      <SectionLayout className="section">
+      <SectionLayout className="section main-section">
         <PageHeader
           title="Everything you need to automate your business with AI"
           subTitle="From CRM to AI agents, Elevanto AI combines a powerful platform with custom automation and intelligent assistants—purpose-built for service-focused teams."

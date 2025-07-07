@@ -12,6 +12,13 @@
     padding-bottom: 32px;
   }
 
+  &__items-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 100px;
+  }
+
   &__items {
     .title {
       font-size: 16px;

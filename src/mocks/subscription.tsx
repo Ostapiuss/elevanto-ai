@@ -7,43 +7,7 @@ export const subscriptionOptions = {
     options: [
       {
         text: 'Basic',
-        price: '$89',
-        description: 'Per company/month, billed annually',
-        purpose: 'For small businesses',
-        buttonText: 'Continue with Basic',
-        advantages: [
-          {
-            text: 'CRM & Pipeline Management',
-            icon: <CheckIcon />,
-          },
-          {
-            text: 'Conversations Hub (SMS, email, etc.)',
-            icon: <CheckIcon />,
-          },
-          {
-            text: 'Basic Funnel Builder',
-            icon: <CheckIcon />,
-          },
-          {
-            text: 'Appointment Booking System',
-            icon: <CheckIcon />,
-          },
-          {
-            text: 'Prebuilt Automation Templates',
-            icon: <CheckIcon />,
-          },
-          {
-            text: 'No AI chat/voice bots',
-            icon: <CloseIcon />,
-          },
-          {
-            text: 'No white-label branding',
-            icon: <CloseIcon />,
-          },
-        ],
-      },
-      {
-        text: 'Basic',
+        id: 1,
         price: '$89',
         description: 'Per company/month, billed annually',
         purpose: 'For small businesses',
@@ -82,9 +46,11 @@ export const subscriptionOptions = {
       {
         text: 'Pro',
         price: '$169',
+        id: 2,
         description: 'Per company/month, billed annually',
         purpose: 'For small businesses',
         buttonText: 'Continue with Pro',
+        off: 10,
         advantages: [
           {
             text: 'Everything in Basic',
@@ -119,6 +85,8 @@ export const subscriptionOptions = {
       {
         text: 'Enterprise',
         price: '$260',
+        id: 3,
+        off: 10,
         description: 'Per company/month, billed annually',
         purpose: 'For large organizations',
         buttonText: 'Continue with Enterprise',
@@ -153,6 +121,43 @@ export const subscriptionOptions = {
           },
         ],
       },
+      {
+        text: 'Custom',
+        id: 4,
+        description:
+          'Work directly with our solutions team to design an Elevanto environment tailored to your business. Ideal for agencies, franchises, and high-volume operations.',
+        buttonText: 'Continue with Basic',
+        advantages: [
+          {
+            text: 'CRM & Pipeline Management',
+            icon: <CheckIcon />,
+          },
+          {
+            text: 'Conversations Hub (SMS, email, etc.)',
+            icon: <CheckIcon />,
+          },
+          {
+            text: 'Basic Funnel Builder',
+            icon: <CheckIcon />,
+          },
+          {
+            text: 'Appointment Booking System',
+            icon: <CheckIcon />,
+          },
+          {
+            text: 'Prebuilt Automation Templates',
+            icon: <CheckIcon />,
+          },
+          {
+            text: 'No AI chat/voice bots',
+            icon: <CloseIcon />,
+          },
+          {
+            text: 'No white-label branding',
+            icon: <CloseIcon />,
+          },
+        ],
+      },
     ],
   },
   monthly: {
@@ -160,7 +165,8 @@ export const subscriptionOptions = {
     options: [
       {
         text: 'Basic',
-        price: '$89',
+        id: 1,
+        price: '$29',
         description: 'Per company/month, billed annually',
         purpose: 'For small businesses',
         buttonText: 'Continue with Basic',
@@ -197,7 +203,8 @@ export const subscriptionOptions = {
       },
       {
         text: 'Basic',
-        price: '$89',
+        id: 2,
+        price: '$29',
         description: 'Per company/month, billed annually',
         purpose: 'For small businesses',
         buttonText: 'Continue with Basic',
@@ -234,7 +241,8 @@ export const subscriptionOptions = {
       },
       {
         text: 'Pro',
-        price: '$169',
+        id: 3,
+        price: '$100',
         description: 'Per company/month, billed annually',
         purpose: 'For small businesses',
         buttonText: 'Continue with Pro',
@@ -271,7 +279,8 @@ export const subscriptionOptions = {
       },
       {
         text: 'Enterprise',
-        price: '$260',
+        id: 4,
+        price: '$160',
         description: 'Per company/month, billed annually',
         purpose: 'For large organizations',
         buttonText: 'Continue with Enterprise',

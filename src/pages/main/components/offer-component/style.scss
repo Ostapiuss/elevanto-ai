@@ -17,16 +17,16 @@
       flex-direction: column;
       align-items: flex-start;
 
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
       transition: background-color 0.2 ease-in;
 
       &:hover {
         background-color: $bg-50;
-
         transition: background-color 0.2 ease-out;
-      }
-
-      &:last-child {
-        border: none;
       }
 
       .offer-item__icon {
@@ -40,6 +40,8 @@
         svg {
           width: 20px;
           height: 20px;
+          position: relative;
+          top: 4px;
         }
       }
 
@@ -79,6 +81,25 @@
         }
       }
     }
+
+    .offer-component-container {
+      &:first-child {
+        .MuiButtonBase-root {
+          border-top-left-radius: 16px;
+        }
+      }
+
+      &:last-child {
+        .MuiButtonBase-root {
+          border-bottom-left-radius: 16px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .offer-item-icon {
+    display: none;
   }
 
   .offer-icon {
@@ -99,7 +120,14 @@
   }
 }
 
-@media (max-width: $breakpoint-lg) {
+@media (max-width: $breakpoint-md) {
   .offer-component {
+    .offer-item-icon {
+      display: block;
+    }
+
+    .offer-icon {
+      display: none;
+    }
   }
 }

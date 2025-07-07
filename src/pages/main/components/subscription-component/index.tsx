@@ -14,6 +14,12 @@ export default function Subscription() {
   const [subsriptionPlan, setSubsriptionPlan] = useState<SubscriptionItem>(subscriptionOptions.annually);
   const [subOption, setSubOption] = useState<SubPlan>('annually');
 
+  const [activeCardId, setActiveCardId] = useState(0);
+
+  const handleClick = (id: number) => {
+    setActiveCardId(id);
+  };
+
   const handleChange = (_: React.MouseEvent<HTMLElement>, newSubPlan: SubPlan | null) => {
     if (!newSubPlan) return;
     const plan = subscriptionOptions[newSubPlan];
@@ -47,7 +53,7 @@ export default function Subscription() {
       >
         {subsriptionPlan?.options.map((subData, index) => (
           <Grid size={{ xs: 12, sm: 6, md: 6, lg: 3 }} key={index}>
-            <SubscriptionItemComponent {...subData} />
+            <SubscriptionItemComponent data={{ ...subData }} activeCardId={activeCardId} handleClick={handleClick} />
           </Grid>
         ))}
       </Grid>

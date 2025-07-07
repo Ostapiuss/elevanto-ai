@@ -5,9 +5,27 @@
   flex-direction: column;
   border: 1px solid $gray-50;
   border-radius: 12px;
+  cursor: pointer;
+
+  min-height: 461px;
+
+  transition:
+    border 0.1s ease-in,
+    box-shadow 0.1s ease-in;
+
+  &.active {
+    box-shadow: 0 0 0 4px $secondary-200;
+    border: 1px solid #dc2c62;
+
+    transition:
+      border 0.1s ease-out,
+      box-shadow 0.1s ease-out;
+  }
 
   &__content {
+    background-color: #ffffff;
     padding: 12px;
+    border-radius: 12px;
 
     h1.text {
       font-size: 24px;
@@ -17,10 +35,16 @@
     }
 
     .price {
-      font-size: 36px;
-      line-height: 40px;
-      font-weight: 600;
-      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .text-price {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
     }
 
     .description {
@@ -32,6 +56,12 @@
   &__advantages {
     background-color: $bg-50;
     padding: 12px;
+    border-radius: 12px;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
 
     .purpose {
       font-size: 16px;
@@ -66,7 +96,7 @@
     }
 
     .advantage-button {
-      margin-top: 36px;
+      margin-top: auto;
 
       button {
         width: 100%;

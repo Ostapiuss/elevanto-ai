@@ -9,7 +9,7 @@ import DefaultBg from '@assets/svg/default-bg.svg?react';
 import './style.scss';
 import { useState } from 'react';
 import { IF } from '@shared/components/IF';
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
 const mockOfferData: Array<OfferListItem> = [
@@ -45,21 +45,27 @@ export default function CompanyOffer() {
   };
 
   return (
-    <Grid container spacing={2} className="offer-component">
+    <Grid container className="offer-component">
       <Grid size={{ xs: 6, md: 5, lg: 6 }} className="offer-list">
         {mockOfferData.map((offerItem, index) => {
           return (
-            <Button key={index} className="offer-item" onClick={() => handlePreview(offerItem)}>
-              <div className="offer-item__icon">{offerItem.icon}</div>
-              <div className="offer-item__text">{offerItem.text}</div>
-              <p className="offer-item__description">{offerItem.description}</p>
-              <div className="offer-item__more">
-                <div className="title">Learn more</div>
-                <div className="icon">
-                  <ArrowRightBg />
+            <Box key={index} className="offer-component-container">
+              <Button className="offer-item" onClick={() => handlePreview(offerItem)}>
+                <div className="offer-item__icon">{offerItem.icon}</div>
+                <div className="offer-item__text">{offerItem.text}</div>
+                <p className="offer-item__description">{offerItem.description}</p>
+                <div className="offer-item__more">
+                  <div className="title">Learn more</div>
+                  <div className="icon">
+                    <ArrowRightBg />
+                  </div>
                 </div>
-              </div>
-            </Button>
+              </Button>
+
+              <Grid size={{ xs: 10, md: 10, lg: 6 }} className="offer-item-icon">
+                {offerItem.previewIcon}
+              </Grid>
+            </Box>
           );
         })}
       </Grid>

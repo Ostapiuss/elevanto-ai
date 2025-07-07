@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/style.scss' as *;
+
 .tags {
   width: 100%;
   overflow: hidden;
@@ -45,5 +47,49 @@
       linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 
     z-index: 2;
+  }
+}
+
+@media (max-width: ($breakpoint-lg)) {
+  .tags {
+    &::before {
+      width: 250px;
+    }
+
+    &:after {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 168px)) {
+  .tags {
+    &::before {
+      width: 100px;
+    }
+
+    &:after {
+      width: 100px;
+    }
+
+    .tag {
+      padding: 16px 28px;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 100px)) {
+  .tags {
+    &::before {
+      width: 50px;
+    }
+
+    &:after {
+      width: 50px;
+    }
+
+    .tag {
+      padding: 14px 16px;
+    }
   }
 }

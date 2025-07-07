@@ -2,26 +2,42 @@ import { SubscriptionOptions } from '@interfaces/shared-interfaces';
 
 import './style.scss';
 import { Button } from '@mui/material';
+import { joinClassNames } from '@utils/utility';
+import { IF } from '@shared/components/IF';
+import { Discount } from '@shared/components/Discount';
 
-export default function SubscriptionItem({
-  text,
-  description,
-  price,
-  purpose,
-  advantages,
-  buttonText,
-}: SubscriptionOptions) {
+type Props = {
+  data: SubscriptionOptions;
+  activeCardId: number;
+  handleClick: (id: number) => void;
+};
+
+export default function SubscriptionItem({ data, activeCardId, handleClick }: Props) {
   return (
-    <div className="sub-item">
+    <div
+      className={joinClassNames('sub-item', {
+        active: activeCardId === data.id,
+      })}
+      onClick={() => {
+        handleClick(data.id);
+      }}
+    >
       <div className="sub-item__content">
-        <h1 className="text">{text}</h1>
-        <div className="price">{price}</div>
-        <p className="description">{description}</p>
+        <h1 className="text">{data.text}</h1>
+        <IF condition={Boolean(data.price)}>
+          <div className="price">
+            <div className="text-price">{data.price}</div>
+            <IF condition={Boolean(data?.off)}>
+              <Discount discount={10} />
+            </IF>
+          </div>
+        </IF>
+        <p className="description">{data.description}</p>
       </div>
       <div className="sub-item__advantages">
-        <div className="purpose">{purpose}</div>
+        <div className="purpose">{data.purpose}</div>
         <div className="advantages-list">
-          {advantages.map((advantagesItem, index) => {
+          {data.advantages.map((advantagesItem, index) => {
             return (
               <div className="advantages-item" key={index}>
                 <div className="icon">{advantagesItem.icon}</div>
@@ -31,7 +47,7 @@ export default function SubscriptionItem({
           })}
         </div>
         <div className="advantage-button">
-          <Button variant="contained">{buttonText}</Button>
+          <Button variant="contained">{data.buttonText}</Button>
         </div>
       </div>
     </div>

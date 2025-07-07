@@ -2,7 +2,9 @@ import { ReactElement, ReactNode } from 'react';
 
 export interface SubscriptionOptions {
   text: string;
+  id: number;
   price: string;
+  off?: number;
   buttonText: string;
   description: string;
   purpose: string;

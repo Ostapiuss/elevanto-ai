@@ -13,35 +13,37 @@ export default function Footer() {
           <div className="title">Elevanto.ai</div>
           <p className="subtitle">AI solutions that elevate your business efficiency</p>
         </div>
-        <div className="footer__items">
-          <div className="title">Company</div>
-          <ul className="list">
-            <li className="item">About Us</li>
-            <li className="item">Contact Us</li>
-          </ul>
-        </div>
-        <div className="footer__items">
-          <div className="title">Product</div>
-          <ul className="list">
-            <li className="item">Use Case</li>
-            <li className="item">Integrations</li>
-            <li className="item">Pricing Plans</li>
-          </ul>
-        </div>
-        <div className="footer__items">
-          <div className="title">Resources</div>
-          <ul className="list">
-            <li className="item">Documentation</li>
-            <li className="item">API Reference</li>
-            <li className="item">Blog</li>
-          </ul>
-        </div>
-        <div className="footer__items">
-          <div className="title">Legal</div>
-          <ul className="list">
-            <li className="item">Privacy Policy</li>
-            <li className="item">Terms of Service</li>
-          </ul>
+        <div className="footer__items-container">
+          <div className="footer__items company">
+            <div className="title">Company</div>
+            <ul className="list">
+              <li className="item">About Us</li>
+              <li className="item">Contact Us</li>
+            </ul>
+          </div>
+          <div className="footer__items products">
+            <div className="title">Product</div>
+            <ul className="list">
+              <li className="item">Use Case</li>
+              <li className="item">Integrations</li>
+              <li className="item">Pricing Plans</li>
+            </ul>
+          </div>
+          <div className="footer__items resources">
+            <div className="title">Resources</div>
+            <ul className="list">
+              <li className="item">Documentation</li>
+              <li className="item">API Reference</li>
+              <li className="item">Blog</li>
+            </ul>
+          </div>
+          <div className="footer__items legal">
+            <div className="title">Legal</div>
+            <ul className="list">
+              <li className="item">Privacy Policy</li>
+              <li className="item">Terms of Service</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="footer__privacy">
