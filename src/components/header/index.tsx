@@ -81,7 +81,7 @@ export function Header() {
               </Menu>
             </Box>
           </Box>
-          <Box sx={{ display: { flexGrow: 1, xs: 'none', md: 'none', lg: 'flex' } }}>
+          <Box sx={{ display: { flexGrow: 1, xs: 'none', md: 'none', lg: 'flex' }, alignItems: 'center' }}>
             <Box className="navigation">
               <Link to="/features">
                 <MenuItem className="navigation__item">Features</MenuItem>
@@ -97,8 +97,12 @@ export function Header() {
               </Link>
             </Box>
             <Box sx={{ marginLeft: 'auto' }} className="elevanto-header__actions">
-              <Button variant="outlined">Sign In</Button>
-              <Button variant="contained">Start for free</Button>
+              <Link to="/login">
+                <Button variant="outlined">Sign In</Button>
+              </Link>
+              <Link to="/login">
+                <Button variant="contained">Start for free</Button>
+              </Link>
             </Box>
           </Box>
         </Toolbar>

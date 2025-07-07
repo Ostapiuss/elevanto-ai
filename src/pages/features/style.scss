@@ -17,6 +17,12 @@
     gap: 40px;
     margin-bottom: 40px;
 
+    &.custom-crm-feature {
+      .page-header {
+        margin-bottom: 40px;
+      }
+    }
+
     &.reverse {
       .split-view {
         margin-top: 0;

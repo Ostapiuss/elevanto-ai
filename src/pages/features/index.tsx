@@ -23,7 +23,7 @@ export default function Features() {
     <>
       <SectionLayout className="features">
         <ScrollFadeIn>
-          <Box className="feature">
+          <Box className="feature custom-crm-feature">
             <PageHeader
               title="Features"
               size={36}
