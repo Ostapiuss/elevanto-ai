@@ -61,3 +61,38 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-sm)) {
+  .custom-workflow {
+    .trigger {
+      padding: 6px;
+      gap: 6px;
+
+      &__action {
+        padding: 2px;
+      }
+
+      &__icon {
+        padding: 10px;
+
+        width: 15px;
+        height: 15px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &__content {
+        .trigger__title {
+          font-size: 8px;
+        }
+
+        .trigger__description {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

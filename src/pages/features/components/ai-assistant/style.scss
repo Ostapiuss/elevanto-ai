@@ -3,7 +3,6 @@
 .ai-assistant-component {
   display: flex;
   gap: 20px;
-  // justify-content: end;
 
   .chat {
     max-width: 279px;
@@ -128,6 +127,29 @@
 
     &__micro-animation {
       margin-top: 24px;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 300px)) {
+  .ai-assistant-component {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: ($breakpoint-sm)) {
+  .ai-assistant-component {
+    flex-direction: column;
+
+    div.chat {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    div.voice-chat {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -141,10 +141,17 @@ let theme = createTheme({
     },
   },
   components: {
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          fontFamily: '"TT Hoves Pro Trial", monospace',
+        },
+      },
+    },
     MuiTab: {
       styleOverrides: {
         root: {
-          // fontFamily: '"TT Hoves Pro Trial", monospace',
+          fontFamily: '"TT Hoves Pro Trial", monospace',
           color: '#3B4146',
           '&.Mui-selected': {
             color: '#3B4146',

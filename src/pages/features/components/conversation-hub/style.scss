@@ -1,13 +1,44 @@
+@use '../../../../assets/styles/style.scss' as *;
+
 .conversation-hub {
   background-color: white;
   box-shadow: 0px 8px 32px 0px #0000000f;
   padding: 32px 24px;
   border-radius: 16px;
   min-height: 491px;
-  height: 491px;
+  min-height: 491px;
 
   &__panels {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
+  }
+}
+
+@media (max-width: ($breakpoint-sm)) {
+  .conversation-hub {
+    .conversation-hub__panels {
+      grid-template-columns: 1fr;
+    }
+
+    .MuiTabs-root {
+      .MuiButtonBase-root {
+        padding: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 100px)) {
+  .conversation-hub {
+    .conversation-hub__panels {
+      grid-template-columns: 1fr;
+    }
+
+    .MuiTabs-root {
+      .MuiButtonBase-root.MuiTab-root {
+        padding: 8px;
+        min-width: 40px;
+      }
+    }
   }
 }

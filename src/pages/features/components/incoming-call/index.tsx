@@ -18,7 +18,7 @@ export default function IncomingCall() {
             <PhoneCallIcon />
             <h2 className="text">Incoming Call</h2>
           </Box>
-          <SmallAlert text="• Automation: On" status="paid" />
+          <SmallAlert text="• AI Answering" status="paid" />
         </Box>
         <Box className="phone">
           <h2>+ 1 555 123 4567</h2>

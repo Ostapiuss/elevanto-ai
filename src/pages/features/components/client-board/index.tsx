@@ -48,7 +48,7 @@ export default function ClientBoard() {
           <p className="text">New lead auto-assigned to Sarag</p>
         </div>
       </Box>
-      <Box sx={{ paddingBottom: '106px' }}></Box>
+      <Box className="client-board__margins" sx={{ paddingBottom: '106px' }}></Box>
     </Box>
   );
 }

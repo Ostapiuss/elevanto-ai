@@ -240,54 +240,6 @@ img.dashboard-icon {
   }
 }
 
-@media (max-width: ($breakpoint-md + 37px)) {
-  .ready-business-section {
-    .ready-business {
-      grid-template-columns: 1fr;
-      padding: 24px;
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1.title {
-          text-align: center;
-          font-size: 24px;
-          line-height: 32px;
-          font-weight: 600;
-        }
-
-        .subtitle {
-          text-align: center;
-          max-width: 480px;
-        }
-      }
-    }
-    .presentation {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: ($breakpoint-sm)) {
-  .ready-business-section {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
-  }
-}
-
-@media (max-width: ($breakpoint-sm - 120px)) {
-  .ready-business-section {
-    .ready-business {
-      .actions {
-        width: 100%;
-        flex-direction: column;
-      }
-    }
-  }
-}
-
 @media (max-width: ($breakpoint-md + 100px)) {
   .section {
     .page-header {

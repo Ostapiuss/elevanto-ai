@@ -1,10 +1,15 @@
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material';
+
 import StageTag from '@shared/components/StageTag';
 import TagTableAlert from '@shared/components/TagTableAlert';
 
@@ -19,28 +24,37 @@ const rows = [
 ];
 
 export default function BasicTable() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
-    <TableContainer component={Paper} sx={{ border: '1px solid #EFF0F1' }}>
-      <Table sx={{ minWidth: 450 }} aria-label="simple table">
+    <TableContainer
+      component={Paper}
+      sx={{
+        border: '1px solid #EFF0F1',
+        overflowX: 'auto',
+      }}
+    >
+      <Table size={isMobile ? 'small' : 'medium'} sx={{ minWidth: isMobile ? 350 : 450 }} aria-label="responsive table">
         <TableHead sx={{ backgroundColor: '#EFF0F1' }}>
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell>Stage</TableCell>
-            <TableCell>Last Activity</TableCell>
-            <TableCell>Tag</TableCell>
+            <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>Name</TableCell>
+            <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>Stage</TableCell>
+            <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>Last Activity</TableCell>
+            <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>Tag</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>
                 {row.name}
               </TableCell>
-              <TableCell>
+              <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>
                 <StageTag status={row.stage} text={row.stage} />
               </TableCell>
-              <TableCell>{row.lastActivity}</TableCell>
-              <TableCell>
+              <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>{row.lastActivity}</TableCell>
+              <TableCell sx={{ fontSize: isMobile ? '0.75rem' : '1rem' }}>
                 <TagTableAlert text={row.tag} />
               </TableCell>
             </TableRow>

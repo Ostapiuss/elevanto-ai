@@ -114,3 +114,12 @@
     }
   }
 }
+@media (max-width: ($breakpoint-md)) {
+  .incoming-call {
+    &__call {
+      .phone {
+        margin-top: 14px;
+      }
+    }
+  }
+}

@@ -47,3 +47,22 @@
     }
   }
 }
+
+// @media (max-width: ($breakpoint-md + 400px)) {
+//   .split-view {
+//     grid-template-columns: 0.5fr 1fr;
+//   }
+// }
+
+@media (max-width: ($breakpoint-md + 300px)) {
+  .split-view {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 37px)) {
+  .split-view {
+    padding: 0;
+  }
+}
