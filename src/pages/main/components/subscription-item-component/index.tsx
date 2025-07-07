@@ -35,7 +35,9 @@ export default function SubscriptionItem({ data, activeCardId, handleClick }: Pr
         <p className="description">{data.description}</p>
       </div>
       <div className="sub-item__advantages">
-        <div className="purpose">{data.purpose}</div>
+        <IF condition={Boolean(data.purpose)}>
+          <div className="purpose">{data.purpose}</div>
+        </IF>
         <div className="advantages-list">
           {data.advantages.map((advantagesItem, index) => {
             return (

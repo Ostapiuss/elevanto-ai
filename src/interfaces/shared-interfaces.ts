@@ -7,7 +7,7 @@ export interface SubscriptionOptions {
   off?: number;
   buttonText: string;
   description: string;
-  purpose: string;
+  purpose?: string;
   advantages: Array<SubscriptionAdvantages>;
 }
 
