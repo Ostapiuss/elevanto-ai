@@ -83,18 +83,18 @@ export function Header() {
           </Box>
           <Box sx={{ display: { flexGrow: 1, xs: 'none', md: 'none', lg: 'flex' } }}>
             <Box className="navigation">
-              <MenuItem className="navigation__item">
-                <Link to="/features">Features</Link>
-              </MenuItem>
-              <MenuItem className="navigation__item">
-                <Link to="/pricing">Pricing</Link>
-              </MenuItem>
-              <MenuItem className="navigation__item">
-                <Link to="/testimonials">Testimonials</Link>
-              </MenuItem>
-              <MenuItem className="navigation__item">
-                <Link to="/faqs">FAQS</Link>
-              </MenuItem>
+              <Link to="/features">
+                <MenuItem className="navigation__item">Features</MenuItem>
+              </Link>
+              <Link to="/pricing">
+                <MenuItem className="navigation__item">Pricing</MenuItem>
+              </Link>
+              <Link to="/testimonials">
+                <MenuItem className="navigation__item">Testimonials</MenuItem>
+              </Link>
+              <Link to="/faqs">
+                <MenuItem className="navigation__item">FAQS</MenuItem>
+              </Link>
             </Box>
             <Box sx={{ marginLeft: 'auto' }} className="elevanto-header__actions">
               <Button variant="outlined">Sign In</Button>
