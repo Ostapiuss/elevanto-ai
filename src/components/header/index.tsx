@@ -13,6 +13,7 @@ import { AppBar, Box, Container, Menu, MenuItem } from '@mui/material';
 import { constants } from '@constants/index';
 
 import './style.scss';
+import StartForFree from '@shared/components/StartForFreeButton';
 
 export function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -100,9 +101,7 @@ export function Header() {
               <Link to="/login">
                 <Button variant="outlined">Sign In</Button>
               </Link>
-              <Link to="/login">
-                <Button variant="contained">Start for free</Button>
-              </Link>
+              <StartForFree />
             </Box>
           </Box>
         </Toolbar>

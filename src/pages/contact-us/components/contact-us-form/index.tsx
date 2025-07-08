@@ -1,15 +1,8 @@
+import React from 'react';
 import { useState } from 'react';
-import {
-  Box,
-  Button,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-  FormControl,
-  InputLabel,
-  SelectChangeEvent,
-} from '@mui/material';
+import { Box, Button, MenuItem, Select, TextField, FormControl, SelectChangeEvent, FormLabel } from '@mui/material';
+
+import './style.scss';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -45,6 +38,7 @@ export default function ContactForm() {
   return (
     <Box
       component="form"
+      className="contact-us-form-component"
       onSubmit={handleSubmit}
       sx={{
         maxWidth: 600,
@@ -55,47 +49,62 @@ export default function ContactForm() {
         p: 4,
       }}
     >
-      <Typography variant="h5" fontWeight={600}>
-        Contact Form
-      </Typography>
+      <FormControl>
+        <FormLabel>First Name</FormLabel>
+        <TextField
+          placeholder="First Name"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleInputChange}
+          fullWidth
+        />
+      </FormControl>
 
-      <TextField
-        label="First Name"
-        name="firstName"
-        value={formData.firstName}
-        onChange={handleInputChange}
-        fullWidth
-      />
+      <FormControl>
+        <FormLabel>Last Name</FormLabel>
+        <TextField
+          placeholder="Last Name"
+          name="lastName"
+          value={formData.lastName}
+          onChange={handleInputChange}
+          fullWidth
+        />
+      </FormControl>
 
-      <TextField label="Last Name" name="lastName" value={formData.lastName} onChange={handleInputChange} fullWidth />
-
-      <TextField label="Phone" name="phone" value={formData.phone} onChange={handleInputChange} fullWidth />
+      <FormControl>
+        <FormLabel>Phone</FormLabel>
+        <TextField placeholder="Phone" name="phone" value={formData.phone} onChange={handleInputChange} fullWidth />
+      </FormControl>
 
       <FormControl fullWidth>
-        <InputLabel id="interested-label">Interested</InputLabel>
+        <FormLabel>I&apos;m interested in...</FormLabel>
         <Select
+          // renderValue={(selected) => selected || 'Select an option'}
           labelId="interested-label"
           name="interested"
           value={formData.interested}
           onChange={handleSelectChange}
-          label="Interested"
         >
-          <MenuItem value="option1">Option 1</MenuItem>
-          <MenuItem value="option2">Option 2</MenuItem>
-          <MenuItem value="option3">Option 3</MenuItem>
+          <MenuItem value="Support">Support</MenuItem>
+          <MenuItem value="Sales Inquiry">Sales Inquiry</MenuItem>
+          <MenuItem value="Demo Request">Demo Request</MenuItem>
+          <MenuItem value="Partnership">Partnership</MenuItem>
         </Select>
       </FormControl>
 
-      <TextField
-        label="Message"
-        name="message"
-        value={formData.message}
-        onChange={handleInputChange}
-        multiline
-        rows={4}
-        fullWidth
-        helperText={`${formData.message.length}/1000`}
-      />
+      <FormControl>
+        <FormLabel>Message</FormLabel>
+        <TextField
+          placeholder="Message"
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+          multiline
+          rows={4}
+          fullWidth
+          helperText={`${formData.message.length}/1000`}
+        />
+      </FormControl>
 
       <Button type="submit" variant="contained" color="primary">
         Submit

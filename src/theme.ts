@@ -264,6 +264,8 @@ let theme = createTheme({
     MuiFormLabel: {
       styleOverrides: {
         root: {
+          marginBottom: '4px',
+          fontFamily: '"TT Hoves Pro Trial", sans-serif',
           lineHeight: '1.3rem',
         },
       },
@@ -281,9 +283,16 @@ let theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
+          backgroundColor: '#ffffff',
           fontFamily: '"TT Hoves Pro Trial", sans-serif',
+          borderRadius: '8px',
           '& fieldset': {
-            borderColor: '#E1E1FF',
+            borderColor: '#A0A3A5',
+            borderRadius: '8px',
+          },
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            boxShadow: '0 0 0 2px #F4BDCE',
+            borderWidth: '1px',
           },
           '&.Mui-error': {
             backgroundColor: '#FDEAE6',
@@ -294,9 +303,11 @@ let theme = createTheme({
         },
         input: {
           fontFamily: '"TT Hoves Pro Trial", sans-serif',
+          padding: '10px 12px',
         },
       },
     },
+
     MuiInputLabel: {
       styleOverrides: {
         root: {

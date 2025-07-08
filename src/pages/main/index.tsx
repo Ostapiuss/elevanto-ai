@@ -1,8 +1,6 @@
 import { PageHeader } from '@shared/components/PageHeader';
 import { SectionLayout } from '@shared/components/SectionLayout';
 
-import { Button } from '@mui/material';
-
 import CustomersComponent from './components/customers-component';
 import CompanyOffer from './components/offer-component';
 import Subscription from './components/subscription-component';
@@ -15,6 +13,7 @@ import ReadyBusiness from '@shared/components/ReadyBusiness';
 import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 
 import './style.scss';
+import StartForFree from '@shared/components/StartForFreeButton';
 
 export default function MainPage() {
   return (
@@ -24,9 +23,7 @@ export default function MainPage() {
           title="Everything you need to automate your business with AI"
           subTitle="From CRM to AI agents, Elevanto AI combines a powerful platform with custom automation and intelligent assistants—purpose-built for service-focused teams."
         />
-        <Button sx={{ marginTop: '32px' }} variant="contained">
-          Start for free
-        </Button>
+        <StartForFree sx={{ marginTop: '32px' }} />
       </SectionLayout>
       <ScrollFadeIn>
         <SectionLayout className="section">

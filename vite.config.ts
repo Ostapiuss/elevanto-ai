@@ -21,6 +21,7 @@ export default defineConfig({
       '@store': '/src/store',
       '@utils': '/src/utils',
       '@api': '/src/api',
+      '@app-types': '/src/app-types',
     },
   },
   server: {

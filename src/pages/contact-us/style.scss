@@ -5,10 +5,22 @@
 
   &__welcome {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
     gap: 48px;
     align-items: center;
     margin-bottom: 60px;
+  }
+
+  &__form {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 0.8fr;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .welcome-title {
@@ -30,5 +42,27 @@
       font-weight: 400;
       line-height: 26px;
     }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 180px)) {
+  .contact-us {
+    &__welcome {
+      grid-template-columns: 1fr;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+
+      .reach-us-component {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-xs + 400px )) {
+  .contact-us {
+    padding: 0;
   }
 }

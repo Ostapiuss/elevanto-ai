@@ -3,9 +3,11 @@ import { Box } from '@mui/material';
 import { SectionLayout } from '@shared/components/SectionLayout';
 import { PresentationItemComponent } from '@shared/components/PresentationItem';
 
-import './style.scss';
 import CustomTag from '@shared/components/CustomTag';
 import ContactForm from './components/contact-us-form';
+import ReachUsComponent from './components/react-us-component';
+
+import './style.scss';
 
 const ContactUs = () => {
   return (
@@ -28,6 +30,9 @@ const ContactUs = () => {
         </Box>
         <Box className="contact-us__form">
           <ContactForm />
+          <Box className="contact-us__contacts">
+            <ReachUsComponent />
+          </Box>
         </Box>
       </Box>
     </SectionLayout>

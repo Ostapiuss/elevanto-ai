@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from '@mui/material';
+import StartForFree from '@shared/components/StartForFreeButton';
 
 import { PresentationItemComponent } from '../PresentationItem';
 
@@ -15,9 +16,7 @@ export default function ReadyBusiness() {
           Join thousands of businesses already using Elevanto AI to automate their operations and scale faster.
         </p>
         <Box className="actions">
-          <Button variant="contained" className="start-btn">
-            Start for free
-          </Button>
+          <StartForFree variant="contained" className="start-btn" />
           <Button variant="contained" className="book-btn">
             Book a demo
           </Button>

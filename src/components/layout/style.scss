@@ -25,6 +25,10 @@
     background-color: white;
     position: relative;
     z-index: 1;
+
+    &.MuiPaper-root {
+      padding-right: 120px !important;
+    }
   }
 
   main {

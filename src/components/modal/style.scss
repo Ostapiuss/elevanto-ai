@@ -1,0 +1,22 @@
+.app-modal-root {
+  &__content {
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+  }
+
+  &__close-btn {
+    &.MuiButtonBase-root {
+      position: absolute;
+      left: 100%;
+      top: 15px;
+
+      transform: translate(calc(-100% - 10px));
+    }
+  }
+
+  &__transparent {
+    background-color: transparent;
+  }
+}

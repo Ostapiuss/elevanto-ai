@@ -1,0 +1,54 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.reach-us-component {
+  background-color: #ffffff;
+  border: 1px solid $white-50;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 396px;
+  display: flex;
+  gap: 16px;
+
+  &__icon {
+    padding: 8px;
+    background-color: $secondary-200;
+    width: fit-content;
+    max-height: 48px;
+    box-shadow: 0px 2px 8px 0px #00000014;
+    border-radius: 8px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    color: $primary-50;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__contact {
+    color: $main-50;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__description {
+    p {
+      color: $gray-500;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
