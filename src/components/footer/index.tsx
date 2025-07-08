@@ -18,7 +18,9 @@ export default function Footer() {
           <div className="footer__items company">
             <div className="title">Company</div>
             <ul className="list">
-              <li className="item">About Us</li>
+              <li className="item">
+                <Link to="about-us">About Us</Link>
+              </li>
               <li className="item">
                 <Link to="contact-us">Contact Us</Link>
               </li>

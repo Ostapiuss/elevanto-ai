@@ -7,6 +7,7 @@ const MainPageLazy = lazy(() => import('@pages/main'));
 const FeaturesPageLazy = lazy(() => import('@pages/features'));
 const SignInPage = lazy(() => import('@pages/sign-in-page'));
 const ContacUsPage = lazy(() => import('@pages/contact-us'));
+const AboutUsPage = lazy(() => import('@pages/about-us'));
 
 export function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export function AppRoutes() {
           <Route index element={<MainPageLazy />} />
           <Route path="features" element={<FeaturesPageLazy />} />
           <Route path="contact-us" element={<ContacUsPage />} />
+          <Route path="about-us" element={<AboutUsPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

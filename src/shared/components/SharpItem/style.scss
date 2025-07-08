@@ -1,0 +1,22 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.sharp-item {
+  position: relative;
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $gray-50;
+    position: absolute;
+    width: 1px;
+    height: 110%;
+    top: -5%;
+    left: calc(100% + 16px);
+  }
+}

@@ -1,0 +1,41 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.our-result {
+  .sharp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .result-item {
+    padding: 135px 16px;
+    background-color: #ffffff;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        svg {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 32px;
+        color: $primary-50;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      color: $primary-50;
+      margin-top: 8px;
+    }
+  }
+}

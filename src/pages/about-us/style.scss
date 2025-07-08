@@ -1,0 +1,42 @@
+@use '../../assets/styles/style.scss' as *;
+
+.about-us-section {
+  padding: 40px 32px;
+
+  .page-header {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+
+    .MuiTypography-root {
+      color: $primary-light;
+    }
+
+    &__subtitle {
+      margin-top: 16px;
+      font-size: 18px;
+      color: $main-50;
+    }
+  }
+
+  &.learn-about-us-section {
+    padding: 40px 0;
+    .laern-about-us {
+      align-items: center;
+      justify-content: center;
+
+      &__welcome-title {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .presentation {
+        margin-top: 48px;
+        max-width: 840px;
+        width: 100%;
+      }
+    }
+  }
+}

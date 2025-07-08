@@ -1,0 +1,43 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+.company-mission {
+  .item {
+    background-color: #ffffff;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+      width: fit-content;
+      margin-bottom: 24px;
+      background-color: $secondary-200;
+      padding: 8px;
+      box-shadow: 0px 2px 8px 0px #00000014;
+      border-radius: 8px;
+      max-height: 48px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      color: $primary-50;
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+
+    &__description {
+      font-size: 16px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 22px;
+      color: $gray-500;
+    }
+  }
+}

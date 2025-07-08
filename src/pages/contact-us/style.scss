@@ -2,13 +2,15 @@
 
 .contact-us {
   padding: 40px 32px;
+  width: 100%;
 
-  &__welcome {
+  .laern-about-us {
     display: grid;
     grid-template-columns: 1fr 0.8fr;
     gap: 48px;
     align-items: center;
     margin-bottom: 60px;
+    width: 100%;
   }
 
   &__form {
@@ -21,27 +23,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-
-  .welcome-title {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 658px;
-
-    &__title {
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 40px;
-      color: $dark-grey-900;
-    }
-
-    &__subtitle {
-      color: $gray-400;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 26px;
-    }
   }
 }
 
