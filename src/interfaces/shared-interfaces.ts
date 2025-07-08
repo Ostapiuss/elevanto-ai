@@ -53,3 +53,9 @@ export interface ResultImpactItem {
   bgColor?: string;
   color?: string;
 }
+
+export interface PersonailezedItem {
+  title: string;
+  subtitle: string;
+  icon: ReactNode;
+}

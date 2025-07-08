@@ -4,6 +4,7 @@ import Twiter from '@assets/svg/twiter.svg?react';
 import Linkedin from '@assets/svg/linkedin.svg?react';
 
 import './style.scss';
+import { Link } from 'react-router';
 
 export default function Footer() {
   return (
@@ -18,7 +19,9 @@ export default function Footer() {
             <div className="title">Company</div>
             <ul className="list">
               <li className="item">About Us</li>
-              <li className="item">Contact Us</li>
+              <li className="item">
+                <Link to="contact-us">Contact Us</Link>
+              </li>
             </ul>
           </div>
           <div className="footer__items products">
