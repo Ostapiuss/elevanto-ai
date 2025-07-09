@@ -107,6 +107,33 @@
     padding-top: 24px !important;
     padding-bottom: 24px !important;
   }
+
+  .section-layout {
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: calc(100% + 32px);
+      height: 1px;
+      left: -16px;
+      background-color: #cdd1d5;
+      top: 0;
+
+      transition: left 0.2s ease;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: calc(100% + 32px);
+      height: 1px;
+      background-color: #cdd1d5;
+      top: 100%;
+      left: -16px;
+      transition: left 0.2s ease;
+    }
+  }
 }
 
 @media (max-width: ($breakpoint-sm - 120px)) {

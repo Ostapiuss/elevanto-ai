@@ -3,18 +3,21 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 65px;
   gap: 16px;
-
+  max-height: 600px;
+  overflow: hidden;
   position: relative;
 
   .col {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: relative;
+    top: 35px;
   }
 
   .col2 {
     position: relative;
-    top: -25px;
+    top: 0px;
   }
 
   &::after {

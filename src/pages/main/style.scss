@@ -5,6 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &.main-section {
+    padding-top: 40px;
+
+    .page-header {
+      margin-top: 24px;
+    }
+  }
 }
 
 .section.offer-section {
@@ -38,6 +46,7 @@
   padding-bottom: 40px;
 
   .page-header {
+    margin-right: auto;
     h1 {
       text-align: left;
     }
@@ -207,6 +216,7 @@ img.dashboard-icon {
     align-items: flex-start;
 
     .customers {
+      margin-top: 32px;
       grid-template-columns: 1fr 1fr;
 
       .col3 {
@@ -231,9 +241,10 @@ img.dashboard-icon {
 @media (max-width: ($breakpoint-sm + 37px)) {
   .section.customer-section {
     .customers {
+      margin-top: 32px;
       grid-template-columns: 1fr;
 
-      .col2 {
+      .col1 {
         display: none;
       }
     }
@@ -354,6 +365,7 @@ img.dashboard-icon {
 @media (max-width: ($breakpoint-sm + 37px)) {
   section {
     padding: 0 16px !important;
+    padding-top: 16px !important;
     padding-bottom: 20px !important;
   }
 }

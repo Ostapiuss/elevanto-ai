@@ -9,7 +9,12 @@ export default function CustomersComponent() {
   const columns: Array<Array<CustomerItem>> = [[], [], []];
 
   customers.forEach((customer, index) => {
-    columns[index % 3].push(customer);
+    if (index < 2) {
+      columns[0].push(customer);
+    } else {
+      const targetColIndex = ((index - 2) % 2) + 1;
+      columns[targetColIndex].push(customer);
+    }
   });
 
   return (

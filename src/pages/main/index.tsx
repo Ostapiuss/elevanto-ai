@@ -3,7 +3,7 @@ import { SectionLayout } from '@shared/components/SectionLayout';
 
 import CustomersComponent from './components/customers-component';
 import CompanyOffer from './components/offer-component';
-import Subscription from './components/subscription-component';
+// import Subscription from './components/subscription-component';
 import Tags from './components/tags-component';
 
 import { constants } from '@constants/index';
@@ -12,13 +12,21 @@ import MainQuestion from './components/question-component';
 import ReadyBusiness from '@shared/components/ReadyBusiness';
 import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 
-import './style.scss';
 import StartForFree from '@shared/components/StartForFreeButton';
+
+import './style.scss';
+import CustomTag from '@shared/components/CustomTag';
 
 export default function MainPage() {
   return (
     <>
       <SectionLayout className="section main-section">
+        <CustomTag
+          bgColor="#ffffff"
+          color="#464D54"
+          text="Powered by advanced AI technology"
+          border="1px solid #818992"
+        />
         <PageHeader
           title="Everything you need to automate your business with AI"
           subTitle="From CRM to AI agents, Elevanto AI combines a powerful platform with custom automation and intelligent assistants—purpose-built for service-focused teams."
@@ -52,7 +60,7 @@ export default function MainPage() {
           <CompanyOffer />
         </SectionLayout>
       </ScrollFadeIn>
-      <ScrollFadeIn>
+      {/* <ScrollFadeIn>
         <SectionLayout className="section subscription-section">
           <PageHeader
             size={36}
@@ -68,7 +76,7 @@ export default function MainPage() {
             </p>
           </div>
         </SectionLayout>
-      </ScrollFadeIn>
+      </ScrollFadeIn> */}
       <ScrollFadeIn>
         <SectionLayout className="section customer-section">
           <PageHeader

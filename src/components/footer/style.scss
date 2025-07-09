@@ -18,10 +18,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 100px;
+    margin-left: 200px;
   }
 
   &__items {
+    max-width: 300px;
+    width: 100%;
+
     .title {
       font-size: 16px;
       margin-bottom: 24px;
