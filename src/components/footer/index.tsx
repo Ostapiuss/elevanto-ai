@@ -24,6 +24,9 @@ export default function Footer() {
               <li className="item">
                 <Link to="contact-us">Contact Us</Link>
               </li>
+              <li className="item">
+                <Link to="blog">Blog</Link>
+              </li>
             </ul>
           </div>
           <div className="footer__items products">
@@ -32,16 +35,6 @@ export default function Footer() {
               <li className="item">Use Case</li>
               <li className="item">Integrations</li>
               <li className="item">Pricing Plans</li>
-            </ul>
-          </div>
-          <div className="footer__items resources">
-            <div className="title">Resources</div>
-            <ul className="list">
-              <li className="item">Documentation</li>
-              <li className="item">API Reference</li>
-              <li className="item">
-                <Link to="blog">Blog</Link>
-              </li>
             </ul>
           </div>
           <div className="footer__items legal">
