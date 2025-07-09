@@ -14,8 +14,11 @@ import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 
 import StartForFree from '@shared/components/StartForFreeButton';
 
-import './style.scss';
 import CustomTag from '@shared/components/CustomTag';
+import AdvantagesComponent from './components/advantages-component';
+import { Button } from '@mui/material';
+
+import './style.scss';
 
 export default function MainPage() {
   return (
@@ -58,6 +61,22 @@ export default function MainPage() {
             }
           />
           <CompanyOffer />
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="section advantage-section">
+          <PageHeader size={36} title="Elevanto One" subTitle="Built to scale. Powered by AI." />
+          <CustomTag
+            bgColor="#ffffff"
+            color="#464D54"
+            text="Powered by advanced AI technology"
+            border="1px solid #818992"
+          />
+          <AdvantagesComponent />
+          <div className="advantage-section__footer">
+            <Button variant="contained">Start for free</Button>
+            <p>We&apos;ll guide you through every step.</p>
+          </div>
         </SectionLayout>
       </ScrollFadeIn>
       {/* <ScrollFadeIn>
