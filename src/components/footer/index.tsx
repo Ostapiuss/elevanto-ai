@@ -39,7 +39,9 @@ export default function Footer() {
             <ul className="list">
               <li className="item">Documentation</li>
               <li className="item">API Reference</li>
-              <li className="item">Blog</li>
+              <li className="item">
+                <Link to="blog">Blog</Link>
+              </li>
             </ul>
           </div>
           <div className="footer__items legal">

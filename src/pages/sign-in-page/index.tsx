@@ -54,6 +54,30 @@ export default function SignInPage() {
                 variant="outlined"
                 label={label}
                 value={value}
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    padding: '4px 12px',
+                    '& fieldset': {
+                      borderColor: '#23272b',
+                    },
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                      boxShadow: 'none',
+                      borderWidth: '1px',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: 'black',
+                    },
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#23272b',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    color: '#5A5F63',
+                  },
+                  '& .MuiInputLabel-root.Mui-focused': {
+                    color: '#23272b',
+                  },
+                }}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
                 onChange={(e) => setValue(e.target.value)}

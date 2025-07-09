@@ -1,0 +1,21 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.read-more {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+
+  .title {
+    color: $primary;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
