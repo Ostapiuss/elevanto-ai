@@ -45,8 +45,12 @@ export default function Footer() {
           <div className="footer__items legal">
             <div className="title">Legal</div>
             <ul className="list">
-              <li className="item">Privacy Policy</li>
-              <li className="item">Terms of Service</li>
+              <li className="item">
+                <Link to="privacy">Privacy Policy</Link>
+              </li>
+              <li className="item">
+                <Link to="terms">Terms of Service</Link>
+              </li>
             </ul>
           </div>
         </div>

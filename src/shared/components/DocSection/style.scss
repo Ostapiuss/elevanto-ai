@@ -1,0 +1,49 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.doc-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 3;
+  padding: 40px 0;
+
+  z-index: 2;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: calc(100% + 240px);
+    left: -120px;
+    height: 1px;
+    background-color: #cdd1d5;
+    top: 0;
+    transition: left 0.2s ease;
+  }
+
+  .action {
+    width: 100%;
+    max-width: 792px;
+    justify-content: start;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main-400;
+    }
+  }
+
+  .content {
+    max-width: 792px;
+  }
+}
