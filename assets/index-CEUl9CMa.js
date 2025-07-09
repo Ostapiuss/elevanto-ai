@@ -1,0 +1,1 @@
+import{j as s,t as a}from"./index-Dq0lbBzZ.js";function x({bgColor:o,color:r,text:t}){return s.jsx(a,{className:"custom-tag",sx:{backgroundColor:o,color:r},children:s.jsx("p",{children:t})})}export{x as C};
