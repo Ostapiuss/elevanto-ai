@@ -1,8 +1,9 @@
 import SocialTwitter from '@assets/svg/social-twiter.svg?react';
+import { BASE_SITE_URL } from '@constants/common';
 
 export const customers = [
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -12,7 +13,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -22,7 +23,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -32,7 +33,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -42,7 +43,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -52,7 +53,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -62,7 +63,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -72,7 +73,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -82,7 +83,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -92,7 +93,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -102,7 +103,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
@@ -112,7 +113,7 @@ export const customers = [
     socialIcon: <SocialTwitter />,
   },
   {
-    iconSrc: '/assets/profile-mock-1.jpg',
+    iconSrc: `${BASE_SITE_URL}/assets/profile-mock-1.jpg`,
     fullName: 'Simon Severino',
     position: 'The Sales Booster',
     text: 'helped us eliminate hours of repetitive work every week. Their automations just run—no maintenance needed.',
