@@ -1,11 +1,11 @@
-import { EdgeProps, getMarkerEnd } from 'reactflow';
+import { EdgeProps } from 'reactflow';
 
 const OFFSET_X = 50;
 const OFFSET_Y = 50;
 const RADIUS = 10;
 
 export default function RoundedStepEdge({ id, sourceX, sourceY, targetX, targetY, markerEnd }: EdgeProps) {
-  const marker = getMarkerEnd(markerEnd, 'target');
+  // const marker = getMarkerEnd(markerEnd, 'target');
 
   const isRightward = targetX > sourceX;
   const isDownward = targetY > sourceY;
@@ -54,7 +54,7 @@ export default function RoundedStepEdge({ id, sourceX, sourceY, targetX, targetY
         fill="none"
         stroke="#222"
         strokeWidth={2}
-        markerEnd={marker}
+        markerEnd={markerEnd}
       />
     </g>
   );
