@@ -1,7 +1,5 @@
 import { Box } from '@mui/material';
 
-// import VoiceAi from '@assets/svg/ai-voice.svg?react';
-// import CustomTag from '@shared/components/CustomTag';
 import { AiBlockItem } from '@interfaces/shared-interfaces';
 
 import './style.scss';

@@ -79,6 +79,9 @@ export function Header() {
                 <MenuItem>
                   <Link to="/faqs">FAQS</Link>
                 </MenuItem>
+                <MenuItem>
+                  <Link to="/login">Sign In</Link>
+                </MenuItem>
               </Menu>
             </Box>
           </Box>

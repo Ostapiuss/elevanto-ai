@@ -8,10 +8,12 @@ import App from './App.tsx';
 import { theme } from './theme.ts';
 
 import './index.scss';
+import ScrollToTop from '@shared/components/ScrollToTop/index.tsx';
 
 createRoot(document.getElementById('elevanto-app-root')!).render(
   <StrictMode>
     <BrowserRouter basename="elevanto-ai">
+      <ScrollToTop />
       <ThemeProvider theme={theme}>
         <App />
         <AppModal />

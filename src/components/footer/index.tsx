@@ -1,6 +1,6 @@
 import Facebook from '@assets/svg/facebook.svg?react';
 import Instagram from '@assets/svg/instagram.svg?react';
-import Twiter from '@assets/svg/twiter.svg?react';
+import XIcon from '@assets/svg/x-icon.svg?react';
 import Linkedin from '@assets/svg/linkedin.svg?react';
 
 import './style.scss';
@@ -57,7 +57,7 @@ export default function Footer() {
             <Facebook />
           </div>
           <div className="link">
-            <Twiter />
+            <XIcon />
           </div>
           <div className="link">
             <Instagram />
