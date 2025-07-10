@@ -59,3 +59,15 @@ export interface PersonailezedItem {
   subtitle: string;
   icon: ReactNode;
 }
+
+export interface AiListItem {
+  icon: ReactNode;
+  title: string;
+}
+
+export interface AiBlockItem {
+  title: string;
+  icon: ReactNode;
+  tag: 'custom' | 'standart';
+  list: AiListItem[];
+}

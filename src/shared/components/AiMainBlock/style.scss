@@ -1,0 +1,12 @@
+.react-flow__viewport {
+  cursor: default !important;
+}
+
+.react-flow__pane {
+  cursor: default !important;
+}
+
+.react-flow {
+  overscroll-behavior: contain !important;
+  touch-action: auto !important;
+}
