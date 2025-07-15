@@ -1,64 +1,64 @@
-  @use '../../../assets/styles/style.scss' as *;
-  
-  .chat {
-    max-width: 279px;
-    padding: 16px;
-    background: #fffffffa;
-    box-shadow: 0px 2px 8px 0px #00000014;
-    border-radius: 12px;
+@use '../../../assets/styles/style.scss' as *;
 
-    &__header {
-      display: flex;
-      gap: 6px;
-      margin-bottom: 18px;
+.chat {
+  max-width: 279px;
+  padding: 16px;
+  background: #fffffffa;
+  box-shadow: 0px 2px 8px 0px #00000014;
+  border-radius: 12px;
 
-      .title {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 16px;
-        color: $main-550;
-      }
-    }
+  &__header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 18px;
 
-    &__messages {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-
-      .message {
-        padding: 12px;
-        border-radius: 8px;
-
-        box-shadow: 0px 2px 8px 0px #00000014;
-
-        p {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 16px;
-        }
-
-        &.chat {
-          background-color: $violet-600;
-          color: white;
-          width: 100%;
-        }
-
-        &.me {
-          background-color: $gray-50;
-          color: $gray-900;
-
-          width: calc(100% - 20px);
-
-          position: relative;
-          left: 20px;
-        }
-      }
-    }
-
-    &__footer {
-      margin-top: 60px;
-      display: flex;
-      justify-content: center;
-      gap: 8px;
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: $main-550;
     }
   }
+
+  &__messages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .message {
+      padding: 12px;
+      border-radius: 8px;
+
+      box-shadow: 0px 2px 8px 0px #00000014;
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      &.chat {
+        background-color: $violet-600;
+        color: white;
+        width: 100%;
+      }
+
+      &.me {
+        background-color: $gray-50;
+        color: $gray-900;
+
+        width: calc(100% - 20px);
+
+        position: relative;
+        left: 20px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+}
