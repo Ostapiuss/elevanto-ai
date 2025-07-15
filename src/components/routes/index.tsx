@@ -27,7 +27,7 @@ export function AppRoutes() {
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="terms" element={<TermsPage />} />
           <Route path="blog" element={<BlogPage />} />
-          <Route path="testimonials" element={<AiAssistant />} />
+          <Route path="ai-assistants" element={<AiAssistant />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

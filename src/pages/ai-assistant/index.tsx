@@ -19,7 +19,7 @@ import GlobalLanguageSupport from './components/features/global-language-support
 export default function AiAssistant() {
   return (
     <>
-      <SectionLayout className="main reverse ai-assistant-section">
+      <SectionLayout className="section main reverse ai-assistant-section">
         <SplitView
           firstColRender={<Assistant />}
           position="center"
@@ -38,7 +38,7 @@ export default function AiAssistant() {
           }}
         />
       </SectionLayout>
-      <SectionLayout className="ai-assistant-section">
+      <SectionLayout className="section ai-assistant-section">
         <PageHeader
           title="Why Choose Elevanto AI"
           size={36}
@@ -46,7 +46,7 @@ export default function AiAssistant() {
         />
         <WhyChooseUs />
       </SectionLayout>
-      <SectionLayout className="features-section ai-assistant-section">
+      <SectionLayout className="section features-section ai-assistant-section">
         <PageHeader
           title="Powerful Features That Drive Results"
           subTitle="Every feature is designed to capture more leads and improve customer satisfaction"
@@ -113,7 +113,7 @@ export default function AiAssistant() {
           />
         </Box>
       </SectionLayout>
-      <SectionLayout className="ready-business-section ai-assistant-section">
+      <SectionLayout className="section ready-business-section ai-assistant-section">
         <ReadyBusiness />
       </SectionLayout>
     </>

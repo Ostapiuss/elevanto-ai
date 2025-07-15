@@ -4,6 +4,7 @@
     background-color: white;
     border-radius: 12px;
     color: black;
+    width: 600px;
   }
 
   &__close-btn {
@@ -18,5 +19,21 @@
 
   &__transparent {
     background-color: transparent;
+  }
+}
+
+@media (max-width: (600px)) {
+  .app-modal-root {
+    &__content {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: (450px)) {
+  .app-modal-root {
+    &__content {
+      width: 320px;
+    }
   }
 }

@@ -16,10 +16,11 @@ type Props = {
     subtitle: string;
     btnText?: string | ReactNode;
   };
+  onButtonClick?: () => void;
   footerRenderProps?: () => ReactNode;
 };
 
-export default function SplitView({ firstColRender, text, footerRenderProps, position = 'top' }: Props) {
+export default function SplitView({ firstColRender, text, footerRenderProps, onButtonClick, position = 'top' }: Props) {
   return (
     <Box className={joinClassNames('split-view', position)}>
       <Box className="split-view__col1">{firstColRender}</Box>
@@ -29,7 +30,9 @@ export default function SplitView({ firstColRender, text, footerRenderProps, pos
         <IF condition={Boolean(text.btnText)}>
           <Box className="col2__action">
             <IF condition={Boolean(typeof text.btnText === 'string')}>
-              <Button variant="contained">{text.btnText}</Button>
+              <Button onClick={onButtonClick} variant="contained">
+                {text.btnText}
+              </Button>
             </IF>
             <IF condition={Boolean(typeof text.btnText !== 'string')}>{text.btnText}</IF>
           </Box>

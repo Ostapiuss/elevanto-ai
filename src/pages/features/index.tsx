@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router';
+
 import { Box } from '@mui/material';
 
 import { PageHeader } from '@shared/components/PageHeader';
@@ -19,6 +21,12 @@ import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 import './style.scss';
 
 export default function Features() {
+  const navigate = useNavigate();
+
+  const rediredToAiAssistants = () => {
+    navigate('/ai-assistants');
+  };
+
   return (
     <>
       <SectionLayout className="section features">
@@ -46,6 +54,7 @@ export default function Features() {
             <SplitView
               position="center"
               firstColRender={<AiAssistant />}
+              onButtonClick={rediredToAiAssistants}
               text={{
                 title: 'AI-Powered Assistants',
                 subtitle:

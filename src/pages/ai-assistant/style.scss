@@ -1,13 +1,15 @@
 @use '../..//assets/styles/style.scss' as *;
 
 .ai-assistant-section {
-  padding: 40px 32px;
-
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center;
   justify-content: center;
+
+  .section-container {
+    padding: 40px 32px;
+  }
 
   &.features-section {
     .page-header {
@@ -60,7 +62,9 @@
   }
 
   &.main {
-    padding: 60px 32px;
+    .section-container {
+      padding: 60px 32px;
+    }
 
     .main__actions {
       display: flex;
