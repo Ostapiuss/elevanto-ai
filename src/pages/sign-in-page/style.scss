@@ -1,10 +1,24 @@
 @use '../../assets/styles/style.scss' as *;
 
+.sign-in-page-frame {
+  height: 100%;
+}
+
 .sign-in-page {
+  max-width: 1440px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+
   &.MuiGrid-root {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 130px;
+    align-items: center;
   }
 
   .top-logo {
@@ -12,10 +26,17 @@
   }
 
   &__form {
+    .form-login {
+      height: fit-content;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     &.MuiGrid-root {
       min-width: 382px;
-      padding: 0 103px;
-
+      height: 100%;
+      max-height: 768px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,6 +89,29 @@
           }
         }
       }
+
+      .privacy {
+        margin-top: auto;
+
+        p.mobile-text {
+          display: none;
+        }
+
+        p {
+          color: $main-400;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 14px;
+
+          a {
+            color: $main-400;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 14px;
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 
@@ -79,6 +123,8 @@
     gap: 57px;
     min-width: 588px;
     flex-direction: column;
+
+    height: fit-content;
 
     &__logo {
       display: flex;
@@ -133,6 +179,7 @@
 @media (max-width: ($breakpoint-md + 340px)) {
   .sign-in-page {
     &.MuiGrid-root {
+      gap: 24px;
       padding: 0 20px;
       padding-top: 60px;
     }
@@ -167,12 +214,33 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+
+      padding-left: 122px;
+      padding-right: 122px;
     }
 
     &__form {
       &.MuiGrid-root {
-        padding: 0 20px;
-        margin-bottom: auto;
+        padding: 20px;
+        border: 1px solid #eaebec;
+        background-color: #ffffff;
+        border-radius: 16px;
+
+        height: 727px;
+        max-height: 727px;
+
+        .privacy {
+          margin-top: auto;
+
+          p.desktop-text {
+            display: none;
+          }
+
+          p.mobile-text {
+            display: block;
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -186,6 +254,15 @@
 
     .welcome {
       display: none;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 70px)) {
+  .sign-in-page {
+    &.MuiGrid-root {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }

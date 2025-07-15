@@ -11,6 +11,7 @@ import GoogleIcon from '@assets/svg/google-icon.svg?react';
 import { motion } from 'framer-motion';
 
 import './style.scss';
+import { Link } from 'react-router';
 
 export default function SignInPage() {
   const [label, setLabel] = useState('Enter your work email address');
@@ -23,6 +24,7 @@ export default function SignInPage() {
 
   return (
     <motion.div
+      className="sign-in-page-frame"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
@@ -39,53 +41,66 @@ export default function SignInPage() {
           <div className="title">elevanto.ai</div>
         </Box>
         <Grid className="sign-in-page__form">
-          <Box className="sso-login">
-            <Button variant="outlined">
-              <GoogleIcon />
-              <p className="text">Sign in with Google</p>
-            </Button>
-          </Box>
-          <Box className="form">
-            <FormControl defaultValue="" required>
-              <TextField
-                margin="normal"
-                fullWidth
-                id="outlined-basic"
-                variant="outlined"
-                label={label}
-                value={value}
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    padding: '4px 12px',
-                    '& fieldset': {
-                      borderColor: '#23272b',
-                    },
-                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      boxShadow: 'none',
-                      borderWidth: '1px',
-                    },
-                    '&:hover fieldset': {
-                      borderColor: 'black',
-                    },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#23272b',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    color: '#5A5F63',
-                  },
-                  '& .MuiInputLabel-root.Mui-focused': {
-                    color: '#23272b',
-                  },
-                }}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                onChange={(e) => setValue(e.target.value)}
-              />
-              <Button className="submit-btn" variant="contained">
-                <p>Continue</p>
+          <Box className="form-login">
+            <Box className="sso-login">
+              <Button variant="outlined">
+                <GoogleIcon />
+                <p className="text">Sign in with Google</p>
               </Button>
-            </FormControl>
+            </Box>
+            <Box className="form">
+              <FormControl defaultValue="" required>
+                <TextField
+                  margin="normal"
+                  fullWidth
+                  id="outlined-basic"
+                  variant="outlined"
+                  label={label}
+                  value={value}
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      padding: '4px 12px',
+                      '& fieldset': {
+                        borderColor: '#23272b',
+                      },
+                      '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                        boxShadow: 'none',
+                        borderWidth: '1px',
+                      },
+                      '&:hover fieldset': {
+                        borderColor: 'black',
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#23272b',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      color: '#5A5F63',
+                    },
+                    '& .MuiInputLabel-root.Mui-focused': {
+                      color: '#23272b',
+                    },
+                  }}
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={(e) => setValue(e.target.value)}
+                />
+                <Button className="submit-btn" variant="contained">
+                  <p>Continue</p>
+                </Button>
+              </FormControl>
+            </Box>
+          </Box>
+          <Box className="privacy">
+            <p className="desktop-text">
+              By inserting your email you confirm you agree to Elevanto AI contacting you about our product and
+              services. You can opt out at any time by clicking unsubscribe in our emails. Find out more about how we
+              use data in our <Link to="/privacy">privacy policy</Link>.
+            </p>
+            <p className="mobile-text">
+              By inserting your email you confirm you agree to Elevanto AI contacting you about our product and
+              services. Find out more about how we use data in our <Link to="/privacy">privacy policy</Link>.
+            </p>
           </Box>
         </Grid>
         <Grid className="sign-in-page__welcome welcome">
