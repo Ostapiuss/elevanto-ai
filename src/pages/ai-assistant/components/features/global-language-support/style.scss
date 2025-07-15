@@ -1,0 +1,30 @@
+@use '../../../../../assets/styles/style.scss' as *;
+
+.global-language-support {
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $main-500;
+  }
+
+  .language-list {
+    .language-item {
+      display: flex;
+      gap: 8px;
+
+      align-items: center;
+
+      &__title {
+        color: $dark-grey-900;
+      }
+    }
+  }
+
+  .language-count-supports {
+    color: $main-500;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -5,6 +5,7 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
+  // align-items: center;
 
   &::before {
     content: '';
@@ -32,7 +33,6 @@
   }
 
   main {
-    padding: 0 120px;
     position: relative;
 
     &::before {
@@ -50,22 +50,18 @@
 
   footer {
     margin-top: auto;
-    padding-left: 120px;
-    padding-right: 120px;
   }
 }
 
 @media (max-width: ($breakpoint-md + 200px)) {
   .layout > .main {
     padding: 0 40px;
-
     transition: padding 0.2s ease;
   }
 
   .layout {
     header {
       padding: 0 40px;
-
       transition: padding 0.2s ease;
 
       &.MuiPaper-root {

@@ -1,7 +1,11 @@
+@use '../../assets/styles/style.scss' as *;
+
 .features {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  padding: 0 120px;
 
   .page-header {
     margin-top: 40px;
@@ -16,8 +20,54 @@
     justify-content: center;
     gap: 40px;
     margin-bottom: 40px;
+    padding: 8px;
+
+    .split-view {
+      &__col2 {
+        height: fit-content;
+      }
+    }
+
+    &.ready-business-section {
+      .section-container {
+        padding: 40px 24px;
+      }
+    }
+    s &.conversation-hub-feature {
+      .split-view {
+        grid-template-columns: 1.7fr 1fr;
+      }
+    }
+
+    &.ai-voice-agent-handle {
+      .split-view {
+        grid-template-columns: 1.7fr 1fr;
+      }
+    }
+
+    &.real-business-outcomes {
+      .split-view {
+        grid-template-columns: 2fr 1.1fr;
+      }
+    }
+
+    &.ai-powered-assistants {
+      .split-view {
+        grid-template-columns: 2r 1fr;
+      }
+    }
+
+    &.automated-custom-workflow {
+      .split-view {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
 
     &.custom-crm-feature {
+      .split-view {
+        grid-template-columns: 2fr 1.2fr;
+      }
+
       .page-header {
         margin-bottom: 40px;
       }
@@ -33,5 +83,23 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 400px)) {
+  .features {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 200px)) {
+  .features {
+    padding: 0;
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 237px)) {
+  .features {
+    padding: 0;
   }
 }

@@ -1,6 +1,14 @@
 import { Box } from '@mui/material';
 
 import { AiBlockItem } from '@interfaces/shared-interfaces';
+import { IF } from '../IF';
+import { joinClassNames } from '@utils/utility';
+
+import RightMultiplePoints from '@assets/svg/ui-agents/right-multiple-points.svg?react';
+import TopMultiplePoints from '@assets/svg/ui-agents/top-multiple-points.svg?react';
+import LeftMultiplePoints from '@assets/svg/ui-agents/left-multiple-points.svg?react';
+import SinglePoint from '@assets/svg/ui-agents/single-point.svg?react';
+import BottomPoints from '@assets/svg/ui-agents/bottom-multiple-points.svg?react';
 
 import './style.scss';
 
@@ -10,14 +18,14 @@ type Props = {
 
 export default function AiBlock({ aiData }: Props) {
   return (
-    <Box className="ai-block">
+    <Box className={joinClassNames('ai-block', aiData.className)}>
       <Box className="ai-block__header">
         {aiData.icon}
         <h2>{aiData.title}</h2>
         {aiData.tag}
       </Box>
       <Box className="ai-block__content">
-        {aiData.list.map((item, index) => {
+        {aiData?.list?.map((item, index) => {
           return (
             <Box key={index} className="item">
               <Box className="item__icon">{item.icon}</Box>
@@ -26,6 +34,41 @@ export default function AiBlock({ aiData }: Props) {
           );
         })}
       </Box>
+      <IF condition={Boolean(aiData.bottomPoint)}>
+        <div className="bottom-points">
+          <SinglePoint />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.rightPoints)}>
+        <div className="right-points">
+          <RightMultiplePoints />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.rightPoint)}>
+        <div className="right-point">
+          <SinglePoint />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.leftPoints)}>
+        <div className="left-points">
+          <LeftMultiplePoints />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.topPoint)}>
+        <div className="top-point">
+          <SinglePoint />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.topPoints)}>
+        <div className="top-points">
+          <TopMultiplePoints />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.bottomPoints)}>
+        <div className="bottom-points">
+          <BottomPoints />
+        </div>
+      </IF>
     </Box>
   );
 }

@@ -1,0 +1,43 @@
+@use '../../../../../assets/styles/style.scss' as *;
+
+.intelligent-chatbot {
+  .chat {
+    width: 100%;
+    max-width: 100%;
+
+    &__footer {
+      margin-top: 17px;
+    }
+
+    .assistant-message-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      .title-container {
+        .title {
+          color: $main-500;
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        .online {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17px;
+          color: $green-600;
+        }
+      }
+    }
+
+    .message.chat {
+      background-color: $gray-50;
+      color: $primary-50;
+    }
+
+    .message.me {
+      background-color: $secondary;
+      color: #ffffff;
+    }
+  }
+}

@@ -14,29 +14,29 @@ import OurResults from './components/our-result';
 export default function AboutUs() {
   return (
     <>
-      <SectionLayout className="about-us-section learn-about-us-section">
+      <SectionLayout className="section about-us-section learn-about-us-section">
         <LearnAboutUse />
       </SectionLayout>
-      <SectionLayout className="about-us-section company-mission-section">
+      <SectionLayout className="section about-us-section company-mission-section">
         <CompanyMission />
       </SectionLayout>
-      <SectionLayout className="about-us-section our-story-section">
+      <SectionLayout className="section about-us-section our-story-section">
         <PageHeader title="Our Story" subTitle="The journey that brought us here" size={36} />
         <OurStory />
       </SectionLayout>
-      <SectionLayout className="about-us-section meet-with-team-section">
+      <SectionLayout className="section about-us-section meet-with-team-section">
         <PageHeader title="Meet the Team" subTitle="The people building the future of business automation" size={36} />
         <MeetWithTeam />
       </SectionLayout>
-      <SectionLayout className="about-us-section our-values-section">
+      <SectionLayout className="section about-us-section our-values-section">
         <PageHeader title="Our Values" subTitle="The principles that guide everything we do" size={36} />
         <OurValues />
       </SectionLayout>
-      <SectionLayout className="about-us-section our-results-section">
+      <SectionLayout className="section about-us-section our-results-section">
         <PageHeader title="Backed by Results" subTitle="Numbers that speak for themselves" size={36} />
         <OurResults />
       </SectionLayout>
-      <SectionLayout className="about-us-section ready-business-section">
+      <SectionLayout className="section about-us-section ready-business-section">
         <ReadyBusiness />
       </SectionLayout>
     </>

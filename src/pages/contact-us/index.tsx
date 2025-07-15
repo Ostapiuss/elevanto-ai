@@ -10,7 +10,7 @@ import './style.scss';
 
 const ContactUs = () => {
   return (
-    <SectionLayout>
+    <SectionLayout className="section">
       <Box className="contact-us">
         <LearnAboutUse />
         <Box className="contact-us__form">

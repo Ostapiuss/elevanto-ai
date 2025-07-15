@@ -67,7 +67,20 @@ export interface AiListItem {
 
 export interface AiBlockItem {
   title: string;
+  className?: string;
+  bottomPoint?: boolean;
+  rightPoints?: boolean;
+  rightPoint?: boolean;
+  leftPoints?: boolean;
+  topPoint?: boolean;
+  topPoints?: boolean;
+  bottomPoints?: boolean;
   icon: ReactNode;
-  tag: 'custom' | 'standart';
+  tag: ReactNode;
   list: AiListItem[];
+}
+
+export interface Message {
+  message: string;
+  role: 'chat' | 'me';
 }

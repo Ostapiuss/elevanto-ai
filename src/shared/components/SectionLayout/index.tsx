@@ -10,5 +10,9 @@ type Props = {
 };
 
 export const SectionLayout: React.FC<Props> = ({ children, className }) => {
-  return <section className={joinClassNames('section-layout', className ? className : '')}>{children}</section>;
+  return (
+    <section className={joinClassNames('section-layout', className ? className : '')}>
+      <section className="section-container">{children}</section>
+    </section>
+  );
 };

@@ -21,7 +21,7 @@ import './style.scss';
 export default function Features() {
   return (
     <>
-      <SectionLayout className="features">
+      <SectionLayout className="section features">
         <ScrollFadeIn>
           <Box className="feature custom-crm-feature">
             <PageHeader
@@ -42,12 +42,12 @@ export default function Features() {
           </Box>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <Box className="feature reverse">
+          <Box className="feature reverse ai-powered-assistants">
             <SplitView
               position="center"
               firstColRender={<AiAssistant />}
               text={{
-                title: 'AI-Powered Assistants 123',
+                title: 'AI-Powered Assistants',
                 subtitle:
                   'Turn every website visit, WhatsApp chat, or phone call into a qualified lead with intelligent agents that respond and book—24/7.',
                 btnText: 'Learn more',
@@ -56,7 +56,7 @@ export default function Features() {
           </Box>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <Box className="feature">
+          <Box className="feature automated-custom-workflow">
             <SplitView
               position="center"
               firstColRender={<CustomWorkflow />}
@@ -70,7 +70,7 @@ export default function Features() {
           </Box>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <Box className="feature reverse">
+          <Box className="feature reverse real-business-outcomes">
             <SplitView
               position="center"
               firstColRender={<BusinessImpact />}
@@ -84,7 +84,7 @@ export default function Features() {
           </Box>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <Box className="feature">
+          <Box className="feature ai-voice-agent-handle">
             <SplitView
               position="center"
               firstColRender={<IncomingCall />}
@@ -98,7 +98,7 @@ export default function Features() {
           </Box>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <Box className="feature reverse">
+          <Box className="feature reverse conversation-hub-feature">
             <SplitView
               position="center"
               firstColRender={<ConversationHub />}
@@ -142,7 +142,7 @@ export default function Features() {
       </SectionLayout>
 
       <ScrollFadeIn>
-        <SectionLayout className="section ready-business-section">
+        <SectionLayout className="features section ready-business-section">
           <ReadyBusiness />
         </SectionLayout>
       </ScrollFadeIn>

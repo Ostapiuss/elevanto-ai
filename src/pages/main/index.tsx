@@ -18,9 +18,9 @@ import CustomTag from '@shared/components/CustomTag';
 import AdvantagesComponent from './components/advantages-component';
 import { Button } from '@mui/material';
 
+import AiMainBlockCustom from '@shared/components/AiMainBlockCustom';
+
 import './style.scss';
-// import AiBlock from '@shared/components/AiBlock';
-import AiMainBlock from '@shared/components/AiMainBlock';
 
 export default function MainPage() {
   return (
@@ -37,7 +37,7 @@ export default function MainPage() {
           subTitle="From CRM to AI agents, Elevanto AI combines a powerful platform with custom automation and intelligent assistants—purpose-built for service-focused teams."
         />
         <StartForFree sx={{ marginTop: '32px' }} />
-        <AiMainBlock />
+        <AiMainBlockCustom />
       </SectionLayout>
       <ScrollFadeIn>
         <SectionLayout className="section">

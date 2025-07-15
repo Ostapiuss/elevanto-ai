@@ -120,7 +120,7 @@
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: ($breakpoint-md + 37px)) {
   .offer-component {
     .offer-item-icon {
       display: block;

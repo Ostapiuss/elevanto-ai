@@ -1,7 +1,9 @@
 @use '../../assets/styles/style.scss' as *;
 
 .about-us-section {
-  padding: 40px 32px;
+  .section-container {
+    padding: 40px 32px;
+  }
 
   .page-header {
     width: 100%;
@@ -20,7 +22,6 @@
   }
 
   &.learn-about-us-section {
-    padding: 40px 0;
     .laern-about-us {
       align-items: center;
       justify-content: center;

@@ -437,45 +437,51 @@ export const subscriptionOptions = {
 
 export const questions: Array<AccordionsItme> = [
   {
-    question: 'What is Elevanto AI?',
+    question: 'What exactly is included in the Elevanto One plan?',
     id: 1,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'Elevanto One includes everything you need to automate your customer communication and business operations. You get a fully customized AI voice assistant (for answering and making calls), a custom AI chatbot (for your website, WhatsApp, or SMS), a full-feature CRM, appointment booking system, invoicing tools, lead nurturing automations, and full onboarding and support.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'What does the setup fee cover?',
     id: 2,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'The one-time setup fee covers the full development of your custom AI voice and chatbot flows. This includes strategy sessions, scripting, building your call/chat logic, integrations, and testing — tailored to your business model, services, and customer journey. The fee varies based on complexity and is quoted after a discovery call.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'Will the AI sound robotic or unnatural?',
     id: 3,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'No. We use advanced AI voice technology that sounds highly natural and human-like. Your AI assistant is trained with your business language, terminology, and tone of voice, making interactions smooth and professional for your customers.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'Can I customize how the AI responds?',
     id: 4,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'Yes. Both the voice and chat AI agents are fully customizable. We work with you to script and design responses that match your brand, handle objections, book appointments, and route leads — exactly like a real team member would.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'What types of businesses is Elevanto best suited for?',
     id: 5,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'Elevanto is perfect for service-based businesses like contractors, medical clinics, real estate teams, wellness providers, auto shops, and any business that relies on customer calls, bookings, and follow-ups. If you`re losing leads or spending too much time on admin tasks, Elevanto will save you time and increase revenue.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'Can Elevanto integrate with my existing tools or calendar?',
     id: 6,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'Yes. Elevanto integrates with Google Calendar, Outlook, Stripe, Zoom, and many CRMs or third-party tools via native integrations or Zapier. We handle the setup during onboarding to make sure everything works seamlessly.',
   },
   {
-    question: 'What is Elevanto AI?',
+    question: 'What happens if the AI can’t answer a question?',
     id: 7,
     answer:
-      'Elevanto AI is an Automated AI Agency that helps businesses automate their operations using white-labeled CRM, marketing automation, and AI-powered assistants—all built on the robust Go High Level platform.',
+      'If the AI encounters a question it can’t answer, it will automatically route the call or chat to your team, leave a voicemail, or send a follow-up message — depending on how we configure it for your business. You`ll never lose a lead due to a missed or failed interaction.',
+  },
+  {
+    question: 'Is there a contract or can I cancel anytime?',
+    id: 8,
+    answer:
+      'We offer month-to-month flexibility. There’s no long-term contract required — cancel anytime. We believe in earning your business every month with real results and value.',
   },
 ];

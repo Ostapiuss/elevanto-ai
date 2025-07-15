@@ -11,6 +11,7 @@ const AboutUsPage = lazy(() => import('@pages/about-us'));
 const PrivacyPage = lazy(() => import('@pages/privacy'));
 const TermsPage = lazy(() => import('@pages/terms'));
 const BlogPage = lazy(() => import('@pages/blog'));
+const AiAssistant = lazy(() => import('@pages/ai-assistant'));
 
 export function AppRoutes() {
   return (
@@ -26,6 +27,7 @@ export function AppRoutes() {
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="terms" element={<TermsPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="testimonials" element={<AiAssistant />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

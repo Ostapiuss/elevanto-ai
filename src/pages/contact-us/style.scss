@@ -26,8 +26,17 @@
   }
 }
 
-@media (max-width: ($breakpoint-sm + 180px)) {
+@media (max-width: ($breakpoint-md + 37)) {
   .contact-us {
+    .laern-about-us {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+      margin-bottom: 60px;
+      width: 100%;
+    }
+
     &__welcome {
       grid-template-columns: 1fr;
     }

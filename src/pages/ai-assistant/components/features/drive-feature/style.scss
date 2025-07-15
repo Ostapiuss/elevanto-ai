@@ -1,0 +1,65 @@
+@use '../../../../../assets/styles/style.scss' as *;
+
+.drive-result-feature {
+  .voice-chat {
+    max-width: 100%;
+    max-height: 310px;
+    padding: 32px 24px;
+
+    .voice-chat__micro {
+      width: 80px;
+      height: 80px;
+    }
+
+    .voice-chat__message {
+      background-color: $bg-50;
+      .title {
+        display: none;
+      }
+
+      .message {
+        margin-top: 0;
+        color: $primary;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .voice-assistant-tags {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+
+    .custom-tag {
+      padding: 4px 12px;
+    }
+  }
+
+  .assistant-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 17px;
+      color: $primary-50;
+    }
+
+    .phone {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: $main-500;
+    }
+
+    .answering {
+      color: $main-500;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

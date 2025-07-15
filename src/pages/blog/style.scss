@@ -1,7 +1,11 @@
 @use '../../assets/styles/style.scss' as *;
 
 .blog-sections {
-  padding: 60px 38px;
+  padding: 0 120px;
+
+  .section-container {
+    padding: 68px 38px;
+  }
 
   .page-header {
     width: 100%;

@@ -15,7 +15,7 @@
     .col2 {
       position: relative;
       top: 50%;
-      transform: translateY(-25%);
+      transform: translateY(-50%);
     }
   }
 
@@ -48,16 +48,16 @@
   }
 }
 
-// @media (max-width: ($breakpoint-md + 400px)) {
-//   .split-view {
-//     grid-template-columns: 0.5fr 1fr;
-//   }
-// }
-
-@media (max-width: ($breakpoint-md + 300px)) {
+@media (max-width: ($breakpoint-md + 200px)) {
   .split-view {
     display: flex;
     flex-direction: column-reverse;
+
+    &.center {
+      .col2 {
+        transform: translateY(0);
+      }
+    }
   }
 }
 

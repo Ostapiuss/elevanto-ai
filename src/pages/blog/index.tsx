@@ -9,7 +9,7 @@ import Blogs from './components/blogs';
 export default function Blog() {
   return (
     <>
-      <SectionLayout className="blog-sections main-blog-section">
+      <SectionLayout className="section blog-sections main-blog-section">
         <PageHeader
           size={32}
           title="Insights, tips & automation strategies"
@@ -17,7 +17,7 @@ export default function Blog() {
         />
         <Blogs />
       </SectionLayout>
-      <SectionLayout className="blog-sections ready-business-section">
+      <SectionLayout className="section blog-sections ready-business-section">
         <ReadyBusiness />
       </SectionLayout>
     </>
