@@ -9,6 +9,7 @@ import Tags from './components/tags-component';
 import { constants } from '@constants/index';
 
 import MainQuestion from './components/question-component';
+import PromoVideoComponent from './components/promo-video-compoenent';
 import ReadyBusiness from '@shared/components/ReadyBusiness';
 import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 
@@ -121,6 +122,7 @@ export default function MainPage() {
             title="Promo video title"
             subTitle="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque"
           />
+          <PromoVideoComponent />
         </SectionLayout>
       </ScrollFadeIn>
       <ScrollFadeIn>
