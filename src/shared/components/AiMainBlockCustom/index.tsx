@@ -37,9 +37,21 @@ import ConnectionLineEl2Top from '@assets/svg/ui-agents/connection-line-top-02.s
 import ConnectionLineEl2Right from '@assets/svg/ui-agents/connection-line-right-02.svg?react';
 import ConnectionLineEl5Bottom from '@assets/svg/ui-agents/connection-line-bottom-05.svg?react';
 import ConnectionLineEl5Left from '@assets/svg/ui-agents/connection-line-left-05.svg?react';
+import TabletConnectionLineEl02 from '@assets/svg/ui-agents/tablet-connection-line-02.svg?react';
+import TabletConnectionLineEl03 from '@assets/svg/ui-agents/tablet-connection-line-03.svg?react';
+import TabletConnectionLineEl04 from '@assets/svg/ui-agents/tablet-connection-line-04.svg?react';
+import TabletConnectionLineEl01 from '@assets/svg/ui-agents/tablet-connection-line-01.svg?react';
+import TabletConnectionLineEl05 from '@assets/svg/ui-agents/tablet-connection-line-05.svg?react';
+
+import RightMultiplePoints from '@assets/svg/ui-agents/right-multiple-points.svg?react';
+import TopMultiplePoints from '@assets/svg/ui-agents/top-multiple-points.svg?react';
+import LeftMultiplePoints from '@assets/svg/ui-agents/left-multiple-points.svg?react';
+import SinglePoint from '@assets/svg/ui-agents/single-point.svg?react';
+import BottomPoints from '@assets/svg/ui-agents/bottom-multiple-points.svg?react';
+
+import { AiBlockItem } from '@interfaces/shared-interfaces';
 
 import './style.scss';
-import { AiBlockItem } from '@interfaces/shared-interfaces';
 
 type NodeItem = {
   id: string;
@@ -51,7 +63,6 @@ const initialNodes: NodeItem[] = [
     id: '1',
     data: {
       title: 'Ai Voice Agent',
-      bottomPoint: true,
       rightPoints: true,
       className: 'ai-01',
       icon: <AiVoiceIcon />,
@@ -81,7 +92,7 @@ const initialNodes: NodeItem[] = [
     data: {
       title: 'AI Chat Bot Agent',
       className: 'ai-02',
-      topPoint: true,
+      // topPoint: true,
       leftPoints: true,
       rightPoint: true,
       icon: <AiChatBot />,
@@ -132,7 +143,6 @@ const initialNodes: NodeItem[] = [
     data: {
       title: 'Automated CRM',
       leftPoints: true,
-      topPoints: true,
       rightPoint: true,
       className: 'ai-04',
       icon: <AutomatedCrm />,
@@ -189,6 +199,9 @@ export default function AiMainBlockCustom() {
         })}
         <div className="desktop-block">
           <Box className="block1">
+            <Box sx={{ position: 'absolute', left: '-19.2px' }}>
+              <SinglePoint />
+            </Box>
             <Box sx={{ position: 'absolute', left: '', top: '2.2%' }}>
               <ConnectionLineEl1Bottom />
             </Box>
@@ -197,9 +210,17 @@ export default function AiMainBlockCustom() {
             <Box>
               <ConnectionLineCentered />
             </Box>
+            <Box sx={{ position: 'absolute', top: '86px', left: '610px' }}>
+              <TopMultiplePoints />
+            </Box>
           </Box>
           <Box className="block3">
-            <ConnectionLineEl2Top />
+            <Box>
+              <ConnectionLineEl2Top />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '55px', left: '-19.5px' }}>
+              <SinglePoint />
+            </Box>
           </Box>
           <Box className="block4">
             <ConnectionLineEl2Right />
@@ -211,7 +232,74 @@ export default function AiMainBlockCustom() {
             <ConnectionLineEl5Bottom />
           </Box>
           <Box className="block7">
-            <ConnectionLineEl5Left />
+            <Box>
+              <ConnectionLineEl5Left />
+            </Box>
+          </Box>
+        </div>
+        <div className="tablet-block">
+          <Box className="tablet-block-1">
+            <Box sx={{ position: 'absolute', top: '-9px' }}>
+              <BottomPoints />
+            </Box>
+            <Box sx={{ transform: 'rotate(90deg)', position: 'absolute', left: '-7px', top: '15px' }}>
+              <ConnectionLineEl2Right />
+            </Box>
+            <Box sx={{ position: 'absolute', bottom: '39px' }}>
+              <TopMultiplePoints />
+            </Box>
+          </Box>
+          <Box className="tablet-block-2">
+            <Box sx={{ position: 'absolute', left: '-15px', top: '10px' }}>
+              <SinglePoint />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '10px', left: '4px' }}>
+              <TabletConnectionLineEl02 />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '60px', left: '97px' }}>
+              <TopMultiplePoints />
+            </Box>
+          </Box>
+          <Box className="tablet-block-3">
+            <Box sx={{ position: 'absolute', left: '-19px', top: '59px' }}>
+              <TopMultiplePoints />
+            </Box>
+            <Box sx={{ position: 'absolute', left: '0px', top: '12px' }}>
+              <TabletConnectionLineEl03 />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '10px', left: '120px' }}>
+              <BottomPoints />
+            </Box>
+          </Box>
+          <Box className="tablet-block-4">
+            <Box sx={{ position: 'absolute', left: '-20px', top: '-2px' }}>
+              <SinglePoint />
+            </Box>
+            <Box>
+              <TabletConnectionLineEl04 />
+            </Box>
+          </Box>
+          <Box className="tablet-block-5">
+            <Box sx={{ position: 'absolute', top: '17px', left: '-19px' }}>
+              <BottomPoints />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '20px' }}>
+              <TabletConnectionLineEl01 />
+            </Box>
+            <Box sx={{ position: 'absolute', left: '293px', top: '65px' }}>
+              <TopMultiplePoints />
+            </Box>
+          </Box>
+          <Box className="tablet-block-6">
+            <Box sx={{ position: 'absolute', top: '-16px', left: '31px' }}>
+              <SinglePoint />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '-16px' }}>
+              <TabletConnectionLineEl05 />
+            </Box>
+            <Box sx={{ position: 'absolute', top: '80px', left: '31px' }}>
+              <SinglePoint />
+            </Box>
           </Box>
         </div>
       </div>

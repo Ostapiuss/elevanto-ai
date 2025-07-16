@@ -1,3 +1,5 @@
+@use '../../../assets/styles/style.scss' as *;
+
 $top-spacing: 50.6%;
 $row-height: 11.3px;
 
@@ -9,12 +11,20 @@ $row-height: 11.3px;
   grid-template-rows: repeat(12, $row-height);
   row-gap: 19px;
 
+  .tablet-block {
+    display: none;
+  }
+
+  .mobile-block {
+    display: none;
+  }
+
   .block1 {
     position: absolute;
     top: 13px;
     bottom: 0;
     left: 1px;
-    z-index: 0;
+    z-index: 3;
     grid-column-start: 24;
     grid-column-end: 30;
     grid-row-start: 6;
@@ -25,56 +35,24 @@ $row-height: 11.3px;
 
   .block2 {
     position: absolute;
-    top: $row-height + 17;
+    top: $row-height + 11;
     bottom: 0;
     left: 1px;
-    z-index: 0;
+    z-index: 2;
     grid-column-start: 33;
     grid-column-end: 85;
     grid-row-start: 3;
     grid-row-end: 7;
-
     height: calc(100% - ($row-height * 1.5));
     width: 100%;
-
-    svg {
-      max-width: 632px;
-      width: 100%;
-      min-width: 300px;
-    }
-
-    @media (max-width: 1373px) {
-      top: 26.3px;
-      left: 4px;
-    }
-
-    @media (max-width: 1346px) {
-      left: 6px;
-    }
-
-    @media (max-width: 1335px) {
-      left: 8px;
-    }
-
-    @media (max-width: 1300px) {
-      left: 10px;
-    }
-
-    @media (max-width: 1285px) {
-      left: 12px;
-    }
-
-    @media (max-width: 1265px) {
-      left: 14px;
-    }
   }
 
   .block3 {
     position: absolute;
-    top: $row-height + 30;
+    top: $row-height + 23;
     bottom: 0;
     left: 9px;
-    z-index: 0;
+    z-index: 5;
     grid-column-start: 38;
     grid-column-end: 50;
     grid-row-start: 4;
@@ -131,7 +109,7 @@ $row-height: 11.3px;
 
   .block7 {
     position: absolute;
-    top: -133px;
+    top: -140px;
     bottom: 0;
     left: 10px;
     z-index: 0;
@@ -158,7 +136,11 @@ $row-height: 11.3px;
     grid-column-start: 15;
     left: 4px;
     top: 4px;
-    z-index: 1;
+    z-index: 3;
+
+    .right-points {
+      top: 46%;
+    }
   }
 
   &.ai-02 {
@@ -166,7 +148,7 @@ $row-height: 11.3px;
     grid-column-start: 30;
     grid-row: span 5 / span 5;
     grid-row-start: 7;
-    z-index: 1;
+    z-index: 4;
   }
 
   &.ai-03 {
@@ -191,5 +173,281 @@ $row-height: 11.3px;
     grid-row: span 5 / span 5;
     top: 8px;
     z-index: 1;
+
+    .left-points {
+      top: 44.5%;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 370px)) {
+  .ai-container {
+    grid-template-rows: repeat(12, 20.3px);
+    height: 600px;
+
+    width: 100vw;
+
+    position: relative;
+    top: 40px;
+    left: 120px;
+
+    transition: left 0.2s ease;
+
+    .desktop-block {
+      display: none;
+    }
+
+    .tablet-block {
+      display: block;
+
+      .tablet-block-1 {
+        position: absolute;
+        top: -14px;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 12;
+        grid-column-end: 12;
+        grid-row-start: 6;
+        grid-row-end: 30;
+        height: 100px;
+        width: 100%;
+      }
+
+      .tablet-block-2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 30;
+        grid-column-end: 47;
+        grid-row-start: 10;
+        grid-row-end: 30;
+        height: 100px;
+        width: 100%;
+      }
+
+      .tablet-block-3 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 55;
+        grid-column-end: 65;
+        grid-row-start: 10;
+        grid-row-end: 30;
+        height: 100px;
+        width: 100%;
+      }
+
+      .tablet-block-4 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -10px;
+        z-index: 0;
+        grid-column-start: 38;
+        grid-column-end: 55;
+        grid-row-start: 8;
+        grid-row-end: 10;
+        height: 100px;
+        width: 100%;
+      }
+
+      .tablet-block-5 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 30;
+        grid-column-end: 55;
+        grid-row-start: 5;
+        grid-row-end: 30;
+        height: 100px;
+        width: 100%;
+      }
+
+      .tablet-block-6 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 72;
+        grid-column-end: 72;
+        grid-row-start: 5;
+        grid-row-end: 30;
+        height: 100px;
+        width: 100%;
+        top: -5px;
+      }
+    }
+  }
+
+  .ai-block {
+    max-width: 360px;
+    min-width: 260px;
+    min-height: 132px;
+    width: 100%;
+
+    transition: min-width 0.2s ease;
+
+    .left-points {
+      display: none;
+    }
+
+    .left-point {
+      display: none;
+    }
+
+    .right-points {
+      display: none;
+    }
+
+    .right-point {
+      display: none;
+    }
+
+    .top-points {
+      display: none;
+    }
+
+    .top-point {
+      display: none;
+    }
+
+    .bottom-point {
+      display: none;
+    }
+
+    .bottom-points {
+      display: none;
+    }
+
+    &.ai-01 {
+      grid-column: span 27 / span 27;
+      grid-row: span 5 / span 5;
+      grid-column-start: 10;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+
+    &.ai-02 {
+      grid-column: span 27 / span 27;
+      grid-column-start: 10;
+      grid-row: span 3 / span 3;
+      grid-row-start: 7;
+      z-index: 0;
+    }
+
+    &.ai-03 {
+      grid-column: span 27 / span 27;
+      grid-column-start: 55;
+      // left: -6px;
+      grid-row: span 3 / span 3;
+      grid-row-start: 7;
+      z-index: 3;
+      top: -1px;
+
+      .left-points {
+        display: block;
+        left: -4.9%;
+      }
+    }
+
+    &.ai-04 {
+      grid-column: span 27 / span 27;
+      grid-column-start: 35;
+      grid-row: span 2 / span 2;
+      grid-row-start: 13;
+      top: -46px;
+      z-index: 0;
+    }
+
+    &.ai-05 {
+      grid-column: span 27 / span 27;
+      grid-column-start: 57;
+      grid-row: span 3 / span 3;
+      z-index: 0;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 180px)) {
+  .ai-container {
+    left: 100px;
+
+    transition: left 0.2s ease;
+  }
+
+  .ai-block {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 110px)) {
+  .ai-container {
+    left: 90px;
+    transition: left 0.2s ease;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 90px)) {
+  .ai-container {
+    left: 80px;
+    transition: left 0.2s ease;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 70px)) {
+  .ai-container {
+    left: 70px;
+    transition: left 0.2s ease;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 40px)) {
+  .ai-container {
+    left: 60px;
+    transition: left 0.2s ease;
+  }
+}
+
+@media (max-width: ($breakpoint-md + 10px)) {
+  .ai-container {
+    left: 50px;
+    transition: left 0.2s ease;
+  }
+}
+
+@media (max-width: (883px)) {
+  .ai-container {
+    left: 95px;
+    transition: left 0.2s ease;
+  }
+
+  .ai-block {
+    min-width: 150px;
+    transition: min-width 0.2s ease;
+
+    .custom-tag {
+      font-size: 9px;
+    }
+
+    &__header {
+      h2 {
+        font-size: 10px;
+      }
+    }
+
+    .item {
+      // padding: 3px;
+      &__title {
+        font-size: 9px;
+      }
+    }
   }
 }
