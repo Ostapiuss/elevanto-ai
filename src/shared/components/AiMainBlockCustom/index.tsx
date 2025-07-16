@@ -43,9 +43,7 @@ import TabletConnectionLineEl04 from '@assets/svg/ui-agents/tablet-connection-li
 import TabletConnectionLineEl01 from '@assets/svg/ui-agents/tablet-connection-line-01.svg?react';
 import TabletConnectionLineEl05 from '@assets/svg/ui-agents/tablet-connection-line-05.svg?react';
 
-import RightMultiplePoints from '@assets/svg/ui-agents/right-multiple-points.svg?react';
 import TopMultiplePoints from '@assets/svg/ui-agents/top-multiple-points.svg?react';
-import LeftMultiplePoints from '@assets/svg/ui-agents/left-multiple-points.svg?react';
 import SinglePoint from '@assets/svg/ui-agents/single-point.svg?react';
 import BottomPoints from '@assets/svg/ui-agents/bottom-multiple-points.svg?react';
 
