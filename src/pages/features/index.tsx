@@ -41,9 +41,9 @@ export default function Features() {
               position="center"
               firstColRender={<ClientBoard />}
               text={{
-                title: 'Custom CRM & Automation',
+                title: 'Everything You Need to Automate, Sell, and Scale',
                 subtitle:
-                  'Manage leads, automate sales funnels, schedule appointments, and communicate across channels—all from one powerful dashboard.',
+                  'From AI voice and chat agents to custom workflows and billing, Elevanto brings all your operations into one intelligent, growth-focused platform.',
                 btnText: 'Learn more',
               }}
             />
@@ -56,9 +56,9 @@ export default function Features() {
               firstColRender={<AiAssistant />}
               onButtonClick={rediredToAiAssistants}
               text={{
-                title: 'AI-Powered Assistants',
+                title: 'One CRM. Every Channel. Total Control.',
                 subtitle:
-                  'Turn every website visit, WhatsApp chat, or phone call into a qualified lead with intelligent agents that respond and book—24/7.',
+                  'Capture leads, close deals, and automate conversations across phone, chat, text, and email—all in one smart system built to sell for you.',
                 btnText: 'Learn more',
               }}
             />
@@ -84,9 +84,9 @@ export default function Features() {
               position="center"
               firstColRender={<BusinessImpact />}
               text={{
-                title: 'Real Business Outcomes',
+                title: 'Automation That Works the Way You Do',
                 subtitle:
-                  'We focus on real results—like fewer no-shows, faster response times, and more conversions. AI that delivers visible results.',
+                  'We design custom workflows that mirror your processes—from onboarding to deadline management—eliminating manual work and keeping your business running on autopilot.',
                 btnText: 'Learn more',
               }}
             />
@@ -98,9 +98,9 @@ export default function Features() {
               position="center"
               firstColRender={<IncomingCall />}
               text={{
-                title: 'AI Voice Agent',
+                title: 'AI That Pays for Itself',
                 subtitle:
-                  'Handle inbound and outbound calls, qualify leads, and schedule appointments with natural-sounding voice automation.',
+                  'Get more bookings, fewer no-shows, faster replies, and higher close rates. Elevanto is built to deliver results you can see—and revenue you can track.',
                 btnText: 'Learn more',
               }}
             />
@@ -112,9 +112,9 @@ export default function Features() {
               position="center"
               firstColRender={<ConversationHub />}
               text={{
-                title: 'Conversation Hub',
+                title: 'Your AI-Powered Call Rep That Never Sleeps',
                 subtitle:
-                  'Manage SMS, WhatsApp, and email in a single smart inbox. Track interactions and collaborate with your team in real-time.',
+                  'From answering calls to qualifying leads and scheduling bookings, our voice agent handles real conversations with natural, human-like speech—24/7.',
                 btnText: 'Learn more',
               }}
             />
@@ -126,9 +126,9 @@ export default function Features() {
               position="center"
               firstColRender={<ClientDatabase />}
               text={{
-                title: 'Client Database & CRM Analytics',
+                title: 'All Your Messages. One Smart Inbox.',
                 subtitle:
-                  'All your client data, activity logs, and insights in one place. Custom fields, tagging, and real-time search included.',
+                  'From WhatsApp to email and SMS, Elevanto keeps your communication organized, searchable, and shared—so your team always stays in sync.',
                 btnText: 'Learn more',
               }}
             />
@@ -140,9 +140,9 @@ export default function Features() {
               position="center"
               firstColRender={<BillingAndInvoices />}
               text={{
-                title: 'Billing & Invoices',
+                title: 'Know Your Clients. Grow Smarter.',
                 subtitle:
-                  'Generate and send invoices, track payments, and sync billing with your workflows—all with full automation.',
+                  'From detailed activity logs to powerful filters and analytics, Elevanto helps you understand, segment, and serve your clients better—with all your data exactly where you need it.',
                 btnText: 'Learn more',
               }}
             />
