@@ -12,6 +12,10 @@
   }
 
   &.features-section {
+    .feature {
+      padding-bottom: 40px;
+    }
+
     .page-header {
       display: flex;
       flex-direction: column;

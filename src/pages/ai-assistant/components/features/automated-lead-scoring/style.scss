@@ -1,0 +1,139 @@
+@use '../../../../../assets/styles/style.scss' as *;
+
+.automated-lead-scoring {
+  background-color: #ffffff;
+  border: 1px solid $white-50;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+  padding: 24px 19px;
+  border-radius: 16px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: $primary;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .lead-item {
+      border-radius: 6px;
+      border: 1px solid transparent;
+      align-items: center;
+      padding: 12px;
+      display: flex;
+      gap: 8px;
+
+      &.hot {
+        background-color: $secondary-200;
+        border-color: $secondary;
+
+        .lead-item__avatar {
+          .MuiAvatar-root {
+            background-color: $accent-600;
+            color: white;
+          }
+        }
+
+        .lead-item__status {
+          background-color: $accent-600;
+        }
+
+        .lead-item__number {
+          color: $accent-600;
+        }
+      }
+
+      &.warm {
+        background-color: $yellow-50;
+        border-color: $yellow-500;
+
+        .lead-item__avatar {
+          .MuiAvatar-root {
+            background-color: $yellow-600;
+            color: white;
+          }
+        }
+
+        .lead-item__status {
+          background-color: $orange-600;
+        }
+
+        .lead-item__number {
+          color: $yellow-700;
+        }
+      }
+
+      &.cold {
+        background-color: $violet-50;
+        border-color: $violet-500;
+
+        .lead-item__avatar {
+          .MuiAvatar-root {
+            background-color: $violet-600;
+            color: white;
+          }
+        }
+
+        .lead-item__status {
+          background-color: $violet-600;
+        }
+
+        .lead-item__number {
+          color: $violet-700;
+        }
+      }
+
+      &__avatar {
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+        }
+      }
+
+      &__personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      &__title {
+        font-size: 16px;
+        font-weight: 600;
+        color: $main-50;
+      }
+
+      &__ocupation {
+        color: $main-50;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__additonal-data {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        margin-left: auto;
+      }
+
+      &__status {
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px 12px;
+        border-radius: 16px;
+        height: fit-content;
+      }
+
+      &__number {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

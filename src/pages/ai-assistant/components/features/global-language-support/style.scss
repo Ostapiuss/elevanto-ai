@@ -1,6 +1,18 @@
 @use '../../../../../assets/styles/style.scss' as *;
 
 .global-language-support {
+  background-color: #ffffff;
+  border: 1px solid $white-50;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+
   .title {
     font-size: 18px;
     font-weight: 600;
@@ -9,11 +21,20 @@
   }
 
   .language-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    width: 100%;
+
     .language-item {
       display: flex;
+      width: 100%;
       gap: 8px;
-
+      background-color: $white-100;
+      padding: 16px;
       align-items: center;
+      border-radius: 8px;
 
       &__title {
         color: $dark-grey-900;

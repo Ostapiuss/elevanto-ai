@@ -4,9 +4,10 @@ import ShootingStart from '@assets/svg/shooting-star.svg?react';
 import RocketIcon from '@assets/svg/rocket-icon.svg?react';
 import WorldSmallIcon from '@assets/svg/world-small-icon.svg?react';
 
-import './style.scss';
 import SharpContainer from '@shared/components/SharpContainer';
 import SharpItem from '@shared/components/SharpItem';
+
+import './style.scss';
 
 const storyItems = [
   {

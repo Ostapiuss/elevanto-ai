@@ -7,6 +7,26 @@ const languages = [
     languageIcon: '🇺🇸',
     language: 'English',
   },
+  {
+    languageIcon: '🇫🇷',
+    language: 'French',
+  },
+  {
+    languageIcon: '🇩🇪',
+    language: 'Deutsch',
+  },
+  {
+    languageIcon: '🇯🇵',
+    language: '日本語',
+  },
+  {
+    languageIcon: '🇪🇸',
+    language: 'Español',
+  },
+  {
+    languageIcon: '🇨🇳',
+    language: '中文',
+  },
 ];
 
 export default function GlobalLanguageSupport() {
@@ -18,7 +38,7 @@ export default function GlobalLanguageSupport() {
           return (
             <Box key={index} className="language-item">
               <Box className="language-item__icon">{languageIcon}</Box>
-              <Box className="language-item__title">{language}</Box>
+              <p className="language-item__title">{language}</p>
             </Box>
           );
         })}

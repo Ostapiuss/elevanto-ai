@@ -15,6 +15,10 @@ import WhyChooseUs from './components/why-choose-us';
 import DriveResult from './components/features/drive-feature';
 import IntelligentChatbot from './components/features/inteligent-chatbot';
 import GlobalLanguageSupport from './components/features/global-language-support';
+import AutomatedLeadScoring from './components/features/automated-lead-scoring';
+import HowItWorks from './components/how-it-works';
+import BusinessImpact from './components/business-impact';
+import Industries from '@shared/components/Industries';
 
 export default function AiAssistant() {
   return (
@@ -92,26 +96,68 @@ export default function AiAssistant() {
             }}
           />
         </Box>
-        <Box className="feature">
+        <Box className="feature reverse">
           <SplitView
             firstColRender={<GlobalLanguageSupport />}
             position="center"
             text={{
-              title: 'Intelligent Chatbot',
-              subtitle:
-                'Engages visitors on site and chat apps, qualifies leads in real-time with smart conversation flows.',
+              title: 'Multilingual Support',
+              subtitle: 'Converse fluently in multiple languages to serve your global customer base.',
             }}
             footerRenderProps={() => {
               return (
                 <ul className="ai-voice-agent-list">
-                  <li>Instant responses 24/7</li>
-                  <li>Lead qualification logic</li>
-                  <li>Seamless handoff to humans</li>
+                  <li>50+ languages supported</li>
+                  <li>Auto-detect customer language</li>
+                  <li>Cultural context awareness</li>
                 </ul>
               );
             }}
           />
         </Box>
+        <Box className="feature">
+          <SplitView
+            firstColRender={<AutomatedLeadScoring />}
+            position="center"
+            text={{
+              title: 'Automated Lead Scoring',
+              subtitle: 'Tags and scores leads based on interest level, budget, and buying intent automatically.',
+            }}
+            footerRenderProps={() => {
+              return (
+                <ul className="ai-voice-agent-list">
+                  <li>Smart qualification criteria</li>
+                  <li>Automatic CRM updates</li>
+                  <li>Priority alerts for hot leads</li>
+                </ul>
+              );
+            }}
+          />
+        </Box>
+      </SectionLayout>
+      <SectionLayout className="section">
+        <PageHeader
+          title="How it works"
+          size={36}
+          subTitle="Get up and running with AI assistants in just four simple steps"
+        />
+        <HowItWorks />
+      </SectionLayout>
+      <SectionLayout className="section">
+        <PageHeader
+          title="Perfect for Every Industry"
+          size={36}
+          subTitle="See how businesses like yours are using Elevanto AI to grow faster"
+        />
+        <Industries />
+      </SectionLayout>
+      <SectionLayout className="section">
+        <PageHeader
+          title="Real Business Impact"
+          size={36}
+          subTitle="See the measurable results our customers achieve with Elevanto AI"
+        />
+        <BusinessImpact />
       </SectionLayout>
       <SectionLayout className="section ready-business-section ai-assistant-section">
         <ReadyBusiness />
