@@ -346,6 +346,11 @@ img.dashboard-icon {
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
         min-height: 332px;
+
+        img {
+          width: 200px;
+          height: 200px;
+        }
       }
 
       svg {

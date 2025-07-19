@@ -28,7 +28,7 @@ export function Header() {
   };
 
   return (
-    <AppBar sx={{ boxShadow: 'none', backgroundColor: 'white' }} component="header">
+    <AppBar className="elevanto-header" sx={{ boxShadow: 'none', backgroundColor: 'white' }} component="header">
       <Container maxWidth="xl" className="elevanto-header">
         <Toolbar disableGutters>
           <Box className="elevanto-header__logo">
@@ -36,7 +36,7 @@ export function Header() {
               <Box className="logo">
                 <img src={Logo} alt="elevanto-logo" />
               </Box>
-              <div className="title">Elevanto.ai</div>
+              <Box className="title">Elevanto.ai</Box>
             </Link>
           </Box>
           <Box sx={{ display: { md: 'flex', xl: 'none', lg: 'none', justifyContent: 'right' } }}>
