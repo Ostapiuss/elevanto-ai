@@ -68,13 +68,13 @@ import { AiBlockItem, ComponentSliderItem } from '@interfaces/shared-interfaces'
 
 import SalesSlide from './components/sales-component';
 import ProductLedGrowthSlide from './components/product-led-growth-component';
-import ProductLedSales from './components/product-led-sales';
+// import ProductLedSales from './components/product-led-sales';
 
 import SliderComponent from '@shared/components/SliderComponent';
 
 import SalesBtnIcon from '@assets/svg/ui-agents-new/sales-btn-icon.svg?react';
 import ProductBtnIcon from '@assets/svg/ui-agents-new/product-led-growth-btn-icon.svg?react';
-import ProductLedSalesBtn from '@assets/svg/ui-agents-new/product-led-sales-btn-icon.svg?react';
+// import ProductLedSalesBtn from '@assets/svg/ui-agents-new/product-led-sales-btn-icon.svg?react';
 
 import './style.scss';
 
