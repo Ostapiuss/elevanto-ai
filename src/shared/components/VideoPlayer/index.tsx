@@ -20,7 +20,8 @@ export default function VideoPlayer() {
         loop
         // @ts-expect-error: native video props
         controls
-        style={{ width: '100%', height: '100%' }}
+        playsInline
+        style={{ width: '100%', minWidth: '200px', maxWidth: '1280px', height: '100%' }}
       />
     </Box>
   );
