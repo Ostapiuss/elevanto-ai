@@ -7,6 +7,8 @@
   justify-content: center;
   position: relative;
 
+  padding: 0 120px;
+
   &::after {
     content: '';
     position: absolute;
@@ -43,6 +45,7 @@
   }
 
   &.main-section {
+    padding: 0;
     .section-container {
       overflow-x: hidden;
       overflow-y: hidden;
@@ -51,6 +54,32 @@
 
     .page-header {
       margin-top: 24px;
+    }
+
+    @media (max-width: ($breakpoint-md + 200px)) {
+      margin-left: -40px;
+      margin-right: -40px;
+
+      &::after {
+        width: calc(100% + 40px);
+      }
+
+      &::before {
+        width: calc(100% + 40px);
+      }
+    }
+
+    @media (max-width: ($breakpoint-sm)) {
+      margin: 0;
+      padding: 0 20px !important;
+
+      &::after {
+        width: calc(100% + 55px);
+      }
+
+      &::before {
+        width: calc(100% + 55px);
+      }
     }
   }
 

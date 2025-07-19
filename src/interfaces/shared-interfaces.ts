@@ -84,3 +84,11 @@ export interface Message {
   message: string;
   role: 'chat' | 'me';
 }
+
+export interface ComponentSliderItem {
+  content: ReactNode;
+  name: string;
+  className: string;
+  nameIcon: ReactNode;
+  id: number;
+}

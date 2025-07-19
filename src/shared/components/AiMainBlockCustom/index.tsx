@@ -1,53 +1,80 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import AiVoiceIcon from '@assets/svg/ai-voice.svg?react';
-import AiChatBot from '@assets/svg/ai-chat.svg?react';
-import AutomatedWorkflow from '@assets/svg/automated-workflow.svg?react';
-import AutomatedCrm from '@assets/svg/automated-srm.svg?react';
-import InvoiceBilling from '@assets/svg/billing-ai.svg?react';
-import PhoneIcon from '@assets/svg/phone-inbound.svg?react';
+// import AiVoiceIcon from '@assets/svg/ai-voice.svg?react';
+// import AiChatBot from '@assets/svg/ai-chat.svg?react';
+// import AutomatedWorkflow from '@assets/svg/automated-workflow.svg?react';
+// import AutomatedCrm from '@assets/svg/automated-srm.svg?react';
+// import InvoiceBilling from '@assets/svg/billing-ai.svg?react';
+// import PhoneIcon from '@assets/svg/phone-inbound.svg?react';
 import CustomTag from '@shared/components/CustomTag';
 
-import CalendarIcon from '@assets/svg/calendar.svg?react';
-import AvailabilityIcon from '@assets/svg/availability.svg?react';
-import SmallPlusIcon from '@assets/svg/small-plus-icon.svg?react';
+// import CalendarIcon from '@assets/svg/calendar.svg?react';
+// import AvailabilityIcon from '@assets/svg/availability.svg?react';
+// import SmallPlusIcon from '@assets/svg/small-plus-icon.svg?react';
 
-import WorldIntegration from '@assets/svg/world-integration.svg?react';
-import WorldMultiLanguage from '@assets/svg/world-multilanguage.svg?react';
-import LeadQuality from '@assets/svg/lead-quality.svg?react';
+// import WorldIntegration from '@assets/svg/world-integration.svg?react';
+// import WorldMultiLanguage from '@assets/svg/world-multilanguage.svg?react';
+// import LeadQuality from '@assets/svg/lead-quality.svg?react';
 
-import TaskAutomation from '@assets/svg/task-automation.svg?react';
-import DeadlineIcon from '@assets/svg/deadline-icon.svg?react';
-import PuzzleIcon from '@assets/svg/puzzle-icon.svg?react';
+// import TaskAutomation from '@assets/svg/task-automation.svg?react';
+// import DeadlineIcon from '@assets/svg/deadline-icon.svg?react';
+// import PuzzleIcon from '@assets/svg/puzzle-icon.svg?react';
 
-import ContactIcon from '@assets/svg/contact-icon.svg?react';
-import PerfomanceIcon from '@assets/svg/perfomance-icon.svg?react';
-import MobileIcon from '@assets/svg/mobile-icon.svg?react';
+// import ContactIcon from '@assets/svg/contact-icon.svg?react';
+// import PerfomanceIcon from '@assets/svg/perfomance-icon.svg?react';
+// import MobileIcon from '@assets/svg/mobile-icon.svg?react';
 
-import ListIcon from '@assets/svg/list-icon.svg?react';
-import PaymentIcon from '@assets/svg/payment-icon.svg?react';
-import SmallDollarIcon from '@assets/svg/small-dollar-icon.svg?react';
+// import ListIcon from '@assets/svg/list-icon.svg?react';
+// import PaymentIcon from '@assets/svg/payment-icon.svg?react';
+// import SmallDollarIcon from '@assets/svg/small-dollar-icon.svg?react';
 
 import { Box } from '@mui/material';
 import AiBlock from '../AiBlock';
 
-import ConnectionLineEl1Bottom from '@assets/svg/ui-agents/connection-line-bottom-01.svg?react';
-import ConnectionLineCentered from '@assets/svg/ui-agents/connection-line-centered.svg?react';
-import ConnectionLineEl2Top from '@assets/svg/ui-agents/connection-line-top-02.svg?react';
-import ConnectionLineEl2Right from '@assets/svg/ui-agents/connection-line-right-02.svg?react';
-import ConnectionLineEl5Bottom from '@assets/svg/ui-agents/connection-line-bottom-05.svg?react';
-import ConnectionLineEl5Left from '@assets/svg/ui-agents/connection-line-left-05.svg?react';
-import TabletConnectionLineEl02 from '@assets/svg/ui-agents/tablet-connection-line-02.svg?react';
-import TabletConnectionLineEl03 from '@assets/svg/ui-agents/tablet-connection-line-03.svg?react';
-import TabletConnectionLineEl04 from '@assets/svg/ui-agents/tablet-connection-line-04.svg?react';
-import TabletConnectionLineEl01 from '@assets/svg/ui-agents/tablet-connection-line-01.svg?react';
-import TabletConnectionLineEl05 from '@assets/svg/ui-agents/tablet-connection-line-05.svg?react';
+// import ConnectionLineEl1Bottom from '@assets/svg/ui-agents/connection-line-bottom-01.svg?react';
+import BottomLeft from '@assets/svg/ui-agents-new/bottom-lefts.svg?react';
+import BottomLineEl1 from '@assets/svg/ui-agents-new/bottom-line.svg?react';
+import SinglePointEl from '@assets/svg/ui-agents-new/single-point.svg?react';
+import TopPoints from '@assets/svg/ui-agents-new/top-points.svg?react';
+import RightPoints from '@assets/svg/ui-agents-new/right-points.svg?react';
 
-import TopMultiplePoints from '@assets/svg/ui-agents/top-multiple-points.svg?react';
-import SinglePoint from '@assets/svg/ui-agents/single-point.svg?react';
-import BottomPoints from '@assets/svg/ui-agents/bottom-multiple-points.svg?react';
+import ConnectedLineEl2 from '@assets/svg/ui-agents-new/connection-line-el-02.svg?react';
+import ConnectionRightLineEl1 from '@assets/svg/ui-agents-new/right-line-el-01.svg?react';
+import ConnectionLineEl3 from '@assets/svg/ui-agents-new/connection-line-el-03.svg?react';
+import ConnectionLineEl5 from '@assets/svg/ui-agents-new/connection-line-el-05.svg?react';
+import ConnectionLineEl5Bottom from '@assets/svg/ui-agents-new/connection-line-bottom-el-05.svg?react';
 
-import { AiBlockItem } from '@interfaces/shared-interfaces';
+import PartnershipIcon from '@assets/svg/ui-agents-new/partnership-icon.svg?react';
+import PartnershipSmallIcon from '@assets/svg/ui-agents-new/partnership-new-icon.svg?react';
+import PlusDefaultIcon from '@assets/svg/ui-agents-new/default-plus-icon.svg?react';
+import PartnershipType from '@assets/svg/ui-agents-new/partnership-type.svg?react';
+import Location from '@assets/svg/ui-agents-new/location.svg?react';
+import CompanyIcon from '@assets/svg/ui-agents-new/company-icon.svg?react';
+import CompanyNameIcon from '@assets/svg/ui-agents-new/company-name-icon.svg?react';
+import DealIcon from '@assets/svg/ui-agents-new/deal-icon.svg?react';
+import PersonIcon from '@assets/svg/ui-agents-new/person-icon.svg?react';
+import EmailIcon from '@assets/svg/ui-agents-new/email-icon.svg?react';
+import InvoicesIcon from '@assets/svg/ui-agents-new/invoices-icon.svg?react';
+import PhoneIconSmall from '@assets/svg/ui-agents-new/phone-icon.svg?react';
+import PointIcon from '@assets/svg/ui-agents-new/point-contact-icon.svg?react';
+
+import SmallDesktopConnectionLineEl1 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-01.svg?react';
+// import SmallDesktopConnectionLineEl2 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-02.svg?react';
+import SmallDesktopConnectionLineRightEl1 from '@assets/svg/ui-agents-new/small-desktop/connection-line-right-el-01.svg?react';
+import SmallDesktopConnectionLineBotttomEl5 from '@assets/svg/ui-agents-new/small-desktop/connection-line-bottom-el-05.svg?react';
+// import LeftConnectors from '@assets/svg/ui-agents-new/left-connectors.svg?react';
+
+import { AiBlockItem, ComponentSliderItem } from '@interfaces/shared-interfaces';
+
+import SalesSlide from './components/sales-component';
+import ProductLedGrowthSlide from './components/product-led-growth-component';
+import ProductLedSales from './components/product-led-sales';
+
+import SliderComponent from '@shared/components/SliderComponent';
+
+import SalesBtnIcon from '@assets/svg/ui-agents-new/sales-btn-icon.svg?react';
+import ProductBtnIcon from '@assets/svg/ui-agents-new/product-led-growth-btn-icon.svg?react';
+import ProductLedSalesBtn from '@assets/svg/ui-agents-new/product-led-sales-btn-icon.svg?react';
 
 import './style.scss';
 
@@ -56,30 +83,41 @@ type NodeItem = {
   data: AiBlockItem;
 };
 
+const slides: ComponentSliderItem[] = [
+  { id: 0, className: 'sales', name: 'Sales', nameIcon: <SalesBtnIcon />, content: <SalesSlide /> },
+  {
+    id: 1,
+    className: 'product-led-growth',
+    name: 'Product-led growth',
+    nameIcon: <ProductBtnIcon />,
+    content: <ProductLedGrowthSlide />,
+  },
+];
+
 const initialNodes: NodeItem[] = [
   {
     id: '1',
     data: {
-      title: 'Ai Voice Agent',
+      title: 'Partnership',
       rightPoints: true,
       className: 'ai-01',
-      icon: <AiVoiceIcon />,
-      tag: <CustomTag text="Custom" bgColor="#E6F6F9" color="#03586D" border="1px solid #B2E2ED" />,
+      icon: <PartnershipIcon />,
+      tag: <CustomTag text="Custom" bgColor="#E5EFFF" color="#173D81" border="1px solid #d6e5ff" />,
       list: [
         {
-          icon: <PhoneIcon />,
-          title: 'Inbound/Outbound Calls',
+          icon: <PartnershipSmallIcon />,
+          title: 'Partnership name',
         },
         {
-          icon: <CalendarIcon />,
-          title: 'Appointment Setter',
+          icon: <PartnershipType />,
+          title: 'Partnership type',
         },
         {
-          icon: <AvailabilityIcon />,
-          title: '24/7 Availability',
+          icon: <Location />,
+          title: 'Location',
         },
         {
-          icon: <SmallPlusIcon />,
+          icon: <PlusDefaultIcon />,
           title: '10 More Attributes',
         },
       ],
@@ -88,25 +126,23 @@ const initialNodes: NodeItem[] = [
   {
     id: '2',
     data: {
-      title: 'AI Chat Bot Agent',
+      title: 'Company',
       className: 'ai-02',
-      // topPoint: true,
       leftPoints: true,
-      rightPoint: true,
-      icon: <AiChatBot />,
-      tag: <CustomTag text="Custom" bgColor="#E6F6F9" color="#03586D" border="1px solid #B2E2ED" />,
+      icon: <CompanyIcon />,
+      tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
       list: [
         {
-          icon: <WorldIntegration />,
-          title: 'Website Integration',
+          icon: <CompanyNameIcon />,
+          title: 'Company Name',
         },
         {
-          icon: <WorldMultiLanguage />,
-          title: 'Multi-language Support',
+          icon: <PartnershipType />,
+          title: 'Industry',
         },
         {
-          icon: <LeadQuality />,
-          title: 'Lead Qualification',
+          icon: <PlusDefaultIcon />,
+          title: '10 More Attributes',
         },
       ],
     },
@@ -114,24 +150,24 @@ const initialNodes: NodeItem[] = [
   {
     id: '3',
     data: {
-      title: 'Automated',
+      title: 'Deal',
       className: 'ai-03',
       leftPoints: true,
       rightPoint: true,
-      icon: <AutomatedWorkflow />,
-      tag: <CustomTag text="Standart" bgColor="#EFF0F1" color="#363B41" border="1px solid #CED1D5" />,
+      icon: <DealIcon />,
+      tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
       list: [
         {
-          icon: <TaskAutomation />,
-          title: 'Task Automation',
+          icon: <PartnershipSmallIcon />,
+          title: 'Deal ID',
         },
         {
-          icon: <DeadlineIcon />,
-          title: 'Deadline Management',
+          icon: <PartnershipType />,
+          title: 'Deal type',
         },
         {
-          icon: <PuzzleIcon />,
-          title: 'Integration Capabilities',
+          icon: <PlusDefaultIcon />,
+          title: '8 More Attributes',
         },
       ],
     },
@@ -139,24 +175,24 @@ const initialNodes: NodeItem[] = [
   {
     id: '4',
     data: {
-      title: 'Automated CRM',
+      title: 'Person',
       leftPoints: true,
       rightPoint: true,
       className: 'ai-04',
-      icon: <AutomatedCrm />,
-      tag: <CustomTag text="Standart" bgColor="#EFF0F1" color="#363B41" border="1px solid #CED1D5" />,
+      icon: <PersonIcon />,
+      tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
       list: [
         {
-          icon: <ContactIcon />,
-          title: 'Contact Management',
+          icon: <PartnershipSmallIcon />,
+          title: 'Person Name',
         },
         {
-          icon: <PerfomanceIcon />,
-          title: 'Performance Analytics',
+          icon: <EmailIcon />,
+          title: 'Email address',
         },
         {
-          icon: <MobileIcon />,
-          title: 'Mobile Access',
+          icon: <PlusDefaultIcon />,
+          title: '8 More Attributes',
         },
       ],
     },
@@ -164,24 +200,28 @@ const initialNodes: NodeItem[] = [
   {
     id: '5',
     data: {
-      title: 'Invoices & Billing',
+      title: 'Invoices',
       bottomPoints: true,
       leftPoints: true,
       className: 'ai-05',
-      icon: <InvoiceBilling />,
-      tag: <CustomTag text="Standart" bgColor="#EFF0F1" color="#363B41" border="1px solid #CED1D5" />,
+      icon: <InvoicesIcon />,
+      tag: <CustomTag text="Custom" bgColor="#E5EFFF" color="#173D81" border="1px solid #d6e5ff" />,
       list: [
         {
-          icon: <ListIcon />,
-          title: 'Automated Billing',
+          icon: <Location />,
+          title: 'Billing address',
         },
         {
-          icon: <PaymentIcon />,
-          title: 'Payment Tracking',
+          icon: <PhoneIconSmall />,
+          title: 'Phone number',
         },
         {
-          icon: <SmallDollarIcon />,
-          title: 'Currency Options',
+          icon: <PointIcon />,
+          title: 'Point of contact',
+        },
+        {
+          icon: <PlusDefaultIcon />,
+          title: '12 More Attributes',
         },
       ],
     },
@@ -190,117 +230,133 @@ const initialNodes: NodeItem[] = [
 
 export default function AiMainBlockCustom() {
   return (
-    <>
+    <div className="ai-container-section">
       <div className="ai-container">
         {initialNodes?.map((data, index) => {
           return <AiBlock key={index} aiData={data.data} />;
         })}
         <div className="desktop-block">
           <Box className="block1">
-            <Box sx={{ position: 'absolute', left: '-19.2px' }}>
-              <SinglePoint />
+            <Box sx={{ position: 'absolute', left: '0px' }}>
+              <BottomLeft />
             </Box>
-            <Box sx={{ position: 'absolute', left: '', top: '2.2%' }}>
-              <ConnectionLineEl1Bottom />
-            </Box>
-          </Box>
-          <Box className="block2">
-            <Box>
-              <ConnectionLineCentered />
-            </Box>
-            <Box sx={{ position: 'absolute', top: '86px', left: '610px' }}>
-              <TopMultiplePoints />
+            <Box sx={{ position: 'absolute', left: '19px', top: '1%', width: '107px' }}>
+              <BottomLineEl1 />
             </Box>
           </Box>
-          <Box className="block3">
-            <Box>
-              <ConnectionLineEl2Top />
+          <Box className="block2" sx={{ position: 'absolute' }}>
+            <Box sx={{ width: '40px', position: 'relative', top: '62%', left: '0', transform: 'translateX(-20px)' }}>
+              <TopPoints />
             </Box>
-            <Box sx={{ position: 'absolute', top: '55px', left: '-19.5px' }}>
-              <SinglePoint />
+            <Box sx={{ position: 'relative', top: '20px' }}>
+              <ConnectedLineEl2 />
             </Box>
           </Box>
-          <Box className="block4">
-            <ConnectionLineEl2Right />
+          <Box className="block3" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', left: '-8px', top: '-3.5px' }}>
+              <RightPoints />
+            </Box>
+            <Box className="connection-line" sx={{ width: '189px', position: 'relative', top: '-38.7%', left: '-4px' }}>
+              <ConnectionRightLineEl1 />
+            </Box>
           </Box>
-          <Box className="block5">
-            <ConnectionLineEl2Right />
+          <Box className="block4" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', width: '40px', left: '52%', top: '16%' }}>
+              <SinglePointEl />
+            </Box>
+            <Box sx={{ width: '70px', position: 'relative', left: '64%', top: '-12.5px' }}>
+              <ConnectionLineEl3 />
+            </Box>
           </Box>
-          <Box className="block6">
-            <ConnectionLineEl5Bottom />
+          <Box className="block5" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', left: '0', top: '37%' }}>
+              <ConnectionLineEl5 />
+            </Box>
           </Box>
-          <Box className="block7">
-            <Box>
-              <ConnectionLineEl5Left />
+          <Box className="block6" sx={{ position: 'absolute' }}>
+            <Box sx={{ width: '40px', position: 'relative', left: '67.5%', top: '4%' }}>
+              <SinglePointEl />
+            </Box>
+            <Box sx={{ width: '106px' }}>
+              <ConnectionLineEl5Bottom />
+            </Box>
+          </Box>
+          <Box className="block7" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', left: '0' }}>
+              <ConnectionLineEl5 />
             </Box>
           </Box>
         </div>
-        <div className="tablet-block">
-          <Box className="tablet-block-1">
-            <Box sx={{ position: 'absolute', top: '-9px' }}>
-              <BottomPoints />
+        <div className="small-desktop">
+          <Box className="small-block-1">
+            <Box sx={{ position: 'absolute', left: '0px', top: '0px' }}>
+              <BottomLeft />
             </Box>
-            <Box sx={{ transform: 'rotate(90deg)', position: 'absolute', left: '-7px', top: '15px' }}>
-              <ConnectionLineEl2Right />
+            <Box sx={{ position: 'absolute', left: '19px', width: '103px', top: '0px' }}>
+              <SmallDesktopConnectionLineEl1 />
             </Box>
-            <Box sx={{ position: 'absolute', bottom: '39px' }}>
-              <TopMultiplePoints />
-            </Box>
-          </Box>
-          <Box className="tablet-block-2">
-            <Box sx={{ position: 'absolute', left: '-15px', top: '10px' }}>
-              <SinglePoint />
-            </Box>
-            <Box sx={{ position: 'absolute', top: '10px', left: '4px' }}>
-              <TabletConnectionLineEl02 />
-            </Box>
-            <Box sx={{ position: 'absolute', top: '60px', left: '97px' }}>
-              <TopMultiplePoints />
+            <Box sx={{ width: '40px', position: 'absolute', top: '45px', left: '100px' }}>
+              <TopPoints />
             </Box>
           </Box>
-          <Box className="tablet-block-3">
-            <Box sx={{ position: 'absolute', left: '-19px', top: '59px' }}>
-              <TopMultiplePoints />
+          <Box className="small-block-2" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'absolute', top: '59px', left: '-8px' }}>
+              <SinglePointEl />
             </Box>
-            <Box sx={{ position: 'absolute', left: '0px', top: '12px' }}>
-              <TabletConnectionLineEl03 />
+            <Box
+              sx={{ position: 'absolute', maxWidth: '496px', width: '100%', height: '50px', top: '19px', left: '10px' }}
+            >
+              <ConnectedLineEl2 />
             </Box>
-            <Box sx={{ position: 'absolute', top: '10px', left: '120px' }}>
-              <BottomPoints />
-            </Box>
-          </Box>
-          <Box className="tablet-block-4">
-            <Box sx={{ position: 'absolute', left: '-20px', top: '-2px' }}>
-              <SinglePoint />
-            </Box>
-            <Box>
-              <TabletConnectionLineEl04 />
+            <Box sx={{ position: 'absolute', left: '97.5%', top: '59px' }}>
+              <TopPoints />
             </Box>
           </Box>
-          <Box className="tablet-block-5">
-            <Box sx={{ position: 'absolute', top: '17px', left: '-19px' }}>
-              <BottomPoints />
+          <Box className="small-block-3" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', width: '40px' }}>
+              <RightPoints />
             </Box>
-            <Box sx={{ position: 'absolute', top: '20px' }}>
-              <TabletConnectionLineEl01 />
-            </Box>
-            <Box sx={{ position: 'absolute', left: '293px', top: '65px' }}>
-              <TopMultiplePoints />
+            <Box
+              className="connection-line"
+              sx={{ width: '145px', height: '68px', position: 'relative', top: '-30%', left: '5px' }}
+            >
+              <SmallDesktopConnectionLineRightEl1 />
             </Box>
           </Box>
-          <Box className="tablet-block-6">
-            <Box sx={{ position: 'absolute', top: '-16px', left: '31px' }}>
-              <SinglePoint />
+          <Box className="small-block-4" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', width: '40px', left: '35%', top: '16%' }}>
+              <SinglePointEl />
             </Box>
-            <Box sx={{ position: 'absolute', top: '-16px' }}>
-              <TabletConnectionLineEl05 />
+            <Box sx={{ width: '80px', position: 'relative', left: '52%', top: '-12.5px' }}>
+              <ConnectionLineEl3 />
             </Box>
-            <Box sx={{ position: 'absolute', top: '80px', left: '31px' }}>
-              <SinglePoint />
+          </Box>
+          <Box className="small-block-5" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', left: '-17%', top: '87%', width: '80px' }}>
+              <ConnectionLineEl3 />
+            </Box>
+          </Box>
+          <Box className="small-block-6" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', width: '40px', left: '81px', top: '16px' }}>
+              <BottomLeft />
+            </Box>
+            <Box sx={{ width: '103px', position: 'relative', top: '-10px' }}>
+              <SmallDesktopConnectionLineBotttomEl5 />
+            </Box>
+            <Box sx={{ width: '40px', position: 'relative', top: '-29px', left: '-18px' }}>
+              <SinglePointEl />
+            </Box>
+          </Box>
+          <Box className="small-block-7" sx={{ position: 'absolute' }}>
+            <Box sx={{ position: 'relative', left: '0' }}>
+              <ConnectionLineEl5 />
             </Box>
           </Box>
         </div>
       </div>
-    </>
+      <div className="mobile-block">
+        <SliderComponent slides={slides} />
+      </div>
+    </div>
   );
 }

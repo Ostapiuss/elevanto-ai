@@ -1,0 +1,256 @@
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  &__tab {
+    &.MuiButtonBase-root {
+      background-color: #ffffff;
+      color: #505967;
+      border: 1px solid #e4e7ec;
+      cursor: pointer;
+      border-radius: 10px;
+
+      .buttons-content {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        .icon {
+          height: 23px;
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+    &.active {
+      background-color: #f3f4f6;
+    }
+  }
+
+  &__content-container {
+    width: 100%;
+    margin-top: 1.25rem;
+    isolation: isolate;
+    max-width: 624px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1024px;
+    min-height: 400px;
+  }
+
+  &__content {
+    position: relative;
+
+    .keen-slider {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(40, 1fr);
+      grid-template-rows: repeat(14, 26px);
+      row-gap: 0.5rem;
+
+      .ai-block {
+        padding: 7px !important;
+        position: relative;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        border: 1px solid #ced1d5;
+
+        &__header {
+          padding-bottom: 7px;
+
+          svg {
+            width: 15px;
+          }
+
+          h2 {
+            font-size: 11px;
+            line-height: 14px;
+          }
+
+          .custom-tag {
+            padding: 0.3px 3.5px;
+            p {
+              font-size: 9.5px;
+            }
+          }
+        }
+
+        &__content {
+          .item {
+            padding: 4.5px 9.5px;
+
+            &__icon {
+              svg {
+                width: 11px;
+                height: 14px;
+              }
+            }
+
+            &__title {
+              font-size: 9.5px;
+              line-height: 12px;
+            }
+
+            &:last-child {
+              padding-bottom: 0;
+              padding-top: 3px;
+
+              .item__icon {
+                svg {
+                  width: 12px;
+                  height: 12px;
+                }
+              }
+
+              .item__title {
+                font-size: 8.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.sales {
+      .ai-block {
+        &.ai-01 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 1;
+          left: 0;
+          top: 0;
+          z-index: 0;
+        }
+
+        &.ai-02 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          left: 0;
+          top: 40px;
+          z-index: 0;
+        }
+
+        &.ai-05 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 23;
+          left: 0;
+          top: 0;
+          z-index: 0;
+
+          .left-points {
+            display: none;
+          }
+        }
+
+        &.ai-04 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 23;
+          left: 0;
+          top: 40px;
+          z-index: 0;
+
+          .left-points {
+            display: none;
+          }
+        }
+
+        &.ai-03 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 12;
+          left: 0;
+          top: 70px;
+          z-index: 0;
+
+          .left-points {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.product-led-growth {
+      .ai-block {
+        &.ai-04 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 1;
+          left: 0;
+          z-index: 0;
+
+          .left-points {
+            display: none;
+          }
+        }
+
+        &.ai-02 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 23;
+          left: 0;
+          top: 50px;
+          z-index: 0;
+        }
+
+        &.ai-05 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 23;
+          left: 0;
+          top: 100px;
+          z-index: 0;
+
+          .left-points {
+            display: none;
+          }
+        }
+
+        &.ai-01 {
+          grid-column: span 17 / span 17;
+          grid-row: span 4 / span 4;
+          grid-column-start: 1;
+          left: 0;
+          top: 170px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  &__dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    border: none;
+    cursor: pointer;
+
+    &.active {
+      background-color: #1f2937;
+    }
+  }
+}

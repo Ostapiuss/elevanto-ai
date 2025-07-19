@@ -1,9 +1,11 @@
 @use '../../../assets/styles/style.scss' as *;
 
 .ai-block {
-  max-width: 215px;
+  // max-width: 262px;
+  // min-width: 200px;
+  // width: 100%;
   background-color: #ffffff;
-  min-height: 132px;
+  // min-height: 132px;
 
   .bottom-points {
     position: absolute;
@@ -59,10 +61,21 @@
   &__header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e4e7ec;
+    padding-bottom: calc(0.25rem * 3);
+
+    .custom-tag {
+      padding: 1px 5px;
+      border-radius: 5rem;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
 
     h2 {
-      font-weight: 700;
-      font-size: 12px;
+      font-weight: 600;
+      font-size: 0.875rem;
       line-height: 16px;
       width: fit-content;
       margin-left: 4px;
@@ -79,8 +92,6 @@
   }
 
   &__content {
-    margin-top: 8px;
-
     .item {
       display: flex;
       align-items: center;
@@ -91,6 +102,11 @@
 
       &:last-child {
         border: 0;
+
+        .item__title {
+          font-size: 11px;
+          color: #a4aeba;
+        }
       }
 
       &__icon {
@@ -102,10 +118,10 @@
       }
 
       &__title {
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 0.75rem;
+        font-weight: 500;
         line-height: 16px;
-        color: $gray-400;
+        color: #505967;
       }
     }
   }

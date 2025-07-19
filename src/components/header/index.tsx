@@ -12,8 +12,9 @@ import { AppBar, Box, Container, Menu, MenuItem } from '@mui/material';
 
 import { constants } from '@constants/index';
 
-import './style.scss';
 import StartForFree from '@shared/components/StartForFreeButton';
+
+import './style.scss';
 
 export function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
