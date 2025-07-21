@@ -9,7 +9,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   padding: 24px;
-  // margin-top: 40px;
 
   &.center {
     .col2 {
@@ -20,6 +19,8 @@
   }
 
   .col2 {
+    height: fit-content;
+
     &__title {
       font-weight: 600;
       font-size: 36px;
@@ -55,6 +56,7 @@
 
     &.center {
       .col2 {
+        padding-top: 0 !important;
         transform: translateY(0);
       }
     }
@@ -63,6 +65,29 @@
 
 @media (max-width: ($breakpoint-sm + 37px)) {
   .split-view {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: ($breakpoint-md)) {
+  .split-view {
+    .col2 {
+      &__title {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__action {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }

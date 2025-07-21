@@ -43,3 +43,27 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-md)) {
+  .ai-assistant-item {
+    padding: 16px;
+
+    &__icon {
+      height: 37px;
+      svg {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    &__title-container {
+      .title {
+        font-size: 16px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+}

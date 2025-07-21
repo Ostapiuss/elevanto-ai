@@ -7,15 +7,16 @@ import { Message } from '@interfaces/shared-interfaces';
 
 const messagesMock: Message[] = [
   {
-    message: 'Hi! I`m here to help. What can I assist you with today?',
+    message: 'Hi! I noticed you`re browsing our pricing page. Any questions I can help with?',
     role: 'chat',
   },
   {
-    message: 'I`m interested in your AI solutions for my business',
+    message: 'Yes, what`s included in the Professional plan?',
     role: 'me',
   },
   {
-    message: 'Great! I`d love to learn more about your business needs. What industry are you in?',
+    message:
+      'The Professional plan includes unlimited chatbots, voice agents, and integrations. Would you like me to schedule a demo?',
     role: 'chat',
   },
 ];

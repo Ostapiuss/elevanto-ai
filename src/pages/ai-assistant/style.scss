@@ -7,8 +7,156 @@
   align-items: center;
   justify-content: center;
 
-  .section-container {
-    padding: 40px 32px;
+  .page-header {
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+
+  &.chatbot-section {
+    .split-view {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: ($breakpoint-md + 700px)) {
+      .split-view {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+    @media (max-width: ($breakpoint-md + 620px)) {
+      .split-view {
+        grid-template-columns: 1.4fr 1fr;
+      }
+    }
+
+    @media (max-width: ($breakpoint-md + 520px)) {
+      .split-view {
+        grid-template-columns: 1.7fr 1fr;
+      }
+    }
+
+    @media (max-width: ($breakpoint-md + 500px)) {
+      .split-view {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .split-view__col1 {
+          width: 100%;
+
+          .assistant {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .split-view__col2 {
+          top: 0;
+          transform: translateY(0%);
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .col2__title {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media (max-width: ($breakpoint-sm - 100px)) {
+      .split-view {
+        .split-view__col2 {
+          width: 100%;
+
+          .col2__action {
+            width: 100%;
+          }
+
+          .main__actions {
+            flex-direction: column;
+            width: 100%;
+
+            .MuiButtonBase-root {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.why-choose-section {
+    .page-header__subtitle {
+      max-width: 540px;
+    }
+
+    @media (max-width: ($breakpoint-sm + 100px)) {
+      .section-container {
+        .page-header {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+
+  .ai-voice-agent-feature {
+    .split-view {
+      grid-template-columns: 1.3fr 1fr;
+    }
+  }
+
+  .inteligent-chatbot-feature {
+    .split-view {
+      grid-template-columns: 1.1fr 1fr;
+    }
+  }
+
+  .language-feature {
+    .split-view {
+      grid-template-columns: 1.3fr 1fr;
+    }
+  }
+
+  .automated-lead-feature {
+    .split-view {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+
+  &.main {
+    .section-container {
+      padding: 40px 32px;
+
+      .page-header {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        &__subtitle {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &.why-choose-section {
+    .section-container {
+      padding: 40px 32px;
+
+      .page-header {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        &__subtitle {
+          font-size: 18px;
+        }
+      }
+    }
   }
 
   &.features-section {
@@ -67,7 +215,7 @@
 
   &.main {
     .section-container {
-      padding: 60px 32px;
+      padding: 16px 32px;
     }
 
     .main__actions {

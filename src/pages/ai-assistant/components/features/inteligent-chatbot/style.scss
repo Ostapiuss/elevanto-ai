@@ -4,6 +4,7 @@
   .chat {
     width: 100%;
     max-width: 100%;
+    min-height: 324px;
 
     &__footer {
       margin-top: 17px;
@@ -33,11 +34,22 @@
     .message.chat {
       background-color: $gray-50;
       color: $primary-50;
+      height: fit-content;
+      min-height: fit-content;
+      max-width: 500px;
+      width: fit-content;
+      padding: 16px 12px;
     }
 
     .message.me {
       background-color: $secondary;
       color: #ffffff;
+      max-width: 540px;
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+      height: fit-content;
+      padding: 16px 12px;
     }
   }
 }

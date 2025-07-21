@@ -217,17 +217,27 @@ let theme = createTheme({
         {
           props: { color: 'grayLight' },
           style: {
-            fontSize: 14,
-            borderRadius: '6px',
-            ':hover': {
-              backgroundColor: '#7C66EB1A',
-              color: '#23272b',
-              svg: {
-                stroke: '#23272b',
-              },
-            },
+            backgroundColor: '#EAEBEC',
+            borderColor: '#EAEBEC',
+            color: '#1B1E21',
+            fontSize: '16px',
+            fontWeight: '600',
           },
         },
+        // {
+        //   props: { color: 'grayLight' },
+        //   style: {
+        //     fontSize: 14,
+        //     borderRadius: '6px',
+        //     ':hover': {
+        //       backgroundColor: '#7C66EB1A',
+        //       color: '#23272b',
+        //       svg: {
+        //         stroke: '#23272b',
+        //       },
+        //     },
+        //   },
+        // },
         {
           props: { color: 'previewButtons' },
           style: {

@@ -6,6 +6,8 @@
   gap: 24px;
   margin-top: 40px;
 
+  padding: 0 12px;
+
   .industy-item {
     background-color: #ffffff;
     box-shadow: 0px 2px 8px 0px #00000014;
@@ -52,6 +54,36 @@
         color: $main-500;
         background-color: $bg-50;
       }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 300px)) {
+  .industries {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .industy-item {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 230px)) {
+  .industries {
+    grid-template-columns: 1fr 1fr;
+
+    .industy-item {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + -50px)) {
+  .industries {
+    grid-template-columns: 1fr;
+
+    .industy-item {
+      max-width: 100%;
     }
   }
 }

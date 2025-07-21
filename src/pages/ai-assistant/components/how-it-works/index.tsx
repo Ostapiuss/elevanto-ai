@@ -7,8 +7,9 @@ import AnalyzeRefineIcon from '@assets/svg/analyze-refine-icon.svg?react';
 
 import SharpItem from '@shared/components/SharpItem';
 
-import './style.scss';
 import SharpContainer from '@shared/components/SharpContainer';
+
+import './style.scss';
 
 const workers = [
   {

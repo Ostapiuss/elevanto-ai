@@ -63,3 +63,39 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-md + 200px)) {
+  .how-it-works {
+    .sharp-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .sharp-item {
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          background-color: $gray-50;
+          width: 125%;
+          height: 1px;
+          top: 0%;
+          left: -25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm)) {
+  .how-it-works {
+    .sharp-container {
+      grid-template-columns: 1fr;
+
+      .sharp-item {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

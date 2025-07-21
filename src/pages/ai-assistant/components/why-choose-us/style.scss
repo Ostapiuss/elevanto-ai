@@ -1,5 +1,13 @@
+@use '../../../../assets/styles/style.scss' as *;
+
 .why-choose-use {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+@media (max-width: ($breakpoint-sm + 100px)) {
+  .why-choose-use {
+    grid-template-columns: 1fr;
+  }
 }

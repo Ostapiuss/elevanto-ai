@@ -23,7 +23,7 @@ import Industries from '@shared/components/Industries';
 export default function AiAssistant() {
   return (
     <>
-      <SectionLayout className="section main reverse ai-assistant-section">
+      <SectionLayout className="chatbot-section section main reverse ai-assistant-section">
         <SplitView
           firstColRender={<Assistant />}
           position="center"
@@ -35,14 +35,16 @@ export default function AiAssistant() {
               <>
                 <Box className="main__actions">
                   <StartForFree />
-                  <Button variant="outlined">Book a demo</Button>
+                  <Button variant="outlined" color="grayLight">
+                    Book a demo
+                  </Button>
                 </Box>
               </>
             ),
           }}
         />
       </SectionLayout>
-      <SectionLayout className="section ai-assistant-section">
+      <SectionLayout className="section ai-assistant-section why-choose-section">
         <PageHeader
           title="Why Choose Elevanto AI"
           size={36}
@@ -56,7 +58,7 @@ export default function AiAssistant() {
           subTitle="Every feature is designed to capture more leads and improve customer satisfaction"
           size={36}
         />
-        <Box className="feature reverse">
+        <Box className="ai-voice-agent-feature feature reverse">
           <SplitView
             firstColRender={<DriveResult />}
             position="center"
@@ -76,7 +78,7 @@ export default function AiAssistant() {
             }}
           />
         </Box>
-        <Box className="feature">
+        <Box className="feature inteligent-chatbot-feature">
           <SplitView
             firstColRender={<IntelligentChatbot />}
             position="center"
@@ -96,7 +98,7 @@ export default function AiAssistant() {
             }}
           />
         </Box>
-        <Box className="feature reverse">
+        <Box className="language-feature feature reverse">
           <SplitView
             firstColRender={<GlobalLanguageSupport />}
             position="center"
@@ -115,7 +117,7 @@ export default function AiAssistant() {
             }}
           />
         </Box>
-        <Box className="feature">
+        <Box className="automated-lead-feature feature">
           <SplitView
             firstColRender={<AutomatedLeadScoring />}
             position="center"
@@ -135,7 +137,7 @@ export default function AiAssistant() {
           />
         </Box>
       </SectionLayout>
-      <SectionLayout className="section">
+      <SectionLayout className="section ai-assistant-section">
         <PageHeader
           title="How it works"
           size={36}
@@ -143,7 +145,7 @@ export default function AiAssistant() {
         />
         <HowItWorks />
       </SectionLayout>
-      <SectionLayout className="section">
+      <SectionLayout className="section ai-assistant-section">
         <PageHeader
           title="Perfect for Every Industry"
           size={36}
@@ -151,7 +153,7 @@ export default function AiAssistant() {
         />
         <Industries />
       </SectionLayout>
-      <SectionLayout className="section">
+      <SectionLayout className="section ai-assistant-section">
         <PageHeader
           title="Real Business Impact"
           size={36}
