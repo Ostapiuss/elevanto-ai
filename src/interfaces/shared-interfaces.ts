@@ -73,6 +73,7 @@ export interface AiBlockItem {
   rightPoints?: boolean;
   rightPoint?: boolean;
   leftPoints?: boolean;
+  leftPoint?: boolean;
   topPoint?: boolean;
   topPoints?: boolean;
   bottomPoints?: boolean;

@@ -171,10 +171,6 @@
           top: 40px;
           z-index: 0;
 
-          // .left-points {
-          //   display: none;
-          // }
-
           .right-point {
             display: none;
           }
@@ -208,6 +204,10 @@
           left: 0;
           z-index: 0;
 
+          .right-points {
+            top: 26%;
+          }
+
           .left-points {
             display: none;
           }
@@ -218,8 +218,12 @@
           grid-row: span 4 / span 4;
           grid-column-start: 23;
           left: 0;
-          top: 50px;
+          top: 70px;
           z-index: 0;
+
+          .left-points {
+            display: none;
+          }
         }
 
         &.ai-05 {
@@ -227,8 +231,14 @@
           grid-row: span 4 / span 4;
           grid-column-start: 23;
           left: 0;
-          top: 100px;
-          z-index: 0;
+          top: 137px;
+          position: relative;
+          z-index: 3;
+
+          .left-point {
+            top: 17.5%;
+            z-index: 3;
+          }
 
           .left-points {
             display: none;

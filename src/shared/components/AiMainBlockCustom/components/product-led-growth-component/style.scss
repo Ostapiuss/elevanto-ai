@@ -1,0 +1,61 @@
+.keen-slider {
+  &.product-led-growth {
+    .mobile-product-led-growth {
+      .mobile-block-1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        grid-column-start: 18;
+        grid-column-end: 25;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 45px;
+        width: 100%;
+      }
+
+      .mobile-block-2 {
+        position: absolute;
+        top: -25px;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 11;
+        height: 45px;
+        width: 100%;
+      }
+
+      .mobile-block-3 {
+        position: absolute;
+        top: -24px;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        grid-column-start: 29;
+        grid-column-end: 29;
+        grid-row-start: 7;
+        grid-row-end: 10;
+        height: 45px;
+        width: 100%;
+      }
+
+      .mobile-block-4 {
+        position: absolute;
+        top: -25px;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        grid-column-start: 23;
+        grid-column-end: 13;
+        grid-row-start: 10;
+        grid-row-end: 10;
+        height: 45px;
+        width: 100%;
+      }
+    }
+  }
+}

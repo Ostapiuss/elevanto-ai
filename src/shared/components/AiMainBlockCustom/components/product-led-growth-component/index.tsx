@@ -19,6 +19,16 @@ import UserTabIcon from '@assets/svg/ui-agents-new/user-tab-icon.svg?react';
 import WorkspaceUserIcon from '@assets/svg/ui-agents-new/worspace-small-icon.svg?react';
 import ReanewIcon from '@assets/svg/ui-agents-new/reanew-table-icon.svg?react';
 
+import El1Line from '@assets/svg/ui-agents-new/mobile/product-led/el-01-line.svg?react';
+import TopPoints from '@assets/svg/ui-agents-new/top-points.svg?react';
+import SinglePointEl from '@assets/svg/ui-agents-new/single-point.svg?react';
+import El2Line from '@assets/svg/ui-agents-new/mobile/product-led/el-02-line.svg?react';
+import El3Line from '@assets/svg/ui-agents-new/mobile/product-led/el-03-line.svg?react';
+import El1LineBottom from '@assets/svg/ui-agents-new/mobile/product-led/el-01-line-buttom.svg?react';
+import { Box } from '@mui/material';
+
+import './style.scss';
+
 type NodeItem = {
   id: string;
   data: AiBlockItem;
@@ -29,8 +39,7 @@ const initialNodes: NodeItem[] = [
     id: '4',
     data: {
       title: 'Person',
-      leftPoints: true,
-      rightPoint: true,
+      rightPoints: true,
       className: 'ai-04',
       icon: <PersonIcon />,
       tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
@@ -86,8 +95,8 @@ const initialNodes: NodeItem[] = [
     id: '5',
     data: {
       title: 'Workspace',
+      leftPoint: true,
       bottomPoints: true,
-      leftPoints: true,
       className: 'ai-05',
       icon: <WorkspaceSmallIcon />,
       tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
@@ -115,7 +124,6 @@ const initialNodes: NodeItem[] = [
     id: '1',
     data: {
       title: 'User',
-      rightPoints: true,
       className: 'ai-01',
       icon: <UserSmallIcon />,
       tag: <CustomTag text="Custom" bgColor="#E5EFFF" color="#173D81" border="1px solid #d6e5ff" />,
@@ -143,10 +151,61 @@ const initialNodes: NodeItem[] = [
 
 export default function ProductLedGrowthSlide() {
   return (
-    <div className="keen-slider">
+    <div className="keen-slider product-led-growth">
       {initialNodes?.map((data, index) => {
         return <AiBlock key={index} aiData={data.data} />;
       })}
+      <div className="mobile-product-led-growth">
+        <Box className="mobile-block-1">
+          <Box sx={{ height: '38px', width: '130px' }}>
+            <El1Line />
+          </Box>
+          <Box sx={{ position: 'relative', width: '130px', left: '0%', top: '-14px' }}>
+            <Box sx={{ position: 'absolute', left: '100%', transform: 'translateX(-53%)' }}>
+              <TopPoints />
+            </Box>
+          </Box>
+        </Box>
+        <Box className="mobile-block-2">
+          <Box sx={{ position: 'relative', top: '5px', left: '-18px' }}>
+            <SinglePointEl />
+          </Box>
+          <Box sx={{ position: 'relative' }}>
+            <El1LineBottom />
+          </Box>
+          <Box sx={{ position: 'relative', top: '-17px', left: '-18px' }}>
+            <SinglePointEl />
+          </Box>
+        </Box>
+        <Box className="mobile-block-3">
+          <Box sx={{ position: 'relative', top: '5px', left: '-18px' }}>
+            <SinglePointEl />
+          </Box>
+          <Box sx={{ position: 'relative' }}>
+            <El2Line />
+          </Box>
+          <Box sx={{ position: 'relative', top: '-17px', left: '-19px' }}>
+            <TopPoints />
+          </Box>
+        </Box>
+        <Box className="mobile-block-4">
+          <Box
+            sx={{
+              width: '130px',
+              height: '43px',
+              position: 'relative',
+              left: '26px',
+              top: '16px',
+              zIndex: 0,
+            }}
+          >
+            <El3Line />
+          </Box>
+          <Box sx={{ position: 'relative', left: '8px', top: '3px' }}>
+            <TopPoints />
+          </Box>
+        </Box>
+      </div>
     </div>
   );
 }

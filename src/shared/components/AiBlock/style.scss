@@ -36,6 +36,13 @@
     transform: translateY(calc(-50% + 10px));
   }
 
+  .left-point {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(calc(-50%));
+  }
+
   .bottom-points {
     position: absolute;
   }

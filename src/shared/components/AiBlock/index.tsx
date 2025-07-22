@@ -8,6 +8,8 @@ import LeftConnectors from '@assets/svg/ui-agents-new/left-connectors.svg?react'
 import SingleNewPoint from '@assets/svg/ui-agents-new/single-point.svg?react';
 
 // import RightMultiplePoints from '@assets/svg/ui-agents/right-multiple-points.svg?react';
+import RightMultiplePoints from '@assets/svg/ui-agents-new/right-points-new.svg?react';
+import SinglePointEl from '@assets/svg/ui-agents-new/single-point.svg?react';
 // import TopMultiplePoints from '@assets/svg/ui-agents/top-multiple-points.svg?react';
 // import LeftMultiplePoints from '@assets/svg/ui-agents/left-multiple-points.svg?react';
 // import BottomPoints from '@assets/svg/ui-agents/bottom-multiple-points.svg?react';
@@ -41,9 +43,19 @@ export default function AiBlock({ aiData }: Props) {
           <LeftConnectors />
         </div>
       </IF>
+      <IF condition={Boolean(aiData.leftPoint)}>
+        <div className="left-point">
+          <SinglePointEl />
+        </div>
+      </IF>
       <IF condition={Boolean(aiData.rightPoint)}>
         <div className="right-point">
           <SingleNewPoint />
+        </div>
+      </IF>
+      <IF condition={Boolean(aiData.rightPoints)}>
+        <div className="right-points">
+          <RightMultiplePoints />
         </div>
       </IF>
       {/* <IF condition={Boolean(aiData.bottomPoint)}>

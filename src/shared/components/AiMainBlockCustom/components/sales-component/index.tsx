@@ -43,7 +43,6 @@ const initialNodes: NodeItem[] = [
     id: '1',
     data: {
       title: 'Partnership',
-      rightPoints: true,
       className: 'ai-01',
       icon: <PartnershipIcon />,
       tag: <CustomTag text="Custom" bgColor="#E5EFFF" color="#173D81" border="1px solid #d6e5ff" />,
