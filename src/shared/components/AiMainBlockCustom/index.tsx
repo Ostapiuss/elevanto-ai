@@ -57,7 +57,7 @@ import EmailIcon from '@assets/svg/ui-agents-new/email-icon.svg?react';
 import InvoicesIcon from '@assets/svg/ui-agents-new/invoices-icon.svg?react';
 import PhoneIconSmall from '@assets/svg/ui-agents-new/phone-icon.svg?react';
 import PointIcon from '@assets/svg/ui-agents-new/point-contact-icon.svg?react';
-import LeftMultiplePoints from '@assets/svg/ui-agents-new/left-multiple-points.svg?react';
+// import LeftMultiplePoints from '@assets/svg/ui-agents-new/left-multiple-points.svg?react';
 
 import SmallDesktopConnectionLineEl1 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-01.svg?react';
 // import SmallDesktopConnectionLineEl2 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-02.svg?react';
