@@ -57,6 +57,7 @@ import EmailIcon from '@assets/svg/ui-agents-new/email-icon.svg?react';
 import InvoicesIcon from '@assets/svg/ui-agents-new/invoices-icon.svg?react';
 import PhoneIconSmall from '@assets/svg/ui-agents-new/phone-icon.svg?react';
 import PointIcon from '@assets/svg/ui-agents-new/point-contact-icon.svg?react';
+import LeftMultiplePoints from '@assets/svg/ui-agents-new/left-multiple-points.svg?react';
 
 import SmallDesktopConnectionLineEl1 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-01.svg?react';
 // import SmallDesktopConnectionLineEl2 from '@assets/svg/ui-agents-new/small-desktop/connection-line-el-02.svg?react';
@@ -129,6 +130,7 @@ const initialNodes: NodeItem[] = [
       title: 'Company',
       className: 'ai-02',
       leftPoints: true,
+      rightPoint: true,
       icon: <CompanyIcon />,
       tag: <CustomTag text="Standart" bgColor="#F3F4F6" color="#6F7A88" border="1px solid #E5E7EC" />,
       list: [
@@ -237,59 +239,79 @@ export default function AiMainBlockCustom() {
         })}
         <div className="desktop-block">
           <Box className="block1">
-            <Box sx={{ position: 'absolute', left: '0px' }}>
-              <BottomLeft />
-            </Box>
-            <Box sx={{ position: 'absolute', left: '19px', top: '1%', width: '107px' }}>
+            <Box sx={{ position: 'relative', height: '119px', left: '9%', top: '3%', width: 'calc(100% - 1px)' }}>
               <BottomLineEl1 />
+            </Box>
+            <Box sx={{ position: 'relative', width: '40px', left: '-10px', top: '-100%' }}>
+              <BottomLeft />
             </Box>
           </Box>
           <Box className="block2" sx={{ position: 'absolute' }}>
-            <Box sx={{ width: '40px', position: 'relative', top: '62%', left: '0', transform: 'translateX(-20px)' }}>
+            <Box
+              sx={{
+                width: '40px',
+                position: 'relative',
+                top: '112%',
+                left: '1px',
+                transform: 'translateX(-20px)',
+                zIndex: '3',
+              }}
+            >
               <TopPoints />
             </Box>
-            <Box sx={{ position: 'relative', top: '20px' }}>
+            <Box sx={{ position: 'relative', height: '100%' }}>
               <ConnectedLineEl2 />
+            </Box>
+            <Box
+              sx={{
+                width: '40px',
+                position: 'relative',
+                top: '-27%',
+                left: '100%',
+                transform: 'translateX(-20px)',
+                zIndex: '3',
+              }}
+            >
+              <TopPoints />
             </Box>
           </Box>
           <Box className="block3" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', left: '-8px', top: '-3.5px' }}>
+            <Box sx={{ position: 'relative', left: '-8px', top: '-9.5px', zIndex: 3 }}>
               <RightPoints />
             </Box>
-            <Box className="connection-line" sx={{ width: '189px', position: 'relative', top: '-38.7%', left: '-4px' }}>
+            <Box className="connection-line" sx={{ width: '189px', position: 'relative', top: '-48%', left: '-5px' }}>
               <ConnectionRightLineEl1 />
             </Box>
           </Box>
           <Box className="block4" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', width: '40px', left: '52%', top: '16%' }}>
-              <SinglePointEl />
-            </Box>
-            <Box sx={{ width: '70px', position: 'relative', left: '64%', top: '-12.5px' }}>
+            <Box sx={{ width: '70px', position: 'relative', left: '65%', top: '15%' }}>
               <ConnectionLineEl3 />
             </Box>
           </Box>
           <Box className="block5" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', left: '0', top: '37%' }}>
+            <Box sx={{ position: 'relative', left: '0', top: '39%' }}>
               <ConnectionLineEl5 />
             </Box>
           </Box>
-          <Box className="block6" sx={{ position: 'absolute' }}>
-            <Box sx={{ width: '40px', position: 'relative', left: '67.5%', top: '4%' }}>
-              <SinglePointEl />
+          <Box className="block6" sx={{ position: 'absolute', height: '100%' }}>
+            <Box sx={{ width: '100%' }}>
+              <Box sx={{ width: '40px', top: '5px', position: 'relative', left: 'calc(100% - 20px)' }}>
+                <SinglePointEl />
+              </Box>
             </Box>
-            <Box sx={{ width: '106px' }}>
+            <Box sx={{ height: '100%' }}>
               <ConnectionLineEl5Bottom />
             </Box>
           </Box>
           <Box className="block7" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', left: '0' }}>
+            <Box sx={{ position: 'relative', left: '-10px' }}>
               <ConnectionLineEl5 />
             </Box>
           </Box>
         </div>
         <div className="small-desktop">
           <Box className="small-block-1">
-            <Box sx={{ position: 'absolute', left: '0px', top: '0px' }}>
+            <Box sx={{ position: 'absolute', left: '0px', top: '0px', zIndex: 3 }}>
               <BottomLeft />
             </Box>
             <Box sx={{ position: 'absolute', left: '19px', width: '103px', top: '0px' }}>
@@ -324,26 +346,23 @@ export default function AiMainBlockCustom() {
             </Box>
           </Box>
           <Box className="small-block-4" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', width: '40px', left: '35%', top: '16%' }}>
-              <SinglePointEl />
-            </Box>
-            <Box sx={{ width: '80px', position: 'relative', left: '52%', top: '-12.5px' }}>
+            <Box sx={{ position: 'relative', top: '16.7%' }}>
               <ConnectionLineEl3 />
             </Box>
           </Box>
           <Box className="small-block-5" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', left: '-17%', top: '87%', width: '80px' }}>
+            <Box sx={{ position: 'relative' }}>
               <ConnectionLineEl3 />
             </Box>
           </Box>
           <Box className="small-block-6" sx={{ position: 'absolute' }}>
-            <Box sx={{ position: 'relative', width: '40px', left: '81px', top: '16px' }}>
+            <Box sx={{ position: 'relative', width: '40px', left: '82px', top: '13px', zIndex: 3 }}>
               <BottomLeft />
             </Box>
-            <Box sx={{ width: '103px', position: 'relative', top: '-10px' }}>
+            <Box sx={{ width: '103px', position: 'relative', top: '-5px', height: '55px' }}>
               <SmallDesktopConnectionLineBotttomEl5 />
             </Box>
-            <Box sx={{ width: '40px', position: 'relative', top: '-29px', left: '-18px' }}>
+            <Box sx={{ width: '40px', position: 'relative', top: '-18px', left: '-18px' }}>
               <SinglePointEl />
             </Box>
           </Box>

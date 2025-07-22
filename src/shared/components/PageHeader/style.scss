@@ -50,14 +50,13 @@
     p {
       font-size: 16px !important;
       line-height: 18px;
-      max-width: 480px !important;
       text-align: center;
     }
   }
 }
 
-@media (max-width: ($breakpoint-sm + 200px)) {
-  .page-header {
-    padding: 0;
-  }
-}
+// @media (max-width: ($breakpoint-sm + 200px)) {
+//   // .page-header {
+//   //   padding: 0;
+//   // }
+// }

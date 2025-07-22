@@ -134,7 +134,7 @@
           grid-row: span 4 / span 4;
           grid-column-start: 1;
           left: 0;
-          top: 0;
+          top: 5px;
           z-index: 0;
         }
 
@@ -144,6 +144,10 @@
           left: 0;
           top: 40px;
           z-index: 0;
+
+          .left-points {
+            display: none;
+          }
         }
 
         &.ai-05 {
@@ -151,7 +155,7 @@
           grid-row: span 4 / span 4;
           grid-column-start: 23;
           left: 0;
-          top: 0;
+          top: 5px;
           z-index: 0;
 
           .left-points {
@@ -167,7 +171,11 @@
           top: 40px;
           z-index: 0;
 
-          .left-points {
+          // .left-points {
+          //   display: none;
+          // }
+
+          .right-point {
             display: none;
           }
         }
@@ -179,6 +187,10 @@
           left: 0;
           top: 70px;
           z-index: 0;
+
+          .right-point {
+            display: none;
+          }
 
           .left-points {
             display: none;

@@ -26,7 +26,7 @@ import './style.scss';
 export default function MainPage() {
   return (
     <>
-      <SectionLayout className="section main-section">
+      <SectionLayout className="section main-section home-section">
         <CustomTag
           bgColor="#ffffff"
           color="#464D54"

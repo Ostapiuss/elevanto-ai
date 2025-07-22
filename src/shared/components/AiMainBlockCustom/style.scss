@@ -31,10 +31,10 @@ $row-height: 11.3px;
     left: 1px;
     z-index: 3;
     grid-column-start: 10;
-    grid-column-end: 30;
+    grid-column-end: 20;
     grid-row-start: 6;
-    grid-row-end: 30;
-    height: calc(100% - ($row-height * 1.5));
+    grid-row-end: 21;
+    height: 120px;
     width: 100%;
   }
 
@@ -56,13 +56,13 @@ $row-height: 11.3px;
     position: absolute;
     bottom: 0;
     left: 1px;
-    top: 11px;
+    top: 24px;
     z-index: 2;
     grid-column-start: 33;
     grid-column-end: 85;
     grid-row-start: 5;
     grid-row-end: 6;
-    height: 108px;
+    height: 48px;
     width: 100%;
   }
 
@@ -121,11 +121,11 @@ $row-height: 11.3px;
   .small-block-4 {
     position: absolute;
     bottom: 0;
-    left: -19px;
+    left: 0;
     top: -29px;
     z-index: 0;
-    grid-column-start: 35;
-    grid-column-end: 49;
+    grid-column-start: 40;
+    grid-column-end: 47;
     grid-row-start: 11;
     grid-row-end: 12;
     height: 50px;
@@ -149,29 +149,28 @@ $row-height: 11.3px;
 
   .small-block-5 {
     position: absolute;
-    top: 107px;
-    bottom: 0;
-    left: 50px;
+    bottom: 2px;
+    left: 8px;
     z-index: 0;
-    grid-column-start: 70;
-    grid-column-end: 76;
+    grid-column-start: 73;
+    grid-column-end: 81;
     grid-row-start: 5;
-    grid-row-end: 10;
-
-    height: 60px;
+    grid-row-end: 12;
+    height: 30px;
     width: 100%;
   }
 
   .block6 {
     position: absolute;
     bottom: 0;
-    left: 11px;
+    left: -8px;
     z-index: 0;
     grid-column-start: 110;
     grid-column-end: 99;
     grid-row-start: 10;
     grid-row-end: 10;
-    height: 130px;
+    height: 115px;
+    bottom: 15px;
     width: 100%;
   }
 
@@ -190,15 +189,15 @@ $row-height: 11.3px;
 
   .block7 {
     position: absolute;
-    top: -115px;
+    top: -120px;
     bottom: 0;
-    left: 10px;
+    left: 20px;
     z-index: 0;
-    grid-column-start: 97;
+    grid-column-start: 96;
     grid-column-end: 63;
     grid-row-start: 8;
     grid-row-end: 9;
-    height: 100px;
+    height: 75px;
     width: 100%;
   }
 
@@ -208,11 +207,11 @@ $row-height: 11.3px;
     bottom: 0;
     left: 10px;
     z-index: 0;
-    grid-column-start: 97;
+    grid-column-start: 91;
     grid-column-end: 63;
     grid-row-start: 8;
-    grid-row-end: 9;
-    height: 100px;
+    grid-row-end: 8;
+    height: 75px;
     width: 100%;
   }
 }
@@ -242,7 +241,15 @@ $row-height: 11.3px;
     grid-column-start: 21;
     grid-row: span 5 / span 5;
     grid-row-start: 8;
-    z-index: 0;
+
+    .left-points {
+      left: -14px;
+    }
+
+    .right-point {
+      top: 44.7%;
+      left: calc(100% - 19px);
+    }
   }
 
   &.ai-03 {
@@ -253,8 +260,12 @@ $row-height: 11.3px;
     z-index: 1;
 
     .right-point {
-      top: 43%;
-      left: 93%;
+      top: 44.7%;
+      left: calc(100% - 19px);
+    }
+
+    .left-points {
+      left: -14px;
     }
   }
 
@@ -266,8 +277,13 @@ $row-height: 11.3px;
     z-index: 1;
 
     .right-point {
-      top: 43%;
-      left: 93%;
+      top: 44.7%;
+      left: calc(100% - 19px);
+    }
+
+    .left-points {
+      left: -14px;
+      z-index: 3;
     }
   }
 
@@ -276,10 +292,10 @@ $row-height: 11.3px;
     grid-column-start: 97;
     grid-row: span 6 / span 6;
     top: 8px;
-    z-index: 1;
 
     .left-points {
-      top: 51.5%;
+      top: 47%;
+      left: -14px;
     }
   }
 }
@@ -338,8 +354,7 @@ $row-height: 11.3px;
         top: 10px;
 
         .right-point {
-          top: 43%;
-          left: 93%;
+          top: 44.5%;
         }
       }
 
@@ -348,12 +363,11 @@ $row-height: 11.3px;
         grid-column-start: 82;
         grid-row: span 5 / span 5;
         grid-row-start: 8;
-        z-index: 1;
+        z-index: 0;
         top: 10px;
 
         .right-point {
-          top: 43%;
-          left: 93%;
+          display: none;
         }
       }
 
@@ -362,10 +376,10 @@ $row-height: 11.3px;
         grid-column-start: 92;
         grid-row: span 6 / span 6;
         top: 8px;
-        z-index: 1;
 
         .left-points {
-          top: 51.5%;
+          z-index: 2;
+          top: 50.5%;
         }
       }
     }
