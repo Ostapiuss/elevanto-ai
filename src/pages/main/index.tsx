@@ -60,7 +60,8 @@ export default function MainPage() {
             subTitle="We combine a white-label automation platform with AI-powered services tailored to your business."
             title={
               <div className="tag-title">
-                What <span style={{ color: constants.colors.secondary }}>We Offer</span>
+                <span style={{ color: constants.colors.gray500 }}>What </span>
+                <span style={{ color: constants.colors.secondary }}>We Offer</span>
               </div>
             }
           />
@@ -73,13 +74,13 @@ export default function MainPage() {
           <CustomTag
             bgColor="#ffffff"
             color="#464D54"
-            text="Powered by advanced AI technology"
+            text="One-time setup fee — quoted based on complexity."
             border="1px solid #818992"
           />
           <AdvantagesComponent />
           <div className="advantage-section__footer">
             <Button variant="contained">Start for free</Button>
-            <p>We&apos;ll guide you through every step.</p>
+            <p style={{ fontSize: '14px' }}>We&apos;ll guide you through every step.</p>
           </div>
         </SectionLayout>
       </ScrollFadeIn>
@@ -107,7 +108,8 @@ export default function MainPage() {
             subTitle="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
             title={
               <div className="tag-title">
-                Our customers <span style={{ color: constants.colors.secondary }}>love us!</span>
+                <span style={{ color: constants.colors.gray500 }}>Our customers </span>
+                <span style={{ color: constants.colors.secondary }}>love us!</span>
               </div>
             }
           />

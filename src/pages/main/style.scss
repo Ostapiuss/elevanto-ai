@@ -124,11 +124,24 @@
   .section-container {
     padding: 0 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
 
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     justify-content: space-between;
     gap: 50px;
+
+    align-items: baseline;
+
+    // .accordions {
+    //   .MuiPaper-root {
+
+    //   }
+    // }
+
+    .page-header {
+      margin-top: 0;
+    }
   }
 
   .page-header {

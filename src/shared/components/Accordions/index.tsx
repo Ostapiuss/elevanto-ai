@@ -66,7 +66,7 @@ export default function Accorions({ data }: Props) {
         {data.map((accordionData, index) => {
           return (
             <Accordion
-              className="accordion"
+              className={`accordion accordion-${index}`}
               key={index}
               expanded={expanded === accordionData.id}
               onChange={() => handleChange(accordionData.id)}

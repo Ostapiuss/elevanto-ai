@@ -24,9 +24,10 @@ export interface SubscriptionAdvantages {
 export interface CustomerItem {
   iconSrc: string;
   fullName: string;
+  tagPosition?: 'start' | 'end';
   position: string;
   text: string;
-  tag: string;
+  tag?: string;
   userName: string;
   dateTime: string;
   socialIcon: ReactElement;

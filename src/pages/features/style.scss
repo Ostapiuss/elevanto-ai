@@ -4,12 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-
   padding: 0 120px;
 
-  // .page-header {
-  //   margin-top: 40px;
-  // }
+  .page-header {
+    margin-bottom: 0;
+  }
 
   .feature {
     z-index: 1;
@@ -19,8 +18,8 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 40px;
     padding: 8px;
+    padding-top: 0;
 
     .split-view {
       &__col2 {
@@ -67,10 +66,6 @@
       .split-view {
         grid-template-columns: 2fr 1.2fr;
       }
-
-      .page-header {
-        margin-bottom: 40px;
-      }
     }
 
     &.reverse {
@@ -101,5 +96,47 @@
 @media (max-width: ($breakpoint-sm + 237px)) {
   .features {
     padding: 0;
+  }
+}
+
+@media (max-width: ($breakpoint-md)) {
+  .features {
+    .feature {
+      gap: 24px;
+
+      &.custom-crm-feature {
+        .page-header {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md - 100px)) {
+  .features {
+    .feature {
+      .page-header {
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 37px)) {
+  .features {
+    .feature {
+      gap: 24px;
+
+      .page-header {
+        padding: 0 16px;
+      }
+
+      &.custom-crm-feature {
+        .page-header {
+          margin-top: 16px;
+        }
+      }
+    }
   }
 }

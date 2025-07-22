@@ -235,3 +235,19 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-sm + 100px)) {
+  .ai-assistant-section {
+    .page-header {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 150px)) {
+  .ai-assistant-section {
+    .page-header {
+      padding: 0 10px;
+    }
+  }
+}

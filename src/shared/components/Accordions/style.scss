@@ -9,6 +9,12 @@
       }
     }
 
+    &.accordion-0 {
+      .MuiButtonBase-root {
+        border: none;
+      }
+    }
+
     .MuiAccordionSummary-expandIconWrapper {
       transform: rotate(180deg);
       svg {
