@@ -1,0 +1,81 @@
+@use '../../assets/styles/style.scss' as *;
+
+.all-in-one-section {
+  &.main-section {
+    .split-view {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .page-header {
+      .col2__title {
+        color: $primary-50;
+      }
+    }
+    .main__actions {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &.why-choose-platform-section {
+    .why-choose-platform {
+      margin-top: 40px;
+    }
+  }
+
+  &.features {
+    .page-header {
+      max-width: 100%;
+    }
+
+    .feature {
+      width: 100%;
+      max-width: 100%;
+
+      &.reverse {
+        .split-view {
+          margin-top: 0;
+          direction: rtl;
+
+          * {
+            direction: ltr;
+          }
+        }
+      }
+
+      &.invoice-feature {
+        .invoices {
+          max-width: 100%;
+          &__items {
+            margin: 0;
+
+            .invoice {
+              padding: 16px;
+
+              &.invoice-note {
+                .invoice__name {
+                  font-size: 14px;
+                }
+              }
+
+              &__name {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.reverse {
+    .split-view {
+      margin-top: 0;
+      direction: rtl;
+
+      * {
+        direction: ltr;
+      }
+    }
+  }
+}

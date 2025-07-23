@@ -1,0 +1,88 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.invoices {
+  background-color: #ffffff;
+  border: 1px solid $white-50;
+  border-radius: 6px;
+  box-shadow: 0px 5.9px 23.58px 0px #0000000f;
+  max-width: 300px;
+  padding: 18px 16px;
+
+  &__title-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      color: $primary-light;
+    }
+
+    .icon {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__items {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .invoice {
+      padding: 10px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background-color: $bg-50;
+
+      &.invoice-note {
+        background-color: $violet-50;
+
+        .invoice__name {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+        }
+      }
+
+      &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: $primary;
+      }
+
+      &__status {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 11px;
+        padding: 4px 8px;
+        border-radius: 12px;
+
+        &.invoice-status-paid {
+          background-color: $secondary-200;
+          color: $accent-700;
+        }
+
+        &.invoice-status-pending {
+          background-color: $orange-50;
+          color: $orange-700;
+        }
+
+        &.invoice-status-draft {
+          background-color: $gray-50;
+          color: $gray-700;
+        }
+      }
+    }
+  }
+}

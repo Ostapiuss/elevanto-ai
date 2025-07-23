@@ -1,4 +1,4 @@
-@use '../../../../assets/styles/style.scss' as *;
+@use '../../../assets/styles/style.scss' as *;
 
 .conversation-hub {
   background-color: white;
@@ -6,11 +6,29 @@
   padding: 32px 24px;
   border-radius: 16px;
   min-height: 491px;
-  min-height: 491px;
 
   &__panels {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
+
+    &.one-panel {
+      grid-template-columns: 1fr;
+    }
+
+    .contact {
+      width: 100%;
+      position: relative;
+      padding: 12px;
+      background-color: #fafafa;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .tag-tabs {
+    display: flex;
+    gap: 8px;
   }
 }
 

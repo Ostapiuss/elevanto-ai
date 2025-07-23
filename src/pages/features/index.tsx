@@ -11,20 +11,27 @@ import AiAssistant from './components/ai-assistant';
 import CustomWorkflow from './components/workflow';
 import BusinessImpact from './components/business-impact';
 import IncomingCall from './components/incoming-call';
-import ConversationHub from './components/conversation-hub';
+import ConversationHub from '@shared/components/ConversationHub';
 import ClientDatabase from './components/client-database';
 import ReadyBusiness from '@shared/components/ReadyBusiness';
 import BillingAndInvoices from './components/billing-and-invoice';
-
 import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
+import { emailUsers, smsUsers, whatsAppUsers } from '@mocks/contacts';
 
 import './style.scss';
+
+const allUsers = [...smsUsers, ...emailUsers, ...whatsAppUsers];
+const tabs = ['all', 'whatsapp', 'email', 'sms'];
 
 export default function Features() {
   const navigate = useNavigate();
 
   const rediredToAiAssistants = () => {
     navigate('/ai-assistants');
+  };
+
+  const rediredToAllInOne = () => {
+    navigate('/all-in-one');
   };
 
   return (
@@ -40,6 +47,7 @@ export default function Features() {
             <SplitView
               position="center"
               firstColRender={<ClientBoard />}
+              onButtonClick={rediredToAllInOne}
               text={{
                 title: 'Everything You Need to Automate, Sell, and Scale',
                 subtitle:
@@ -110,7 +118,7 @@ export default function Features() {
           <Box className="feature reverse conversation-hub-feature">
             <SplitView
               position="center"
-              firstColRender={<ConversationHub />}
+              firstColRender={<ConversationHub tabs={tabs} tabType="tab" users={allUsers} />}
               text={{
                 title: 'Your AI-Powered Call Rep That Never Sleeps',
                 subtitle:

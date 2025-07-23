@@ -1,0 +1,71 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.mocked-calendar {
+  background-color: #ffffff;
+  border: 1px solid $white-50;
+  border-radius: 6px;
+  box-shadow: 0px 5.9px 23.58px 0px #0000000f;
+  max-width: 355px;
+  padding: 18px 16px;
+
+  &__title-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      color: $primary-light;
+    }
+
+    .icon {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    max-width: 300px;
+    // margin: 20px auto;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+
+  .calendar-header {
+    color: $dark-grey-600;
+    font-weight: 500;
+    text-align: center;
+    font-size: 12px;
+    line-height: 11px;
+    padding: 2px 10px;
+  }
+
+  .calendar-day {
+    text-align: center;
+    color: $main-50;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover {
+      background-color: $secondary;
+      color: #ffffff;
+      transition:
+        background-color 0.2s ease-out,
+        color 0.2s ease-out;
+    }
+  }
+}

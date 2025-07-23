@@ -94,3 +94,39 @@ export interface ComponentSliderItem {
   nameIcon: ReactNode;
   id: number;
 }
+
+export interface LeadPipelineItem {
+  leadName: string;
+  status: 'closed' | 'contact' | 'qulified';
+}
+
+export interface InvoicesItem {
+  invoiceNumber: string;
+  className?: string;
+  status?: 'paid' | 'pending' | 'draft';
+}
+
+export interface SmartBoxMessage {
+  title: string;
+  text: string;
+  status?: 'read' | 'delivired';
+}
+
+export interface WorkflowStepIntem {
+  color: string;
+  text: string;
+}
+
+export interface HowItWorkItem {
+  key: number;
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
+
+export interface BenefitItem {
+  icon: ReactNode;
+  iconTitle: string;
+  title: string;
+  description: string;
+}

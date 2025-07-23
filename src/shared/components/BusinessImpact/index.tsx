@@ -3,34 +3,15 @@ import { Box } from '@mui/material';
 import SharpContainer from '@shared/components/SharpContainer';
 import SharpItem from '@shared/components/SharpItem';
 
-import ArrowImpactIcon from '@assets/svg/arrow-impact.svg?react';
-import LightingIcon from '@assets/svg/lighting-icon.svg?react';
-import TimerIcon from '@assets/svg/timer-icon.svg?react';
+import { BenefitItem } from '@interfaces/shared-interfaces';
 
 import './style.scss';
 
-const businessItems = [
-  {
-    icon: <ArrowImpactIcon />,
-    iconTitle: '+38%',
-    title: 'More Qualified Leads',
-    description: 'AI assistants qualify leads 24/7',
-  },
-  {
-    icon: <LightingIcon />,
-    iconTitle: '-42%',
-    title: 'Missed Opportunities',
-    description: 'Never miss another potential customer',
-  },
-  {
-    icon: <TimerIcon />,
-    iconTitle: '10x',
-    title: 'Faster Response Times',
-    description: 'Instant responses vs hours or days',
-  },
-];
+type Props = {
+  businessItems: BenefitItem[];
+};
 
-export default function BusinessImpact() {
+export default function BusinessImpact({ businessItems }: Props) {
   return (
     <Box className="business-impact-component">
       <SharpContainer>

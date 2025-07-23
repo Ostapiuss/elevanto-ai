@@ -10,15 +10,17 @@ import Assistant from './components/assistant';
 
 import { PageHeader } from '@shared/components/PageHeader';
 
-import './style.scss';
 import WhyChooseUs from './components/why-choose-us';
 import DriveResult from './components/features/drive-feature';
 import IntelligentChatbot from './components/features/inteligent-chatbot';
 import GlobalLanguageSupport from './components/features/global-language-support';
 import AutomatedLeadScoring from './components/features/automated-lead-scoring';
-import HowItWorks from './components/how-it-works';
-import BusinessImpact from './components/business-impact';
+import HowItWorks from '../../shared/components/HowItWorks';
+import BusinessImpact from '@shared/components/BusinessImpact';
 import Industries from '@shared/components/Industries';
+
+import './style.scss';
+import { businessItemsAiAssistant, workersAllInOne } from '@mocks/shared';
 
 export default function AiAssistant() {
   return (
@@ -143,7 +145,7 @@ export default function AiAssistant() {
           size={36}
           subTitle="Get up and running with AI assistants in just four simple steps"
         />
-        <HowItWorks />
+        <HowItWorks workers={workersAllInOne} />
       </SectionLayout>
       <SectionLayout className="section ai-assistant-section">
         <PageHeader
@@ -159,7 +161,7 @@ export default function AiAssistant() {
           size={36}
           subTitle="See the measurable results our customers achieve with Elevanto AI"
         />
-        <BusinessImpact />
+        <BusinessImpact businessItems={businessItemsAiAssistant} />
       </SectionLayout>
       <SectionLayout className="section ready-business-section ai-assistant-section">
         <ReadyBusiness />
