@@ -19,12 +19,14 @@ import HowItWorks from '../../shared/components/HowItWorks';
 import BusinessImpact from '@shared/components/BusinessImpact';
 import Industries from '@shared/components/Industries';
 
-import './style.scss';
 import { businessItemsAiAssistant, workersAllInOne } from '@mocks/shared';
+import AiPageLayout from '@shared/components/AiPageLayout';
+
+import './style.scss';
 
 export default function AiAssistant() {
   return (
-    <>
+    <AiPageLayout>
       <SectionLayout className="chatbot-section section main reverse ai-assistant-section">
         <SplitView
           firstColRender={<Assistant />}
@@ -166,6 +168,6 @@ export default function AiAssistant() {
       <SectionLayout className="section ready-business-section ai-assistant-section">
         <ReadyBusiness />
       </SectionLayout>
-    </>
+    </AiPageLayout>
   );
 }

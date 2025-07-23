@@ -9,7 +9,7 @@ import { IF } from '@shared/components/IF';
 import ContactFormInfo from './components/contact-form';
 
 import './style.scss';
-import { joinClassNames } from '@utils/utility';
+import { capitalizeFirstLetter, joinClassNames } from '@utils/utility';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -94,7 +94,7 @@ export default function ConversationHub({ users, tabType, tabs, isShowMessages =
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
               {tabs.map((tabName, index) => (
-                <Tab key={index} label={tabName} {...a11yProps(0)} />
+                <Tab key={index} label={capitalizeFirstLetter(tabName)} {...a11yProps(0)} />
               ))}
             </Tabs>
           </Box>
@@ -134,7 +134,7 @@ export default function ConversationHub({ users, tabType, tabs, isShowMessages =
                   },
                 }}
               >
-                <p>{tabName}</p>
+                <p>{capitalizeFirstLetter(tabName)}</p>
               </ToggleButton>
             ))}
           </ToggleButtonGroup>

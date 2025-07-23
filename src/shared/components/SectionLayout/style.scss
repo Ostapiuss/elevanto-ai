@@ -56,16 +56,16 @@
     }
 
     @media (max-width: ($breakpoint-md + 200px)) {
-      margin-left: -40px;
-      margin-right: -40px;
+      // margin-left: -40px;
+      // margin-right: -40px;
 
-      &::after {
-        width: calc(100% + 40px);
-      }
+      // &::after {
+      // width: calc(100% + 40px);
+      // }
 
-      &::before {
-        width: calc(100% + 40px);
-      }
+      // &::before {
+      // width: calc(100% + 40px);
+      // }
     }
 
     @media (max-width: ($breakpoint-sm)) {

@@ -1,5 +1,56 @@
+@use '../../../../assets/styles/style.scss' as *;
+
+@mixin unifiedPlatfomBottomMixin {
+  position: relative;
+}
+
+@mixin unifiedPlatfomTopMixin {
+  position: relative;
+  left: -35px;
+}
+
 .united-platform {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
   gap: 17px;
+
+  > * {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .pipeline {
+    @include unifiedPlatfomTopMixin();
+  }
+
+  .invoices {
+    @include unifiedPlatfomTopMixin();
+  }
+
+  .mocked-calendar {
+    @include unifiedPlatfomBottomMixin();
+  }
+
+  .smart-box {
+    @include unifiedPlatfomBottomMixin();
+  }
+}
+
+@media (max-width: ($breakpoint-md + 200px)) {
+  .united-platform {
+    .pipeline {
+      left: 0;
+    }
+
+    .invoices {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 250px)) {
+  .united-platform {
+    grid-template-columns: 1fr;
+  }
 }

@@ -11,7 +11,7 @@
     border-radius: 12px;
     padding: 16px;
     background-color: $white-80;
-    width: fit-content;
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -38,5 +38,17 @@
   .workflow-steps-icon {
     margin-left: 8px;
     margin-right: 8px;
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 150px)) {
+  .workflow-steps {
+    width: 100%;
+
+    .step {
+      padding: 12px 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 }

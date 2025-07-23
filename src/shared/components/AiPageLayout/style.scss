@@ -1,0 +1,60 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.ai-page-layout {
+  .section-layout:first-child {
+    @media (max-width: ($breakpoint-md + 500px)) {
+      .split-view {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .split-view__col1 {
+          width: 100%;
+
+          .assistant {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .split-view__col2 {
+          top: 0;
+          transform: translateY(0%);
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .col2__title {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media (max-width: ($breakpoint-sm - 100px)) {
+      .split-view {
+        .split-view__col2 {
+          width: 100%;
+
+          .col2__action {
+            width: 100%;
+          }
+
+          .main__actions {
+            flex-direction: column;
+            width: 100%;
+
+            .MuiButtonBase-root {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

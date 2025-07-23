@@ -2,6 +2,7 @@ import { SectionLayout } from '@shared/components/SectionLayout';
 import SplitView from '@shared/components/SplitView';
 
 import UnderPlatformView from './components/united-platform-view';
+import AiPageLayout from '@shared/components/AiPageLayout';
 import { Box, Button } from '@mui/material';
 import StartForFree from '@shared/components/StartForFreeButton';
 import { emailUsers, smsUsers, whatsAppUsers } from '@mocks/contacts';
@@ -21,15 +22,16 @@ import WorkflowSteps from '@shared/components/WorkflowSteps';
 import { workflowSteps } from '@mocks/common';
 import HowItWorks from '@shared/components/HowItWorks';
 
-import './style.scss';
 import { businessItemsAllInOne, workersAllInOne } from '@mocks/shared';
+
+import './style.scss';
 
 const allUsers = [...smsUsers, ...emailUsers, ...whatsAppUsers];
 const tabs = ['all', 'whatsapp', 'email', 'sms'];
 
 export default function AllInOnePages() {
   return (
-    <>
+    <AiPageLayout>
       <SectionLayout className="all-in-one-section main-section section reverse">
         <SplitView
           firstColRender={<UnderPlatformView />}
@@ -139,6 +141,6 @@ export default function AllInOnePages() {
       <SectionLayout className="all-in-one-section section ready-business-section">
         <ReadyBusiness />
       </SectionLayout>
-    </>
+    </AiPageLayout>
   );
 }

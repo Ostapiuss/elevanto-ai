@@ -3,7 +3,7 @@
 .all-in-one-section {
   &.main-section {
     .split-view {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
     }
 
     .page-header {
@@ -76,6 +76,31 @@
       * {
         direction: ltr;
       }
+    }
+  }
+}
+@media (max-width: ($breakpoint-md + 400px)) {
+  .all-in-one-section {
+    &.main-section {
+      .split-view {
+        grid-template-columns: 1fr 0.8fr;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 100px)) {
+  .ai-assistant-section {
+    .page-header {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 150px)) {
+  .ai-assistant-section {
+    .page-header {
+      padding: 0 10px;
     }
   }
 }
