@@ -1,4 +1,4 @@
-import{j as o,q as l,s,n as i,r as e,H as p}from"./index-A-zhGRwt.js";const r=s(i)`
+import{j as o,q as l,s,n as i,r as e,H as p}from"./index-BYXAL3DU.js";const r=s(i)`
   h1 {
     font-size: 36px;
     font-weight: 600;
