@@ -8,7 +8,7 @@ import SplitView from '@shared/components/SplitView';
 
 import ClientBoard from './components/client-board';
 import AiAssistant from './components/ai-assistant';
-import CustomWorkflow from './components/workflow';
+import CustomWorkflow from '../../shared/components/CustomWorkflow';
 import BusinessImpact from './components/business-impact';
 import IncomingCall from './components/incoming-call';
 import ConversationHub from '@shared/components/ConversationHub';
@@ -32,6 +32,10 @@ export default function Features() {
 
   const rediredToAllInOne = () => {
     navigate('/all-in-one');
+  };
+
+  const rediredToCustomAutomation = () => {
+    navigate('/custom-automation');
   };
 
   return (
@@ -77,6 +81,7 @@ export default function Features() {
             <SplitView
               position="center"
               firstColRender={<CustomWorkflow />}
+              onButtonClick={rediredToCustomAutomation}
               text={{
                 title: 'Custom Workflow Automation',
                 subtitle:

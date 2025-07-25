@@ -130,3 +130,21 @@ export interface BenefitItem {
   title: string;
   description: string;
 }
+
+export interface AutomatedProcessItem {
+  title: ReactNode;
+  text: string;
+  status: 'welcome' | 'scheduled' | 'assigned';
+}
+
+export interface CaseListItem {
+  icon: ReactNode;
+  text: string;
+}
+
+export interface RealCaseItem {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  list: Array<CaseListItem>;
+}

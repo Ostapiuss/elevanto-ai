@@ -1,0 +1,73 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.friendly-integration {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &__icon {
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__services {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+
+    .service {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 8px;
+      width: 100%;
+
+      &.service-crm {
+        background-color: $violet-50;
+
+        h4 {
+          color: $violet-900;
+        }
+      }
+
+      &.service-email {
+        background-color: $orange-50;
+
+        h4 {
+          color: $orange-900;
+        }
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__product {
+    width: 100%;
+    background-color: $secondary-200;
+    box-shadow: 0px 2px 8px 0px #00000014;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: $accent-700;
+      text-align: center;
+    }
+  }
+}

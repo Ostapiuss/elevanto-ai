@@ -1,0 +1,58 @@
+@use '../../assets/styles/style.scss' as *;
+
+.custom-automation {
+  &.main-custom-automation-section {
+    .split-view {
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    .page-header {
+      .col2__title {
+        color: $primary-50;
+      }
+    }
+    .main__actions {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &.why-choose-custom-section {
+    .why-choose-custom {
+      margin-top: 40px;
+    }
+  }
+
+  &.features {
+    .page-header {
+      max-width: 100%;
+    }
+
+    .feature {
+      width: 100%;
+      max-width: 100%;
+
+      &.reverse {
+        .split-view {
+          margin-top: 0;
+          direction: rtl;
+
+          * {
+            direction: ltr;
+          }
+        }
+      }
+    }
+  }
+
+  &.reverse {
+    .split-view {
+      margin-top: 0;
+      direction: rtl;
+
+      * {
+        direction: ltr;
+      }
+    }
+  }
+}

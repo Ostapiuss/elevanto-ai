@@ -13,6 +13,7 @@ const TermsPage = lazy(() => import('@pages/terms'));
 const BlogPage = lazy(() => import('@pages/blog'));
 const AiAssistant = lazy(() => import('@pages/ai-assistant'));
 const AllInOnePage = lazy(() => import('@pages/all-in-one'));
+const CustomAutomationPage = lazy(() => import('@pages/custom-automations'));
 
 export function AppRoutes() {
   return (
@@ -30,6 +31,7 @@ export function AppRoutes() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="ai-assistants" element={<AiAssistant />} />
           <Route path="all-in-one" element={<AllInOnePage />} />
+          <Route path="custom-automation" element={<CustomAutomationPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />
