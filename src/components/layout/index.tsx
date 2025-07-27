@@ -3,6 +3,7 @@ import { Header } from '@components/header';
 
 import './style.scss';
 import Footer from '@components/footer';
+import FloatingButton from '@shared/components/FloatingButton';
 
 export function Layout() {
   return (
@@ -12,6 +13,7 @@ export function Layout() {
         <Main />
       </main>
       <Footer />
+      <FloatingButton />
     </div>
   );
 }
