@@ -8,7 +8,7 @@ import WorkflowCanvas from '@shared/components/WorkflowCanvas';
 
 import { PageHeader } from '@shared/components/PageHeader';
 import WhyChoosePlatform from './components/why-choose-custom';
-
+import { ScrollFadeIn } from '@shared/components/ScrollFadeIn';
 import CustomWorkflow from '@shared/components/CustomWorkflow';
 import SmartTaskRouting from './components/smart-task-routing';
 import AutomatedProcess from '@shared/components/AutomatedProcess';
@@ -67,92 +67,104 @@ export default function CustomAutomation() {
           }}
         />
       </SectionLayout>
-      <SectionLayout className="custom-automation section why-choose-custom-section">
-        <PageHeader
-          title="Why Choose Custom Automations?"
-          size={36}
-          subTitle="Transform your business operations with intelligent automation that works exactly how you need it to."
-        />
-        <WhyChoosePlatform />
-      </SectionLayout>
-      <SectionLayout className="custom-automation section features powerfull-feature-interface-section">
-        <PageHeader
-          title="Powerful Features, Simple Interface"
-          size={36}
-          subTitle="Everything you need to automate your workflows, without the complexity."
-        />
-        <Box className="feature reverse">
-          <SplitView
-            position="center"
-            firstColRender={<CustomWorkflow />}
-            text={{
-              title: 'Visual Workflow Builder',
-              subtitle:
-                'Design complex automations with our intuitive drag-and-drop interface. No coding required - just connect the dots and watch your workflows come to life.',
-            }}
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section why-choose-custom-section">
+          <PageHeader
+            title="Why Choose Custom Automations?"
+            size={36}
+            subTitle="Transform your business operations with intelligent automation that works exactly how you need it to."
           />
-        </Box>
-        <Box className="feature">
-          <SplitView
-            position="center"
-            firstColRender={<SmartTaskRouting />}
-            text={{
-              title: 'Smart Task Routing',
-              subtitle:
-                'Get a 360° view of every client with detailed engagement metrics, interaction history, and predictive insights.',
-            }}
+          <WhyChoosePlatform />
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section features powerfull-feature-interface-section">
+          <PageHeader
+            title="Powerful Features, Simple Interface"
+            size={36}
+            subTitle="Everything you need to automate your workflows, without the complexity."
           />
-        </Box>
-        <Box className="feature reverse">
-          <SplitView
-            position="center"
-            firstColRender={<AutomatedProcess process={processItems} />}
-            text={{
-              title: 'Automated Onboarding Sequences',
-              subtitle:
-                'Create seamless client onboarding experiences that run automatically. From welcome emails to scheduled calls, every step happens exactly when it should.',
-            }}
+          <Box className="feature reverse">
+            <SplitView
+              position="center"
+              firstColRender={<CustomWorkflow />}
+              text={{
+                title: 'Visual Workflow Builder',
+                subtitle:
+                  'Design complex automations with our intuitive drag-and-drop interface. No coding required - just connect the dots and watch your workflows come to life.',
+              }}
+            />
+          </Box>
+          <Box className="feature">
+            <SplitView
+              position="center"
+              firstColRender={<SmartTaskRouting />}
+              text={{
+                title: 'Smart Task Routing',
+                subtitle:
+                  'Get a 360° view of every client with detailed engagement metrics, interaction history, and predictive insights.',
+              }}
+            />
+          </Box>
+          <Box className="feature reverse">
+            <SplitView
+              position="center"
+              firstColRender={<AutomatedProcess process={processItems} />}
+              text={{
+                title: 'Automated Onboarding Sequences',
+                subtitle:
+                  'Create seamless client onboarding experiences that run automatically. From welcome emails to scheduled calls, every step happens exactly when it should.',
+              }}
+            />
+          </Box>
+          <Box className="feature">
+            <SplitView
+              position="center"
+              firstColRender={<FriendlyIntegration />}
+              text={{
+                title: 'Integration-Friendly',
+                subtitle:
+                  'Connect with your existing tools and platforms. Sync data between CRMs, email systems, calendars, and more to create unified workflows.',
+              }}
+            />
+          </Box>
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section how-it-works-section">
+          <PageHeader
+            title="How it works"
+            size={36}
+            subTitle="Get up and running with AI assistants in just four simple steps"
           />
-        </Box>
-        <Box className="feature">
-          <SplitView
-            position="center"
-            firstColRender={<FriendlyIntegration />}
-            text={{
-              title: 'Integration-Friendly',
-              subtitle:
-                'Connect with your existing tools and platforms. Sync data between CRMs, email systems, calendars, and more to create unified workflows.',
-            }}
+          <HowItWorks workers={workersAllInOne} />
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section real-world-use-cases">
+          <PageHeader
+            title="Real-World Use Cases"
+            size={36}
+            subTitle="See how businesses like yours are using custom automations to streamline operations."
           />
-        </Box>
-      </SectionLayout>
-      <SectionLayout className="custom-automation section how-it-works-section">
-        <PageHeader
-          title="How it works"
-          size={36}
-          subTitle="Get up and running with AI assistants in just four simple steps"
-        />
-        <HowItWorks workers={workersAllInOne} />
-      </SectionLayout>
-      <SectionLayout className="custom-automation section real-world-use-cases">
-        <PageHeader
-          title="Real-World Use Cases"
-          size={36}
-          subTitle="See how businesses like yours are using custom automations to streamline operations."
-        />
-        <RealWorldUseCases />
-      </SectionLayout>
-      <SectionLayout className="custom-automation section">
-        <PageHeader
-          title="Real Business Impact"
-          size={36}
-          subTitle="See the measurable results our customers achieve with Elevanto AI"
-        />
-        <BusinessImpact businessItems={businessItemsAllInOne} />
-      </SectionLayout>
-      <SectionLayout className="custom-automation section ready-business-section">
-        <ReadyBusiness />
-      </SectionLayout>
+          <RealWorldUseCases />
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section">
+          <PageHeader
+            title="Real Business Impact"
+            size={36}
+            subTitle="See the measurable results our customers achieve with Elevanto AI"
+          />
+          <BusinessImpact businessItems={businessItemsAllInOne} />
+        </SectionLayout>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SectionLayout className="custom-automation section ready-business-section">
+          <ReadyBusiness />
+        </SectionLayout>
+      </ScrollFadeIn>
     </AiPageLayout>
   );
 }
