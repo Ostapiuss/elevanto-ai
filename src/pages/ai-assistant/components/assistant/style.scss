@@ -33,6 +33,14 @@
 
     &__footer {
       margin-top: 17px;
+
+      .custom-tag {
+        p {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
     }
 
     .assistant-message-header {
@@ -156,6 +164,30 @@
         max-width: 100%;
         width: 100%;
         left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm)) {
+  .assistant {
+    .assistant-chat {
+      .chat {
+        .custom-tag {
+          max-width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 200px)) {
+  .assistant {
+    .assistant-chat {
+      .chat {
+        .custom-tag {
+          max-width: 60px;
+        }
       }
     }
   }

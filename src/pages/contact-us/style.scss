@@ -57,6 +57,22 @@
   }
 }
 
+@media (max-width: ($breakpoint-xs + 500px )) {
+  .contact-us-section {
+    .laern-about-us {
+      .welcome-title {
+        &__title {
+          font-size: 24px;
+        }
+
+        &__subtitle {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: ($breakpoint-xs + 400px )) {
   .contact-us-section {
     .contact-us {

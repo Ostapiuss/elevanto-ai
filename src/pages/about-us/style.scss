@@ -3,8 +3,20 @@
 .about-us-section {
   padding: 0 120px;
 
+  .page-header {
+    h1 {
+      font-size: 32px !important;
+    }
+  }
+
   .section-container {
     padding: 40px 32px;
+  }
+
+  &.company-mission-section {
+    .company-mission {
+      background-color: #ffffff;
+    }
   }
 
   .page-header {
@@ -39,6 +51,163 @@
         margin-top: 48px;
         max-width: 840px;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 200px)) {
+  .about-us-section {
+    &.meet-with-team-section {
+      .meet-with-team {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 100px)) {
+  .about-us-section {
+    &.our-results-section {
+      .result-item {
+        padding: 16px 8px;
+      }
+
+      .sharp-container {
+        grid-template-columns: 1fr;
+
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        .sharp-item {
+          &::after {
+            display: none;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            background-color: #eff0f1;
+            width: 100%;
+            height: 1px;
+            z-index: 100;
+          }
+        }
+      }
+    }
+
+    &.our-story-section {
+      .our-story {
+        width: 100%;
+
+        .story-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__description {
+            text-align: center;
+          }
+        }
+      }
+
+      .sharp-container {
+        grid-template-columns: 1fr;
+
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        .sharp-item {
+          &::after {
+            display: none;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            background-color: #eff0f1;
+            width: 100%;
+            height: 1px;
+            z-index: 100;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm + 168px)) {
+  .about-us-section {
+    &.learn-about-us-section {
+      .laern-about-us {
+        &__welcome-title {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm)) {
+  .about-us-section {
+    .page-header {
+      padding: 0 40px;
+      h1 {
+        font-size: 24px !important;
+      }
+    }
+
+    &.our-values-section {
+      .our-values {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &.company-mission-section {
+      .company-mission {
+        .sharp-container {
+          flex-direction: column;
+
+          .sharp-item {
+            border-bottom: 1px solid $gray-50;
+
+            &::after {
+              display: none;
+            }
+
+            &:last-child {
+              border: none;
+            }
+          }
+
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-sm - 100px)) {
+  .about-us-section {
+    &.meet-with-team-section {
+      .meet-with-team {
+        grid-template-columns: 1fr;
       }
     }
   }

@@ -8,27 +8,3 @@
   border-radius: 16px;
   width: fit-content;
 }
-
-@media (max-width: ($breakpoint-sm)) {
-  .custom-tag {
-    max-width: 120px;
-
-    p {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-  }
-}
-
-@media (max-width: ($breakpoint-sm - 200px)) {
-  .custom-tag {
-    max-width: 60px;
-
-    p {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-  }
-}

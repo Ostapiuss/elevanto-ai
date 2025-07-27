@@ -8,8 +8,9 @@ import OurStory from './components/our-story';
 import MeetWithTeam from './components/meet-team';
 import OurValues from './components/our-values';
 
-import './style.scss';
 import OurResults from './components/our-result';
+
+import './style.scss';
 
 export default function AboutUs() {
   return (
