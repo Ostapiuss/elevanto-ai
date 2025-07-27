@@ -1,5 +1,6 @@
 import { Layout } from '@components/layout';
 import { NotFoundPage } from '@pages/not-found-page';
+import { Loader } from '@shared/components/LoaderDots';
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router';
 
@@ -17,7 +18,7 @@ const CustomAutomationPage = lazy(() => import('@pages/custom-automations'));
 
 export function AppRoutes() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader size={100} loaderType="bounced" />}>
       <Routes>
         <Route path="/login" element={<SignInPage />} />
 
