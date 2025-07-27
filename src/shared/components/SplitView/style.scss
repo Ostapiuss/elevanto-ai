@@ -91,3 +91,16 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-sm)) {
+  .split-view {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__col2 {
+      .col2__title {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/style.scss' as *;
+
 .real-world-use-cases-comp {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,4 +10,12 @@
   gap: 24px;
 
   margin-top: 40px;
+}
+
+@media (max-width: ($breakpoint-sm + 100px)) {
+  .real-world-use-cases-comp {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 1fr;
+  }
 }

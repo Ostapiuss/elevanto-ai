@@ -53,3 +53,21 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-sm + 200px)) {
+  .automated-process {
+    &__list {
+      flex-direction: column;
+
+      .process-item-list {
+        width: 100%;
+
+        &__arrow-image {
+          margin-top: 11px;
+          margin-bottom: 11px;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

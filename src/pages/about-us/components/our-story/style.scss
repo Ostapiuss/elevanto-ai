@@ -9,9 +9,11 @@
 
     &__icon-content {
       display: flex;
+      gap: 8px;
       align-items: center;
 
       .icon {
+        height: 28px;
         svg {
           width: 28px;
           height: 28px;

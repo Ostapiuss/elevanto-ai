@@ -16,13 +16,14 @@ import { AutomatedProcessItem } from '@interfaces/shared-interfaces';
 
 import CheckFilledAccentIcon from '@assets/svg/accent-check-box-icon-filled.svg?react';
 
-import './style.scss';
 import FriendlyIntegration from '@shared/components/FriendlyIntegration';
 import HowItWorks from '@shared/components/HowItWorks';
 import { businessItemsAllInOne, workersAllInOne } from '@mocks/shared';
 import ReadyBusiness from '@shared/components/ReadyBusiness';
 import BusinessImpact from '@shared/components/BusinessImpact';
 import RealWorldUseCases from './components/real-world-use-cases';
+
+import './style.scss';
 
 const processItems: AutomatedProcessItem[] = [
   {

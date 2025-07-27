@@ -7,6 +7,8 @@ import { TriggerItem } from '@interfaces/shared-interfaces';
 
 import PlusIcon from '@assets/svg/plus-icon.svg?react';
 import SubstituitionIcon from '@assets/svg/substitution-icon.svg?react';
+import TagIcon from '@assets/svg/tag-icon.svg?react';
+import ClockIcon from '@assets/svg/clock-icon.svg?react';
 import UsersIcon from '@assets/svg/users-icon.svg?react';
 
 import './style.scss';
@@ -27,16 +29,16 @@ const addTrigger: TriggerItem = {
 
 const baseTriggers: TriggerItem[] = [
   {
-    icon: <SubstituitionIcon />,
+    icon: <TagIcon />,
     status: 'ready',
-    name: 'Trigger',
-    description: 'Pipeline Update to New Lead',
+    name: '',
+    description: 'Add Tag: "new lead activation"',
   },
   {
-    icon: <SubstituitionIcon />,
-    name: 'Trigger',
+    icon: <ClockIcon />,
+    name: '',
     status: 'ready',
-    description: 'Pipeline Update to New Lead',
+    description: 'Wait: 1 minutes',
   },
 ];
 
@@ -56,12 +58,15 @@ export default function CustomWorkflow() {
         </Box>
         <Box className="custom-workflow__triggers">
           {triggers.map((triggerItem, index) => (
-            <React.Fragment key={index}>
+            <Box
+              sx={{ maxWidth: '300px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+              key={index}
+            >
               <IconButton className="plus-icon-btn" onClick={onAddNewTrigger}>
                 <PlusIcon />
               </IconButton>
               <Trigger trigger={triggerItem} />
-            </React.Fragment>
+            </Box>
           ))}
         </Box>
         <Box className="custom-workflow__users">

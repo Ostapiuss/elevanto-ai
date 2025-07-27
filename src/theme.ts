@@ -271,9 +271,19 @@ let theme = createTheme({
         },
       },
     },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          '&[value=""]': {
+            color: 'red',
+          },
+        },
+      },
+    },
     MuiFormLabel: {
       styleOverrides: {
         root: {
+          color: '#424242 !important',
           marginBottom: '4px',
           fontFamily: '"TT Hoves Pro Trial", sans-serif',
           lineHeight: '1.3rem',
@@ -283,10 +293,10 @@ let theme = createTheme({
     MuiInputBase: {
       styleOverrides: {
         root: {
-          fontFamily: '"TT Hoves Pro Trial", sans-serif',
+          fontFamily: '"TT Hoves Pro Trial", sans-serif !important',
         },
         input: {
-          fontFamily: '"TT Hoves Pro Trial", sans-serif',
+          fontFamily: '"TT Hoves Pro Trial", sans-serif !important',
         },
       },
     },

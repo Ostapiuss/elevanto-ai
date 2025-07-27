@@ -1,0 +1,21 @@
+@use '../../../assets/styles/style.scss' as *;
+
+.online-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: $green-600;
+  }
+
+  .text {
+    font-size: 10px;
+    color: $gray-500;
+    line-height: 14px;
+    font-weight: 400;
+  }
+}

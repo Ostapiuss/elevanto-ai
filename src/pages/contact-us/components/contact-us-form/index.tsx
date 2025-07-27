@@ -9,7 +9,7 @@ export default function ContactForm() {
     firstName: '',
     lastName: '',
     phone: '',
-    interested: '',
+    interested: 'Support',
     message: '',
   });
 
@@ -79,8 +79,8 @@ export default function ContactForm() {
       <FormControl fullWidth>
         <FormLabel>I&apos;m interested in...</FormLabel>
         <Select
-          // renderValue={(selected) => selected || 'Select an option'}
           labelId="interested-label"
+          displayEmpty
           name="interested"
           value={formData.interested}
           onChange={handleSelectChange}
