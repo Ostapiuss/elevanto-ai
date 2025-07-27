@@ -3,8 +3,9 @@ import { PageHeader } from '@shared/components/PageHeader';
 
 import ReadyBusiness from '@shared/components/ReadyBusiness';
 
-import './style.scss';
 import Blogs from './components/blogs';
+
+import './style.scss';
 
 export default function Blog() {
   return (

@@ -1,5 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { BASE_API_URL } from 'src/shared/constants/common';
+import { BASE_API_URL } from '@shared/constants/common';
+
+const apiKey = import.meta.env.VITE_FLOTIQ_API_KEY;
 
 const defaultConfiguration: AxiosRequestConfig = {
   responseType: 'json',
@@ -7,8 +9,7 @@ const defaultConfiguration: AxiosRequestConfig = {
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+    'X-Auth-Token': apiKey,
   },
 };
 
@@ -17,9 +18,9 @@ const axiosInstance: AxiosInstance = axios.create({
   baseURL: BASE_API_URL,
 });
 
-const setHeader = (token: string) => {
-  axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-};
+// const setHeader = (token: string) => {
+//   axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+// };
 
 function get<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<any>> {
   return axiosInstance.get<T>(url, config);
@@ -42,6 +43,6 @@ export const httpClient = {
   post,
   put,
   axiosInstance,
-  setHeader,
+  // setHeader,
   remove,
 };

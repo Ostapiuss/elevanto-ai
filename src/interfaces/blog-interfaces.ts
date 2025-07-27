@@ -15,7 +15,7 @@ export interface BlogItem {
   date: string;
   mainListTitle: string;
   readDelay: string;
-  relatedTopic: string;
+  keyWords: string;
   list: BlogNumericArticleItem[];
   textList: BlogArticleItem[];
 }
