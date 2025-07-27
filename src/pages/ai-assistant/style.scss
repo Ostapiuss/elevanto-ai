@@ -182,6 +182,27 @@
   }
 }
 
+@media (max-width: ($breakpoint-md + 400px)) {
+  .ai-assistant-section {
+    &.how-it-works-section {
+      .how-it-works {
+        width: 80%;
+      }
+
+      .sharp-item {
+        &::after {
+          height: 115%;
+        }
+        &:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: ($breakpoint-sm + 100px)) {
   .ai-assistant-section {
     .page-header {

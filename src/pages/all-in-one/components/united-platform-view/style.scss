@@ -37,6 +37,18 @@
   }
 }
 
+@media (max-width: ($breakpoint-md + 500px)) {
+  .united-platform {
+    .pipeline {
+      left: 0;
+    }
+
+    .invoices {
+      left: 0;
+    }
+  }
+}
+
 @media (max-width: ($breakpoint-md + 200px)) {
   .united-platform {
     .pipeline {

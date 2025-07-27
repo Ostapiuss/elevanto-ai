@@ -141,7 +141,7 @@ export default function AiAssistant() {
           />
         </Box>
       </SectionLayout>
-      <SectionLayout className="section ai-assistant-section">
+      <SectionLayout className="section ai-assistant-section how-it-works-section">
         <PageHeader
           title="How it works"
           size={36}

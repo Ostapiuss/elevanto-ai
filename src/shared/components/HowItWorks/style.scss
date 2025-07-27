@@ -66,9 +66,17 @@
 
 @media (max-width: ($breakpoint-md + 200px)) {
   .how-it-works {
+    padding: 8px;
+
     .sharp-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
+      .work-item {
+        .work-item__description {
+          max-width: 100%;
+        }
+      }
 
       .sharp-item {
         &::before {

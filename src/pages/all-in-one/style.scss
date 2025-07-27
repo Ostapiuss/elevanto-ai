@@ -79,11 +79,33 @@
     }
   }
 }
+
 @media (max-width: ($breakpoint-md + 400px)) {
   .all-in-one-section {
     &.main-section {
       .split-view {
         grid-template-columns: 1fr 0.8fr;
+      }
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-md + 200px)) {
+  .all-in-one-section {
+    &.how-it-works-section {
+      .how-it-works {
+        width: 90%;
+      }
+
+      .sharp-item {
+        &::after {
+          height: 115%;
+        }
+        &:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
       }
     }
   }

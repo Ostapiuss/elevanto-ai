@@ -126,7 +126,7 @@ export default function CustomAutomation() {
           />
         </Box>
       </SectionLayout>
-      <SectionLayout className="custom-automation section">
+      <SectionLayout className="custom-automation section how-it-works-section">
         <PageHeader
           title="How it works"
           size={36}

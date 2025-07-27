@@ -82,3 +82,24 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-md + 200px)) {
+  .custom-automation {
+    &.how-it-works-section {
+      .how-it-works {
+        width: 80%;
+      }
+
+      .sharp-item {
+        &::after {
+          height: 115%;
+        }
+        &:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

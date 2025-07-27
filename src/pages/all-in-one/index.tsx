@@ -114,7 +114,7 @@ export default function AllInOnePages() {
           />
         </Box>
       </SectionLayout>
-      <SectionLayout className="all-in-one-section section">
+      <SectionLayout className="all-in-one-section section how-it-works-section">
         <PageHeader
           title="How it works"
           size={36}

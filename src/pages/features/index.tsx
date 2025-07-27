@@ -40,7 +40,7 @@ export default function Features() {
 
   return (
     <>
-      <SectionLayout className="section features">
+      <SectionLayout className="section features-section">
         <ScrollFadeIn>
           <Box className="feature custom-crm-feature">
             <PageHeader
