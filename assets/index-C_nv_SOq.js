@@ -1,0 +1,1 @@
+import{r as i,j as o,p as n}from"./index-BNPli1Rm.js";import{u as r}from"./use-in-view-DRERICTg.js";const p=({children:e,delay:s=0})=>{const t=i.useRef(null),a=r(t,{once:!0,margin:"-100px"});return o.jsx(n.div,{ref:t,className:"section-frame",initial:{opacity:0,y:40},animate:a?{opacity:1,y:0}:{},transition:{duration:.6,ease:"easeOut",delay:s},children:e})};export{p as S};
