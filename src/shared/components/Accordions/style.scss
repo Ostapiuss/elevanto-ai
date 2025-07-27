@@ -44,3 +44,23 @@
     border: none;
   }
 }
+
+@media (max-width: ($breakpoint-sm)) {
+  .accordions {
+    .accordion {
+      .MuiAccordion-heading {
+        .MuiButtonBase-root {
+          .MuiTypography-root {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .MuiAccordionDetails-root {
+        .details {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
