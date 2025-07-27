@@ -33,9 +33,8 @@ export function AppRoutes() {
           <Route path="ai-assistants" element={<AiAssistant />} />
           <Route path="all-in-one" element={<AllInOnePage />} />
           <Route path="custom-automation" element={<CustomAutomationPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-
-        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );
