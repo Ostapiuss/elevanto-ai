@@ -1,1 +1,0 @@
-import{j as r,n as s}from"./index-C09VQnPV.js";function t({children:a}){return r.jsx(s,{className:"sharp-item",children:a})}function e({children:a}){return r.jsx(s,{className:"sharp-container",children:a})}export{e as S,t as a};
