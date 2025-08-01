@@ -18,7 +18,7 @@ export default function ReadyBusiness() {
         <Box className="actions">
           <StartForFree variant="contained" className="start-btn" />
           <Button variant="contained" className="book-btn">
-            Book a demo
+            Try Elevanto
           </Button>
         </Box>
       </Box>
