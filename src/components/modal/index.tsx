@@ -4,10 +4,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import { AppModalService } from '@services/app-modal-service';
 import { IF } from '@shared/components/IF';
 import { ModalInterface } from '@interfaces/common-interfaces';
-import './style.scss';
 import { joinClassNames } from '@utils/utility';
 import { IconButton } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
+
+import './style.scss';
 
 const AppModal = () => {
   const [open, onToggle] = useState<boolean>(false);
@@ -26,7 +27,6 @@ const AppModal = () => {
       AppModalService.unsubscribe('app-modal');
       window.removeEventListener('keydown', handleOutsideKeyClick);
     };
-    // eslint-disable-next-line
   }, []);
 
   const handleOutsideKeyClick = (eventKey: KeyboardEvent): void => {
